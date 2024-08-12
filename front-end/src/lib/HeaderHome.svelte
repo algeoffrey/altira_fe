@@ -18,11 +18,14 @@
       
       <!-- Button and For Founders Message -->
       <div class="mt-8 flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
-        <button class="px-6 py-3 text-white rounded w-full md:w-auto" style="background-color: #363338;">
+        <!-- "Become an Investor" Button -->
+        <a href="/asset-owners" class="px-6 py-3 text-white rounded w-full md:w-auto text-center" style="background-color: #363338;">
           Become an Investor
-        </button>
+        </a>
+        
+        <!-- "For founders, click here" Message -->
         <p class="text-base md:text-lg">
-          For founders, please <a href="https://foundrx.com" class="text-black hover:underline">click here</a>
+          For founders, please <a href="/foundrx-main" class="text-black hover:underline"><u>click here</u></a>
         </p>
       </div>
     </div>
