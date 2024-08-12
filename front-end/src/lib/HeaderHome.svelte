@@ -25,7 +25,7 @@
         
         <!-- "For founders, click here" Message -->
         <p class="text-base md:text-lg">
-          For founders, please <a href="/foundrx-main" class="text-black hover:underline"><u>click here</u></a>
+          For founders, please <a href="/founder-main" class="text-black hover:underline"><u>click here</u></a>
         </p>
       </div>
     </div>
