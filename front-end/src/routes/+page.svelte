@@ -4,6 +4,7 @@
     import HeroQuote from '../lib/HeroQuote.svelte';
     import InfoCard from '../lib/InfoCard.svelte';
     import CourseCard from '../lib/CourseCard.svelte';
+    import LogoHolder from '../lib/LogoHolder.svelte';
   </script>
   
   <!-- Navbar -->
@@ -77,6 +78,18 @@
     </div>
   </section>
   
-
+  <LogoHolder 
+  logos={[
+      { imgSrc: "/images/kfw_deg.svg", altText: "kfw deg"},
+      { imgSrc: "/images/triple_jump.svg", altText: "triple jump"},
+      { imgSrc: "/images/ministry_education_netherland.svg", altText: "ministry education netherland"},
+      { imgSrc: "/images/aavishkar_capital_group.svg", altText: "aavishkar capital group"},
+      { imgSrc: "/images/aavishkaar_group.svg", altText: "aavishkaar group"},
+  ]}
+  maxColumns={5}
+  maxRows={1}
+  title = "Institutional Supporters"
+  seeMoreLink = "#"
+/>
 
   
