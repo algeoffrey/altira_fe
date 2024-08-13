@@ -1,35 +1,20 @@
-steps:
-  - name: "gcr.io/cloud-builders/docker"
+ steps:
+  # Build the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/tebengan-project/${_TEBENGAN_SERVICE_NAME}:${SHORT_SHA}', '.']
+  # Push the container image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/tebengan-project/${_TEBENGAN_SERVICE_NAME}:${SHORT_SHA}']
+  # Deploy container image to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
     args:
-      [
-        "build",
-        "-t",
-        "us.gcr.io/tebengan-project/${_TEBENGAN_SERVICE_NAME}:${SHORT_SHA}",
-        ".",
-      ]
-  - name: "gcr.io/cloud-builders/docker"
-    args:
-      [
-        "push",
-        "us.gcr.io/tebengan-project/${_TEBENGAN_SERVICE_NAME}:${SHORT_SHA}",
-      ]
-  - name: "gcr.io/cloud-builders/gcloud"
-    args:
-      - "container"
-      - "clusters"
-      - "get-credentials"
-      - "tebengan-clusters"
-      - "--zone"
-      - "asia-southeast1-a"
-      - "--project"
-      - "tebengan-project"
-  - name: "gcr.io/cloud-builders/kubectl"
-    env:
-      - "CLOUDSDK_COMPUTE_ZONE=asia-southeast1-a"
-      - "CLOUDSDK_CONTAINER_CLUSTER=tebengan-clusters"
-    args:
-      - "set"
-      - "image"
-      - "deployment/${_TEBENGAN_SERVICE_NAME}"
-      - "${_TEBENGAN_SERVICE_NAME}=us.gcr.io/tebengan-project/${_TEBENGAN_SERVICE_NAME}:${SHORT_SHA}"
-      - "--namespace=${_NAMESPACE}"
+    - 'run'
+    - 'deploy'
+    - 'SERVICE_NAME'
+    - '--image'
+    - 'gcr.io/tebengan-project/${_TEBENGAN_SERVICE_NAME}:${SHORT_SHA}'
+    - '--region'
+    - 'SERVICE_REGION'
+  images:
+  - 'gcr.io/tebengan-project/${_TEBENGAN_SERVICE_NAME}:${SHORT_SHA}'
