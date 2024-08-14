@@ -1,0 +1,1 @@
+export {default as HeroQuote} from './HeroQuote.svelte';

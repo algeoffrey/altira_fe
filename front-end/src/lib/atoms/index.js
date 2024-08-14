@@ -6,3 +6,6 @@ export { default as HamburgerButton } from './HamburgerButton.svelte'
 export { default as HomeBG } from './BackgroundImage.svelte';
 export { default as HomeHeader} from './HomeHeader.svelte';
 export { default as HomeMsg} from './HomeMessage.svelte';
+
+export { default as QuoteText} from './QuoteText.svelte';
+export { default as QuoteAuthor} from './QuoteAuthor.svelte';

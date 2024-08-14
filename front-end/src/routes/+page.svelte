@@ -1,6 +1,6 @@
 <script>
     import { Navbar, HeaderHero } from '$lib/organisms';
-    import HeroQuote from '../lib/HeroQuote.svelte';
+    import { HeroQuote } from '$lib/molecules';
     import InfoCard from '../lib/InfoCard.svelte';
     import CourseCard from '../lib/CourseCard.svelte';
     import LogoHolder from '../lib/LogoHolder.svelte';
@@ -20,6 +20,7 @@
     buttonText="Become an Investor" 
   />
 
+  <!-- Quote Section -->
   <HeroQuote/>
 
   <section class="py-16 bg-gray-100">
