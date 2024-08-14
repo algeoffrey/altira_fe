@@ -1,7 +1,15 @@
 <script>
-    import { Navbar, HeaderHero, InnovationPlatform, InvestorEducation} from '$lib/organisms';
+    import { Navbar, HeaderHero, InnovationPlatform, InvestorEducation, SponsorSection} from '$lib/organisms';
     import { HeroQuote } from '$lib/molecules';
     import LogoHolder from '../lib/LogoHolder.svelte';
+
+    const logos = [
+        { imgSrc: "/images/kfw_deg.svg", altText: "kfw deg" },
+        { imgSrc: "/images/triple_jump.svg", altText: "triple jump" },
+        { imgSrc: "/images/ministry_education_netherland.svg", altText: "ministry education netherland" },
+        { imgSrc: "/images/aavishkar_capital_group.svg", altText: "aavishkar capital group" },
+        { imgSrc: "/images/aavishkaar_group.svg", altText: "aavishkaar group" }
+    ];
 
 
   </script>
@@ -43,18 +51,13 @@
     ]}
 />
   
-  <LogoHolder 
-  logos={[
-      { imgSrc: "/images/kfw_deg.svg", altText: "kfw deg"},
-      { imgSrc: "/images/triple_jump.svg", altText: "triple jump"},
-      { imgSrc: "/images/ministry_education_netherland.svg", altText: "ministry education netherland"},
-      { imgSrc: "/images/aavishkar_capital_group.svg", altText: "aavishkar capital group"},
-      { imgSrc: "/images/aavishkaar_group.svg", altText: "aavishkaar group"},
-  ]}
-  maxColumns={5}
-  maxRows={1}
-  title = "Institutional Supporters"
-  seeMoreLink = "#"
-/>
+<SponsorSection 
+        logos= {logos}
+        title="Institutional Supporters"
+        seeMoreLink="#"
+        maxColumns={5}
+        maxRows={1}
+        linkText = "See More >"
+  />
 
   
