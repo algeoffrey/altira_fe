@@ -3,20 +3,23 @@
     export let theme = "transparent";
     export let variant = "primary";
     export let href = "/";
+    export let fontWeight = "font-medium";
+
+    const customBlack = '#363338';
 
     const buttonClasses = variant === "primary"
         ? theme === 'transparent' 
-            ? 'bg-black text-white' 
+            ? `bg-[${customBlack}] text-white` 
             : theme === 'black' 
-                ? 'bg-transparent text-white border border-white' 
-                : 'bg-transparent border border-black text-black'
+                ? `bg-transparent text-white border border-white` 
+                : `bg-transparent border border-black text-[${customBlack}]`
         : theme === 'transparent' 
-            ? 'border border-black text-black bg-transparent' 
+            ? `border border-black text-[${customBlack}] bg-transparent` 
             : theme === 'black' 
-                ? 'bg-white text-black border border-black' 
-                : 'border-black bg-black text-white';
+                ? `bg-white text-[${customBlack}] border border-[${customBlack}]` 
+                : `border-black bg-[${customBlack}] text-white`;
 </script>
 
-<button onclick="location.href='{href}'" type="button" class={`px-4 py-2 rounded ${buttonClasses}`}>
+<button onclick="location.href='{href}'" type="button" class={`px-4 py-2 rounded ${buttonClasses} ${fontWeight}`}>
     {text}
 </button>

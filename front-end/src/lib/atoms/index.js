@@ -9,3 +9,10 @@ export { default as HomeMsg} from './HomeMessage.svelte';
 
 export { default as QuoteText} from './QuoteText.svelte';
 export { default as QuoteAuthor} from './QuoteAuthor.svelte';
+
+export { default as CardTitle} from './CardTitle.svelte';
+export { default as ListText } from './ListText.svelte';
+
+export { default as CourseCardBadge } from './CourseCardBadge.svelte';
+export { default as CourseCardDesc } from './CourseCardDesc.svelte';
+export { default as CourseCardTitle } from './CourseCardTitle.svelte';
