@@ -1,6 +1,5 @@
 <script>
-    import { Navbar } from '$lib/organisms';
-    import PageHeader from '../../lib/PageHeader.svelte';
+    import { Navbar, PageHeader } from '$lib/organisms';
     
   </script>
   

@@ -1,12 +1,11 @@
 <script>
-    import { Navbar } from '$lib/organisms';
-    import PageHeader from '../../lib/PageHeader.svelte'
+    import { Navbar, PageHeader } from '$lib/organisms';
   </script>
   
   <Navbar theme="black" />
 
   <PageHeader
-  title="ALT Collective | Investor Network";
+  title="ALT Collective | <strong> Investor Network </strong>";
   backgroundColor="#19D4E6"
   secondaryColor="#FC4DEB"
   titleColor="#000000"

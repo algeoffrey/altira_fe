@@ -1,6 +1,5 @@
 <script>
-    import { Navbar } from '$lib/organisms';
-    import PageHeader from '../../lib/PageHeader.svelte';
+    import { Navbar, PageHeader } from '$lib/organisms';
   </script>
   
   <Navbar theme="black" />
@@ -9,7 +8,7 @@
   title="Foundrx"
   subtitle="Hub for Founders and Builders"
   subtitleMarginLeft="ml-auto"  
-  subtitleMarginRight="mr-3"
+  subtitleMarginRight="mr-auto"
   backgroundColor="#6025A4"
   secondaryColor="#19D4E6"
   titleColor="#FFFFFF"
