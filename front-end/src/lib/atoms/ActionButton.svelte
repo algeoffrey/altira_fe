@@ -2,6 +2,7 @@
     export let text = "Button";
     export let theme = "transparent";
     export let variant = "primary";
+    export let href = "/";
 
     const buttonClasses = variant === "primary"
         ? theme === 'transparent' 
@@ -16,6 +17,6 @@
                 : 'border-black bg-black text-white';
 </script>
 
-<button class={`px-4 py-2 rounded ${buttonClasses}`}>
+<button onclick="location.href='{href}'" type="button" class={`px-4 py-2 rounded ${buttonClasses}`}>
     {text}
 </button>

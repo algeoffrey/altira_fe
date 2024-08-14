@@ -1,11 +1,14 @@
 <script>
-    export let title = "Default Title";
-    export let description = "Default description goes here.";
+    export let title = "Invest early in the future you believe in, today";
+    export let description = "Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.";
+
+    let formattedTitle = title.replace('Invest', '<span class="font-bold">Invest</span>');
+    formattedTitle = formattedTitle.replace('today', '<span class="font-bold">today</span>');
 </script>
 
-<div class="relative z-10 text-left max-w-full md:max-w-xl lg:max-w-2xl px-4 md:px-8 lg:px-16 py-16 md:py-24 lg:py-32">
+<div>
     <h1 class="text-3xl md:text-5xl leading-tight">
-        <span class="font-bold">{title.split(' ')[0]}</span> {title.slice(title.indexOf(' ') + 1)}
+        {@html formattedTitle}
     </h1>
-    <p class="mt-4 text-base md:text-lg">{description}</p>
+    <p class="mt-7 text-base md:text-lg font-light">{description}</p>
 </div>

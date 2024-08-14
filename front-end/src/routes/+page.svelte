@@ -1,17 +1,19 @@
 <script>
     import { Navbar, HeaderHero } from '$lib/organisms';
-    import Header from '../lib/HeaderHome.svelte';
     import HeroQuote from '../lib/HeroQuote.svelte';
     import InfoCard from '../lib/InfoCard.svelte';
     import CourseCard from '../lib/CourseCard.svelte';
     import LogoHolder from '../lib/LogoHolder.svelte';
+
+
   </script>
   
   <!-- Navbar -->
   <Navbar theme="transparent" />
+
   
   <!-- Header Section -->
-  <Header
+  <HeaderHero
     backgroundImage="/images/header-home-bg.svg" 
     title="Invest early in the future you believe in, today" 
     description="Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
