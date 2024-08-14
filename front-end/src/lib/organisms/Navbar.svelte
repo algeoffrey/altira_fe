@@ -1,5 +1,5 @@
 <script>
-    import { NavLogo, NavLink, ActionButton } from '$lib/atoms';
+    import { NavLogo, NavLink, ActionButton, HamburgerButton } from '$lib/atoms';
     import { createEventDispatcher } from 'svelte';
 
     export let links = [
@@ -46,12 +46,8 @@
         {/each}
     </ul>
 
-    <!-- Hamburger Menu Button (Visible on Mobile) -->
-    <button type="button" class="md:hidden ml-auto" on:click={toggleMenu} aria-label="Toggle Menu">
-        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-    </button>
+    <!-- Hamburger Menu Button -->
+    <HamburgerButton isOpen={isMenuOpen} toggleMenu={toggleMenu} ariaLabel="Toggle Menu" />
 
     <!-- Action Buttons (Desktop) -->
     <div class="hidden md:flex items-center space-x-4 ml-auto">
