@@ -1,15 +1,6 @@
 <script>
     import { Navbar, HeaderHero, InnovationPlatform, InvestorEducation, SponsorSection} from '$lib/organisms';
     import { HeroQuote } from '$lib/molecules';
-    import LogoHolder from '../lib/LogoHolder.svelte';
-
-    const logos = [
-        { imgSrc: "/images/kfw_deg.svg", altText: "kfw deg" },
-        { imgSrc: "/images/triple_jump.svg", altText: "triple jump" },
-        { imgSrc: "/images/ministry_education_netherland.svg", altText: "ministry education netherland" },
-        { imgSrc: "/images/aavishkar_capital_group.svg", altText: "aavishkar capital group" },
-        { imgSrc: "/images/aavishkaar_group.svg", altText: "aavishkaar group" }
-    ];
 
 
   </script>
@@ -52,12 +43,33 @@
 />
   
 <SponsorSection 
-        logos= {logos}
-        title="Institutional Supporters"
-        seeMoreLink="#"
-        maxColumns={5}
-        maxRows={1}
-        linkText = "See More >"
-  />
+    title="Institutional Supporters"
+    maxColumns={5}
+    maxRows={1}
+    logos={[
+        { imgSrc: "/images/kfw_deg.svg", altText: "kfw deg" },
+        { imgSrc: "/images/triple_jump.svg", altText: "triple jump" },
+        { imgSrc: "/images/ministry_education_netherland.svg", altText: "ministry education netherland" },
+        { imgSrc: "/images/aavishkar_capital_group.svg", altText: "aavishkar capital group" },
+        { imgSrc: "/images/aavishkaar_group.svg", altText: "aavishkaar group" }
+    ]}
+    linkText="See More >"
+    seeMoreLink="#"
+/>
+
+<SponsorSection 
+    title="Strategic Patners"
+    maxColumns={4}
+    maxRows={1}
+    logos={[
+        { imgSrc: "/images/goers.svg", altText: "goers" },
+        { imgSrc: "/images/cision.svg", altText: "cision pr newswire" },
+        { imgSrc: "/images/assegaf_hamzah_partners.svg", altText: "assegaf hamzah & partners" },
+        { imgSrc: "/images/bina_nusantara.svg", altText: "aavishkar capital group" }
+    ]}
+    linkText="See More >"
+    seeMoreLink="#"
+/>
+
 
   
