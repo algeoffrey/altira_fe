@@ -40,7 +40,7 @@
     <NavLogo logoSrc={logoSrc} href="/" theme={theme} />
 
     <!-- Navigation Links -->
-    <ul class="flex items-center gap-8 font-light ml-5 hidden md:flex">
+    <ul class="flex items-center gap-10 font-light ml-10 hidden md:flex">
         {#each links as { name, href }}
             <li><NavLink href={href} text={name} theme={theme} /></li>
         {/each}
