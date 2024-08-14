@@ -4,7 +4,7 @@
     export let links = [];
 </script>
 
-<div class="flex flex-col space-y-2">
+<div class="grid gap-2">
     {#each links as { text, href }}
         <FooterLink {text} {href} />
     {/each}

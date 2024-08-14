@@ -33,19 +33,35 @@
 </script>
 
 <footer class="bg-customBlack text-white py-8 mt-16">
-    <div class="container mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start space-y-6 md:space-y-0">
-        <div class="flex flex-col items-start space-y-5">
-            <AltiraLogo />
-            <SocialIconsGroup icons={socialIcons} class="space-x-4" />
+    <div class="container mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start space-y-12 md:space-y-0">
+        <!-- Logo and Social Icons -->
+        <div class="flex flex-col items-center md:items-start space-y-6">
+            <div class="w-full flex justify-center md:justify-start">
+                <AltiraLogo size="h-10"/>
+            </div>
+            <div class="hidden md:block">
+                <SocialIconsGroup icons={socialIcons} class="flex space-x-4" />
+            </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <FooterLinksGroup links={column1Links} />
-            <FooterLinksGroup links={column2Links} />
-            <FooterLinksGroup links={column3Links} />
-        </div>
+
+        <!-- Footer Links -->
+        <div class="flex flex-col md:items-center mx-auto">
+            <div class="grid grid-cols-3 md:grid-cols-3 gap-12 text-left">
+                <FooterLinksGroup links={column1Links} />
+                <FooterLinksGroup links={column2Links} />
+                <FooterLinksGroup links={column3Links} />
+            </div>
+        </div>  
     </div>
-    <div class="text-center mt-6">
-        <p class="text-xs md:text-sm">ALTIRA Group & Advisory</p>
-        <p class="text-xs md:text-sm">Copyright © 2023</p>
+
+    <!-- Social Icons for Mobile View -->
+    <div class="md:hidden flex justify-center mt-8 space-x-6">
+        <SocialIconsGroup icons={socialIcons} class="flex space-x-4" />
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-10 md:mt-12">
+        <p class="text-sm font-light mb-1">ALTIRA Group & Advisory</p>
+        <p class="text-xs font-light">Copyright © 2023</p>
     </div>
 </footer>
