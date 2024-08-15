@@ -1,5 +1,5 @@
 <script>
-    import { Navbar, PageHeader, MissionAndStory } from '$lib/organisms';
+    import { Navbar, PageHeader, MissionAndStory, TeamSection } from '$lib/organisms';
   </script>
   
   <Navbar theme="custom" />
@@ -19,3 +19,5 @@
 />
 
 <MissionAndStory />
+
+<TeamSection />
