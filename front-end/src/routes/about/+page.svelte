@@ -1,5 +1,5 @@
 <script>
-    import { Navbar, PageHeader } from '$lib/organisms';
+    import { Navbar, PageHeader, MissionAndStory } from '$lib/organisms';
   </script>
   
   <Navbar theme="custom" />
@@ -17,3 +17,5 @@
     { name: "Track Record", href: "/about#track-record" }
   ]}
 />
+
+<MissionAndStory />
