@@ -24,7 +24,7 @@
     <div class="container mx-auto px-4 md:px-8">
         <!-- Paragraph at the top -->
         <Paragraph text={paragraphContent} textMaxWidth="max-w-full" textAlign="text-left" />
-        <Heading text="Mission and Story" size="text-2xl"/>
+        <div class="pt-12"><Heading text="Mission and Story" size="text-2xl"/></div>
 
         <!-- Second Row: TextWithHeading and VennDiagram -->
         <div class="flex flex-col lg:flex-row justify-between items-start mt-10">
