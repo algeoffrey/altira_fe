@@ -1,6 +1,6 @@
 <script>
-    import Avatar from '$lib/atoms/Avatar.svelte';
-    import ProfileInfo from '$lib/molecules/ProfileInfo.svelte';
+    import Avatar from '/src/lib/atoms/Avatar.svelte';
+    import ProfileInfo from '/src/lib/molecules/ProfileInfo.svelte';
   
     export let src = "";
     export let alt = "Profile Image";

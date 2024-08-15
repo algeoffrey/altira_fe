@@ -1,5 +1,5 @@
 <script>
-    import CourseCard from '$lib/organisms/JoinCard.svelte';
+    import CourseCard from '/src/lib/organisms/JoinCard.svelte';
 
     export let courses = [
         {

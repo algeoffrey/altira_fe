@@ -1,5 +1,5 @@
 <script>
-    import { NavLogo, NavLink, ActionButton, HamburgerButton } from '$lib/atoms';
+    import { NavLogo, NavLink, ActionButton, HamburgerButton } from '/src/lib/atoms';
     import { createEventDispatcher } from 'svelte';
 
     export let links = [

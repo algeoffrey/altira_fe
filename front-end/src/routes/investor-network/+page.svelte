@@ -1,5 +1,5 @@
 <script>
-    import { Navbar, PageHeader } from '$lib/organisms';
+    import { Navbar, PageHeader } from '/src/lib/organisms';
   </script>
   
   <Navbar theme="black" />

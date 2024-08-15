@@ -1,5 +1,5 @@
 <script>
-    import LogoImage from '$lib/atoms/LogoImage.svelte';
+    import LogoImage from '/src/lib/atoms/LogoImage.svelte';
 
     export let logos = [];
     export let maxColumns = 5;

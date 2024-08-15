@@ -1,5 +1,5 @@
 <script>
-    import NavLink from '$lib/atoms/SubHeadingLink.svelte';
+    import NavLink from '/src/lib/atoms/SubHeadingLink.svelte';
   
     export let links = []; // Array of { name, href }
     export let color = "#FFFFFF";

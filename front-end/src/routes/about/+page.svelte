@@ -1,5 +1,5 @@
 <script>
-    import { Navbar, PageHeader, MissionAndStory, TeamSection, SponsorSection, LearnJoin, Footer } from '$lib/organisms';
+    import { Navbar, PageHeader, MissionAndStory, TeamSection, SponsorSection, LearnJoin, Footer } from '/src/lib/organisms';
   </script>
   
   <Navbar theme="custom" />

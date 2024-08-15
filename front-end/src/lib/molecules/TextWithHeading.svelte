@@ -1,8 +1,8 @@
 <script>
-  import Heading from '$lib/atoms/CardTitle.svelte';
-  import Paragraph from '$lib/atoms/Paragraph.svelte';
-  import MissionStatement from '$lib/molecules/MissionStatement.svelte';
-  import StoryStatement from '$lib/molecules/StoryStatement.svelte';
+  import Heading from '/src/lib/atoms/CardTitle.svelte';
+  import Paragraph from '/src/lib/atoms/Paragraph.svelte';
+  import MissionStatement from '/src/lib/molecules/MissionStatement.svelte';
+  import StoryStatement from '/src/lib/molecules/StoryStatement.svelte';
 
   export let heading = "Heading";
   export let content = [];

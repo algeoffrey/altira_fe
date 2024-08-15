@@ -1,5 +1,5 @@
 <script>
-    import FooterLink from '$lib/atoms/FooterLink.svelte';
+    import FooterLink from '/src/lib/atoms/FooterLink.svelte';
 
     export let links = [];
 </script>
