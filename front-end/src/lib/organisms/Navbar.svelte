@@ -28,7 +28,7 @@
     }
 </script>
 
-<nav class={`flex items-center justify-start p-4 ${theme === 'transparent' 
+<nav class={`flex items-center justify-start p-5 ${theme === 'transparent' 
     ? 'bg-transparent absolute top-0 left-0 w-full z-10' 
     : theme === 'white' 
         ? 'bg-white shadow-md' 
@@ -37,7 +37,8 @@
             : 'bg-[#363338] shadow-md'}`}>
     
     <!-- Logo -->
-    <NavLogo logoSrc={logoSrc} href="/" theme={theme} />
+    <div class="pl-10"><NavLogo logoSrc={logoSrc} href="/" theme={theme} /></div>
+    
 
     <!-- Navigation Links -->
     <ul class="flex items-center gap-10 font-light ml-10 hidden md:flex">

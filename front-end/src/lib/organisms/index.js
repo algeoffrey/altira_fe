@@ -8,3 +8,4 @@ export { default as Footer } from './Footer.svelte'
 export { default as PageHeader} from './PageHeader.svelte';
 export { default as MissionAndStory} from './MissionAndStory.svelte';
 export { default as TeamSection} from './TeamSection.svelte'; 
+export { default as LearnJoin} from './LearnJoinCommunity.svelte';

@@ -1,5 +1,5 @@
 <script>
-    import { Navbar, PageHeader, MissionAndStory, TeamSection, SponsorSection, Footer } from '$lib/organisms';
+    import { Navbar, PageHeader, MissionAndStory, TeamSection, SponsorSection, LearnJoin, Footer } from '$lib/organisms';
   </script>
   
   <Navbar theme="custom" />
@@ -100,5 +100,7 @@ logos={[
 linkText="See More >"
 seeMoreLink="#"
 />
+
+<LearnJoin />
 
 <Footer />

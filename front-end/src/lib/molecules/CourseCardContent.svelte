@@ -9,11 +9,12 @@
     export let courseType = "Full Module Course (Certification Available)";
     export let buttonText = "Apply Here";
     export let buttonLink = "#";
+    export let ButtonTheme = "transparent";
 </script>
 
 <div class="flex flex-col items-start text-left">
     <CourseCardTitle text={title} />
     <CourseCardBadge text={courseType} />
     <CourseCardDesc text={description} />
-    <ActionButton text={buttonText} href={buttonLink} />
+    <ActionButton text={buttonText} href={buttonLink} theme = {ButtonTheme}/>
 </div>
