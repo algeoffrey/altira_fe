@@ -1,7 +1,7 @@
 <script>
-    import NameText from '$lib/atoms/NameText.svelte';
-    import RoleText from '$lib/atoms/RoleText.svelte';
-    import TitleText from '$lib/atoms/RoleTitle.svelte';
+    import NameText from '/src/lib/atoms/NameText.svelte';
+    import RoleText from '/src/lib/atoms/RoleText.svelte';
+    import TitleText from '/src/lib/atoms/RoleTitle.svelte';
   
     export let name = "Name";
     export let role = "Role";

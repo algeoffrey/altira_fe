@@ -1,5 +1,5 @@
 <script>
-    import ListText from '$lib/atoms/ListText.svelte';
+    import ListText from '/src/lib/atoms/ListText.svelte';
     export let items = [];
 </script>
 

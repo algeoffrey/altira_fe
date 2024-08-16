@@ -1,5 +1,5 @@
 <script>
-    import ProfileCard from '$lib/molecules/ProfileCard.svelte';
+    import ProfileCard from '/src/lib/molecules/ProfileCard.svelte';
 
     export let advisoryBoard = [
         {

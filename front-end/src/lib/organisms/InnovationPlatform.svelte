@@ -1,6 +1,6 @@
 <script>
-    import InfoCard from '$lib/molecules/InfoCard.svelte';
-    import CardTitle from '$lib/atoms/CardTitle.svelte';
+    import InfoCard from '/src/lib/molecules/InfoCard.svelte';
+    import CardTitle from '/src/lib/atoms/CardTitle.svelte';
 
     export let cards = [
         {

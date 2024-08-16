@@ -1,5 +1,5 @@
 <script>
-    import SocialIcon from '$lib/atoms/SocialIcon.svelte';
+    import SocialIcon from '/src/lib/atoms/SocialIcon.svelte';
 
     export let icons = [
         { iconSrc: "/images/instagram_icon.svg", altText: "Instagram", link: "#" },

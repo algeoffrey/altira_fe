@@ -1,8 +1,8 @@
 <script>
-    import TextWithHeading from '$lib/molecules/TextWithHeading.svelte';
-    import Heading from '$lib/atoms/CardTitle.svelte';
-    import VennDiagram from '$lib/atoms/VennDiagram.svelte';
-    import Paragraph from '$lib/atoms/Paragraph.svelte';
+    import TextWithHeading from '/src/lib/molecules/TextWithHeading.svelte';
+    import Heading from '/src/lib/atoms/CardTitle.svelte';
+    import VennDiagram from '/src/lib/atoms/VennDiagram.svelte';
+    import Paragraph from '/src/lib/atoms/Paragraph.svelte';
 
     const paragraphContent = 
       "<strong> ALTIRA (Alternative Investments Group & Advisory) </strong> is an alternative assets and innovation advisory platform focusing on Southeast Asian and Indonesian-related early stage investments that convenes and collaborates with smart capital to empower impactful and innovative ventures and enterprises through funding, advisory, learning and network. ALTIRA is investor-centric and focuses on the development of the investor ecosystem to scale up access for high net worth individuals, family enterprises, foundations and other institutional investors to innovation.";

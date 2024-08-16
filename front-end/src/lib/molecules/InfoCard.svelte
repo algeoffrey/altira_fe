@@ -1,7 +1,7 @@
 <script>
-    import CardTitle from '$lib/atoms/CardTitle.svelte';
-    import ListText from '$lib/atoms/ListText.svelte';
-    import ActionButton from '$lib/atoms/ActionButton.svelte';
+    import CardTitle from '/src/lib/atoms/CardTitle.svelte';
+    import ListText from '/src/lib/atoms/ListText.svelte';
+    import ActionButton from '/src/lib/atoms/ActionButton.svelte';
 
     export let title = "Card Title";
     export let content = [];

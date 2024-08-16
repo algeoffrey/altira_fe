@@ -1,8 +1,8 @@
 <script>
-    import CourseCardTitle from '$lib/atoms/CourseCardTitle.svelte';
-    import CourseCardDesc from '$lib/atoms/CourseCardDesc.svelte';
-    import CourseCardBadge from '$lib/atoms/CourseCardBadge.svelte';
-    import ActionButton from '$lib/atoms/ActionButton.svelte';
+    import CourseCardTitle from '/src/lib/atoms/CourseCardTitle.svelte';
+    import CourseCardDesc from '/src/lib/atoms/CourseCardDesc.svelte';
+    import CourseCardBadge from '/src/lib/atoms/CourseCardBadge.svelte';
+    import ActionButton from '/src/lib/atoms/ActionButton.svelte';
 
     export let title = "Course Title";
     export let description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit.";

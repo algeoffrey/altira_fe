@@ -1,6 +1,6 @@
 <script>
-    import { Navbar, HeaderHero, InnovationPlatform, InvestorEducation, SponsorSection, Footer} from '$lib/organisms';
-    import { HeroQuote } from '$lib/molecules';
+    import { Navbar, HeaderHero, InnovationPlatform, InvestorEducation, SponsorSection, Footer} from '/src/lib/organisms';
+    import { HeroQuote } from '/src/lib/molecules';
 
 
   </script>

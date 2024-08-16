@@ -1,5 +1,5 @@
 <script>
-    import CourseCardContent from '$lib/molecules/JoinCardContent.svelte';
+    import CourseCardContent from '/src/lib/molecules/JoinCardContent.svelte';
 
     export let title = "Course Title";
     export let description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit.";
