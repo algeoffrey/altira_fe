@@ -13,36 +13,35 @@
 </script>
 
 <section
-  class="relative flex flex-col items-start justify-center"
-  style="min-height: 75vh;"
+  class="relative flex flex-col items-start justify-center overflow-hidden bg-[#F8F8F8]"
+  style="min-height: 100vh;"
 >
   <!-- Header Background Image -->
   <HomeBG src={backgroundImage} altText="Header Background" />
 
   <!-- Header Text and Buttons -->
   <div
-    class={`relative text-left max-w-full md:max-w-xl lg:max-w-2xl px-4 md:px-8 lg:px-16 py-8 md:py-24 lg:py-32 ${menuOpen ? "hidden" : "block"}`}
+    class={`relative text-left max-w-full md:max-w-2xl lg:max-w-2xl px-4 md:px-8 lg:px-8 lg:ml-12 lg:pl-12 lg:pr-5 py-8 md:py-24 lg:pt-8 lg:mb-12 lg:pb-18 ${menuOpen ? "hidden" : "block"}`}
   >
     <HomeHeader {title} {description} />
 
-    <!-- Button and For Founders Message -->
-    <div
-      class="mt-8 flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4"
-    >
-      <!-- "Become an Investor" Button -->
-      <ActionButton
+    <div class="mt-6 flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
+    <!-- "Become an Investor" Button -->
+    <ActionButton
         href="/asset-owners"
         text="Become an Investor"
         theme="custom"
         variant="secondary"
-      />
+        size="text-xl"
+    />
 
-      <!-- "For founders, please click here" Message -->
-      <HomeMsg
+    <!-- "For founders, please click here" Message -->
+    <HomeMsg
         message="For founders, please"
         linkText="click here"
         linkHref="/founder-main"
-      />
+    />
+
     </div>
   </div>
 </section>

@@ -4,6 +4,6 @@
     export let linkHref = "/founder-main";
 </script>
 
-<p class="text-base md:text-lg font-light">
+<p class="text-base md:text-lg font-light text-end align-bottom">
     {message} <a href={linkHref} class="text-black hover:underline">{linkText}</a>
 </p>

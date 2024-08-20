@@ -3,6 +3,6 @@
     export let altText = "Header Background";
 </script>
 
-<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 z-0 overflow-hidden">
     <img src={src} alt={altText} class="w-full h-full object-cover" />
 </div>

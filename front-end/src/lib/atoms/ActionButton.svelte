@@ -4,6 +4,8 @@
     export let variant = "primary";
     export let href = "/";
     export let fontWeight = "font-medium";
+    export let size = "text-md";
+    export let bordersize = "px-3 py-2"
 
     const customBlack = '#363338';
 
@@ -20,6 +22,6 @@
                 : `border-black bg-[${customBlack}] text-white`;
 </script>
 
-<button onclick="location.href='{href}'" type="button" class={`px-4 py-2 rounded ${buttonClasses} ${fontWeight}`}>
+<button onclick="location.href='{href}'" type="button" class={` rounded ${bordersize} ${buttonClasses} ${fontWeight} ${size} `}>
     {text}
 </button>
