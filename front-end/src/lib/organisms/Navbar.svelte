@@ -28,7 +28,7 @@
     }
 </script>
 
-<nav class={`flex items-center justify-start p-5 ${theme === 'transparent' 
+<nav class={`flex items-center justify-start p-3.5 ${theme === 'transparent' 
     ? 'bg-transparent absolute top-0 left-0 w-full z-10' 
     : theme === 'white' 
         ? 'bg-white shadow-md' 
@@ -37,11 +37,11 @@
             : 'bg-[#363338] shadow-md'}`}>
     
     <!-- Logo -->
-    <div class="pl-10"><NavLogo logoSrc={logoSrc} href="/" theme={theme} /></div>
+    <div class="md:lg:pl-10"><NavLogo logoSrc={logoSrc} href="/" theme={theme} /></div>
     
 
     <!-- Navigation Links -->
-    <ul class="flex items-center gap-10 font-light ml-10 hidden md:flex">
+    <ul class="flex items-center gap-12 font-light lg:md:ml-10 hidden md:flex text-md">
         {#each links as { name, href }}
             <li><NavLink href={href} text={name} theme={theme} /></li>
         {/each}
@@ -51,9 +51,9 @@
     <HamburgerButton isOpen={isMenuOpen} toggleMenu={toggleMenu} ariaLabel="Toggle Menu" />
 
     <!-- Action Buttons (Desktop) -->
-    <div class="hidden md:flex items-center space-x-4 ml-auto">
-        <ActionButton text="Investor Track" theme={theme} variant="primary" />
-        <ActionButton text="Raise Capital" theme={theme} variant="secondary" />
+    <div class="hidden md:flex items-center space-x-6 lg:md:pr-8 ml-auto">
+        <ActionButton text="Investor Track" theme={theme} variant="primary" bordersize="px-5 py-1.5" size="text-md"/>
+        <ActionButton text="Raise Capital" theme={theme} variant="secondary" bordersize="px-5 py-1.5" size="text-xl/12"/>
     </div>
 
     <!-- Mobile Menu (Visible when Menu is Open) -->

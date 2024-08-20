@@ -25,7 +25,7 @@
   >
     <HomeHeader {title} {description} />
 
-    <div class="mt-6 flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-4">
+    <div class="mt-6 flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-5 md:space-x-4">
     <!-- "Become an Investor" Button -->
     <ActionButton
         href="/asset-owners"
