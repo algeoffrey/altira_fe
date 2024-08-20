@@ -3,6 +3,6 @@
     export let authorColor = "#000000";
 </script>
 
-<p class="mt-4 text-lg font-light" style="color: {authorColor}; max-width: 800px;">
+<p class="mt-5 text-lg md:text-xl font-light text-center max-w-xl mx-auto" style="color: {authorColor};">
     {author}
 </p>
