@@ -1,6 +1,6 @@
 <script>
-    import { Navbar, PageHeader } from '/src/lib/organisms';
-    import {InvestorPlatformSection} from '../../lib/molecules';
+    import { Navbar, PageHeader, FAQSection, Footer } from '/src/lib/organisms';
+    import {InvestorPlatformSection, EnterpriseInnovationSection, WealthPlanningSection} from '../../lib/molecules';
     
   </script>
   
@@ -20,3 +20,9 @@
 />
 
 <InvestorPlatformSection/>
+<EnterpriseInnovationSection/>
+<WealthPlanningSection/>
+
+<FAQSection/>
+
+<Footer/>

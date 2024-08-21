@@ -28,7 +28,7 @@
     ];
 </script>
 
-<section class="py-12 md:py-16 px-6 md:px-12 bg-white max-w-full md:max-w-7xl mx-auto">
+<section class="py-8 pt-12 md:pt-16 md:py-12 px-6 md:px-12 bg-white max-w-full md:max-w-7xl mx-auto">
 
     <!-- Intro Text -->
     <p class="text-left md:text-justify text-sm md:text-base font-light mb-8 md:mb-12 pb-6 md:pb-12">
@@ -36,7 +36,7 @@
     </p>
 
     <!-- Title and Description -->
-    <h2 class="text-center text-2xl md:text-3xl font-semibold mb-6">
+    <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-6">
         {title}
     </h2>
     <p class="text-center text-sm md:text-base font-light mb-8 md:mb-12 mx-auto">
@@ -45,8 +45,8 @@
 
     <!-- Sections -->
     {#each sections as section}
-        <div class="mb-8 md:mb-12 py-4 md:py-6 mx-auto">
-            <CardTitle text={section.subtitle} size="text-lg md:text-xl lg:text-2xl" align="text-left" weight="font-light-bold" />
+        <div class="mb-4 md:mb-6 py-2 md:py-4 mx-auto">
+            <CardTitle text={section.subtitle} size="text-lg md:text-[1.7rem]" align="text-left" weight="font-light-bold" />
             <p class="text-sm md:text-base text-left md:text-justify font-light mt-6 md:mt-8 mb-4 md:mb-6 leading-relaxed">
                 {section.description}
             </p>
