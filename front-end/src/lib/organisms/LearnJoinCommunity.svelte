@@ -25,12 +25,12 @@
 </script>
 
 <section class="py-12 bg-gray-50">
-    <div class="container mx-auto px-4 md:px-6 lg:px-8">
+    <div class="container mx-auto py-4 px-4 md:px-6 lg:px-8">
         <h2 class="text-2xl md:text-3xl font-semibold text-center mb-6">Learn and Join the Community</h2>
         <p class="text-center text-sm md:text-base mb-12 max-w-3xl mx-auto font-thin">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum.
         </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2  gap-6 md:gap-8 max-w-3xl mx-auto">
             {#each courses as course}
                 <div class="flex justify-left">
                     <CourseCard 

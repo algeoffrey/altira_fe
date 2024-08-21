@@ -32,7 +32,7 @@
   ];
 </script>
 
-<footer class="bg-customBlack text-white py-8 mt-16">
+<footer class="bg-customBlack text-white py-8">
   <div
     class="container mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start space-y-12 md:space-y-0"
   >
