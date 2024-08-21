@@ -1,5 +1,6 @@
 <script>
     import { Navbar, PageHeader, BeneficiarySection } from '/src/lib/organisms';
+    import AssetOwnerSection from '../../lib/molecules/AssetOwnerSection.svelte';
   </script>
   
   <Navbar theme="black" />
@@ -19,4 +20,6 @@
 />
   
 <BeneficiarySection/>
+
+<AssetOwnerSection/>
   

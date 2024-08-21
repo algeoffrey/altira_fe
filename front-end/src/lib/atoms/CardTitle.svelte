@@ -5,4 +5,4 @@
     export let weight = "font-semibold"
 </script>
 
-<h3 class={`${weight} mb-3 mt-3 ${align} ${size}`}>{text}</h3>
+<h3 class={`${weight} ${align} ${size}`}>{text}</h3>
