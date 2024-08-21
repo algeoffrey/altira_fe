@@ -1,5 +1,6 @@
 <script>
     import { Navbar, PageHeader } from '/src/lib/organisms';
+    import {InvestorPlatformSection} from '../../lib/molecules';
     
   </script>
   
@@ -17,3 +18,5 @@
     { name: "Wealth Planning & Solutions", href: "/asset-owners#wealth" }
   ]}
 />
+
+<InvestorPlatformSection/>
