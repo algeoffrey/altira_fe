@@ -20,7 +20,7 @@
             <p class="text-base font-light mb-6 leading-relaxed">{paragraph}</p>
         {/each}
         <div class="mt-10 flex justify-end">
-            <ActionButton text={buttonText} href={buttonLink} theme="transparent" variant="secondary" bordersize="px-4 py-2" size="text-md md:text-lg" fontWeight="font-medium" />
+            <ActionButton text={buttonText} href={buttonLink} theme="transparent" variant="secondary" bordersize="px-5 py-1" size="text-md md:text-lg" fontWeight="font-medium" />
         </div>
     </div>
 </section>
