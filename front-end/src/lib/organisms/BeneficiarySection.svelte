@@ -50,7 +50,7 @@
 
 <section class="py-12 bg-white relative">
     <!-- Introductory Paragraph -->
-    <p class="text-left text-sm md:text-base font-light mb-8  py-12 max-w-6xl mx-auto">
+    <p class="text-left text-sm md:text-base font-light mb-12 py-6 max-w-8xl mx-32">
         {introParagraph}
     </p>
 

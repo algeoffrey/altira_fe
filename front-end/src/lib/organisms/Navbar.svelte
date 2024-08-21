@@ -28,7 +28,7 @@
     }
 </script>
 
-<nav class={`flex items-center justify-start p-3.5 ${theme === 'transparent' 
+<nav class={`flex items-center justify-start p-4 ${theme === 'transparent' 
     ? 'bg-transparent absolute top-0 left-0 w-full z-10' 
     : theme === 'white' 
         ? 'bg-white shadow-md' 

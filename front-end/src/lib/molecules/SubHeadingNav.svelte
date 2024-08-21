@@ -5,7 +5,7 @@
     export let color = "#FFFFFF";
   </script>
   
-  <nav class="flex items-center space-x-8">
+  <nav class="flex items-center space-x-9 text-base">
     {#each links as { name, href }}
       <NavLink href={href} text={name} color={color} />
     {/each}

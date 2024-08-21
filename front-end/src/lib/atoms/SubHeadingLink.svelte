@@ -3,7 +3,7 @@
     export let text = "";
     export let color = "#FFFFFF";
     export let hoverColor = "hover:underline";
-    export let weight = "font-light";
+    export let weight = "font-thin";
   </script>
   
   <li class="list-none">

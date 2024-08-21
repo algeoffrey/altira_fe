@@ -20,7 +20,7 @@
 
 <section class="relative w-full" style="background-color: {backgroundColor};">
   <div
-    class="container mx-auto py-12 px-4 md:px-2 lg:px-18 flex justify-between items-center"
+    class="container mx-auto py-14 px-4 md:lg:px-12 flex justify-between items-center"
   >
     <TitleWithSubtitle
       title={displayTitle}
@@ -32,7 +32,7 @@
     />
   </div>
   <div
-    class="w-full px-4 md:px-8 lg:px-20 h-8 flex justify-between items-center"
+    class="w-full px-4 md:px-8 lg:pl-32 h-12 flex justify-between items-center"
     style="background-color: {secondaryColor};"
   >
     <Navigation links={subHeaderLinks} color={subHeaderTextColor} />
