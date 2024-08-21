@@ -1,6 +1,6 @@
 <script>
-    import { Navbar, PageHeader, BeneficiarySection } from '/src/lib/organisms';
-    import {AssetOwnerSection, CorporateInnovatorSection} from '../../lib/molecules';
+    import { Navbar, PageHeader, BeneficiarySection, Footer} from '/src/lib/organisms';
+    import {AssetOwnerSection, CorporateInnovatorSection, FamilyEnterprisesSection, PartnersBuildersSection} from '../../lib/molecules';
   </script>
   
   <Navbar theme="black" />
@@ -23,4 +23,8 @@
 
 <AssetOwnerSection/>
 <CorporateInnovatorSection/>
+<FamilyEnterprisesSection/>
+<PartnersBuildersSection/>
+
+<Footer />
   
