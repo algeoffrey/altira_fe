@@ -32,7 +32,7 @@
       <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-12">
         {title}
       </h2>
-      <p class="text-center text-base md:text-[1.05rem] leading-relaxed mb-6 pb-4 font-thin max-w-2xl md:max-w-4xl mx-auto">
+      <p class="text-center text-base md:text-[1.05rem] leading-relaxed mb-6 pb-4 font-thin max-w-2xl md:max-w-6xl mx-auto">
         {introParagraph}
       </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-16 max-w-full md:max-w-6xl px-4 md:px-12 mx-auto">
