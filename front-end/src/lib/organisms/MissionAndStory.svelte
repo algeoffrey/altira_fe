@@ -5,7 +5,7 @@
     import Paragraph from '/src/lib/atoms/Paragraph.svelte';
 
     const paragraphContent = 
-      "<strong> ALTIRA (Alternative Investments Group & Advisory) </strong> is an alternative assets and innovation advisory platform focusing on Southeast Asian and Indonesian-related early stage investments that convenes and collaborates with smart capital to empower impactful and innovative ventures and enterprises through funding, advisory, learning and network. ALTIRA is investor-centric and focuses on the development of the investor ecosystem to scale up access for high net worth individuals, family enterprises, foundations and other institutional investors to innovation.";
+      "<b> <strong> ALTIRA (Alternative Investments Group & Advisory) </strong></b> is an alternative assets and innovation advisory platform focusing on Southeast Asian and Indonesian-related early stage investments that convenes and collaborates with smart capital to empower impactful and innovative ventures and enterprises through funding, advisory, learning and network. ALTIRA is investor-centric and focuses on the development of the investor ecosystem to scale up access for high net worth individuals, family enterprises, foundations and other institutional investors to innovation.";
     
     const missionContent = [
       "We help entrepreneurs to innovate locally with business model, funding model, and strategy that work for them.",
@@ -20,22 +20,22 @@
     ];
 </script>
 
-<section class="py-10 bg-white">
+<section class="py-10 pl-8 bg-white">
     <div class="container mx-auto px-4 md:px-8">
         <!-- Paragraph at the top -->
-        <Paragraph text={paragraphContent} textMaxWidth="max-w-full" textAlign="text-left" />
-        <div class="pt-12"><Heading text="Mission and Story" size="text-2xl"/></div>
+        <Paragraph text={paragraphContent} textMaxWidth="max-w-full" textAlign="text-left" size="text-[1.05rem]"/>
+        <div class="pt-12"><Heading text="Mission and Story" size="text-[2rem]"/></div>
 
         <!-- Second Row: TextWithHeading and VennDiagram -->
         <div class="flex flex-col lg:flex-row justify-between items-start mt-10">
             <!-- Text with Headings (Mission and Story) -->
-            <div class="w-full lg:w-1/2 space-y-8">
+            <div class="w-full w-3/5 space-y-8 pl-12">
                 <TextWithHeading heading="Our Mission" type="mission" content={missionContent} />
                 <TextWithHeading heading="Our Story" type="story" content={storyContent} />
             </div>
             
             <!-- Venn Diagram Container -->
-            <div class="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+            <div class="w-full w-2/5 my-12 flex justify-center">
                 <div class="max-w-xs lg:max-w-sm w-full">
                     <VennDiagram alt="Venn Diagram representing Mission and Story" />
                 </div>

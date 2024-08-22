@@ -10,12 +10,17 @@
 </script>
 
 <div>
-  <Heading text={heading} align="text-left" size = 'text-base' />
-  {#if type === "paragraph"}
-      <Paragraph text={content} alignment="text-left" />
-  {:else if type === "mission"}
-      <MissionStatement items={content} />
-  {:else if type === "story"}
-      <StoryStatement items={content} />
-  {/if}
+  <div class="mb-6">
+    <Heading text={heading} align="text-left" size = 'text-base' />
+  </div>
+  <div class="leading-relaxed">
+    {#if type === "paragraph"}
+    <Paragraph text={content} alignment="text-left" />
+    {:else if type === "mission"}
+        <MissionStatement items={content} />
+    {:else if type === "story"}
+        <StoryStatement items={content} />
+    {/if}
+  </div>
+
 </div>
