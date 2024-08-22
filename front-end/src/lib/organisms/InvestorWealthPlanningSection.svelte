@@ -22,8 +22,6 @@
         courseType: "Masterclasses (Certification Available)",
         backgroundColor: "#CFC9EF",
         buttonLink: "#",
-        buttonTheme: "black",
-        buttonVariant: "secondary",
       },
     ];
   
