@@ -2,6 +2,12 @@
   import CourseCard from "/src/lib/organisms/CourseCard.svelte";
   import LearnMoreLink from "/src/lib/atoms/LearnMoreLink.svelte";
 
+
+  export let buttonTextSize = "text-lg";
+  export let buttonSize = "px-8 py-2";
+  export let buttonTheme =  "black";
+  export let buttonVariant = "secondary";
+
   export let courses = [
     {
       title: "Early Stage & Startup Investing",
@@ -41,13 +47,16 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-16 max-w-full md:max-w-6xl px-4 md:px-12 mx-auto">
       {#each courses as course}
         <div class="flex justify-left">
-          <CourseCard
+          <CourseCard 
             title={course.title}
             description={course.description}
             courseType={course.courseType}
             backgroundColor={course.backgroundColor}
             buttonLink={course.buttonLink}
-            class="text-left"
+            buttonTheme={buttonTheme}
+            buttonVariant={buttonVariant}
+            buttonTextSize={buttonTextSize}
+            buttonSize={buttonSize}
           />
         </div>
       {/each}
