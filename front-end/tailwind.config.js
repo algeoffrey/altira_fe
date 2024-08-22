@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         customBlack: '#363338',
+        black: '#363338',
       },
     },
   },
