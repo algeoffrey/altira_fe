@@ -38,9 +38,7 @@
       be part of innovation, we provide a comprehensive learning program to
       master investing in early-stage ventures.
     </p>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-3xl mx-auto"
-    >
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-16 max-w-full md:max-w-6xl px-4 md:px-12 mx-auto">
       {#each courses as course}
         <div class="flex justify-left">
           <CourseCard
@@ -54,7 +52,7 @@
         </div>
       {/each}
     </div>
-    <div class="text-right mt-8 max-w-4xl mx-auto">
+    <div class="text-right mt-8 max-w-6xl pr-12 mx-auto">
       <LearnMoreLink href={learnMoreHref} />
     </div>
   </div>
