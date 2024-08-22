@@ -1,5 +1,7 @@
 <script>
     export let title = "Page Title";
+    export let titleWeight = "bold";
+    export let titleSize = "4xl";
     export let subtitle = "";
     export let titleColor = "#FFFFFF";
     export let subtitleColor = "#FFFFFF";
@@ -7,7 +9,7 @@
   
   <div class="flex justify-between items-center w-full">
     <!-- Title on the left -->
-    <h1 class="text-4xl font-bold" style="color: {titleColor};">
+    <h1 class= ' text-{titleSize} font-{titleWeight}' style="color: {titleColor};">
       {@html title}
     </h1>
     

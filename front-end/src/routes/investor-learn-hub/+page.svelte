@@ -6,6 +6,7 @@
 
   <PageHeader
   customTitle="Investors | <strong>Learn HUB</strong>"
+  titleWeight= "font-base"
   backgroundColor="#19D4E6"  
   secondaryColor="#FFC70F"     
   titleColor="#000000"         
