@@ -1,6 +1,13 @@
 <script>
     import CourseCard from '/src/lib/organisms/JoinCard.svelte';
 
+    export let title = "Learn and Join the Community";
+    export let introParagraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum."
+    export let buttonTextSize = "text-lg";
+    export let buttonSize = "px-8 py-2";
+    export let buttonTheme =  "black";
+    export let buttonVariant = "secondary";
+
     export let courses = [
         {
             title: "Alt-C",
@@ -8,8 +15,6 @@
             courseType: "", 
             backgroundColor: "#D3E8F8",
             buttonLink: "#",
-            buttonTheme: "black",
-            buttonVariant : "secondary"
         },
         {
             title: "Learn Hub",
@@ -17,34 +22,35 @@
             courseType: "Investor Masterclass",
             backgroundColor: "#FBD7D7",
             buttonLink: "#",
-            buttonTheme: "black",
-            buttonVariant : "secondary"
         }
     ];
 
 </script>
 
-<section class="py-12 bg-gray-50">
-    <div class="container mx-auto py-4 px-4 md:px-6 lg:px-8">
-        <h2 class="text-2xl md:text-3xl font-semibold text-center mb-6">Learn and Join the Community</h2>
-        <p class="text-center text-sm md:text-base mb-12 max-w-3xl mx-auto font-thin">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum.
-        </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2  gap-6 md:gap-8 max-w-3xl mx-auto">
-            {#each courses as course}
-                <div class="flex justify-left">
-                    <CourseCard 
-                        title={course.title}
-                        description={course.description}
-                        courseType={course.courseType}
-                        backgroundColor={course.backgroundColor}
-                        buttonLink={course.buttonLink}
-                        buttonTheme={course.buttonTheme}
-                        ButtonVariant= {course.buttonVariant}
-                        class="text-left"
-                    />
-                </div>
-            {/each}
-        </div>
+<section class="py-14 bg-[#F4F4F4] relative max-w-full md:max-w-8xl">
+    <div class="container mx-auto py-4 px-4 md:px-12">
+      <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-12">
+        {title}
+      </h2>
+      <p class="text-center text-base md:text-[1.05rem] leading-relaxed mb-6 pb-4 font-thin max-w-2xl md:max-w-4xl mx-auto">
+        {introParagraph}
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-16 max-w-full md:max-w-6xl px-4 md:px-12 mx-auto">
+        {#each courses as course}
+          <div class="flex justify-center md:justify-left">
+            <CourseCard 
+              title={course.title}
+              description={course.description}
+              backgroundColor={course.backgroundColor}
+              buttonLink={course.buttonLink}
+              buttonTheme={buttonTheme}
+              buttonVariant={buttonVariant}
+              buttonTextSize={buttonTextSize}
+              buttonSize={buttonSize}
+            />
+          </div>
+        {/each}
+      </div>
     </div>
-</section>
+  </section>
+  

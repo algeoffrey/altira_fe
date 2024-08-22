@@ -7,7 +7,9 @@
     export let backgroundColor = "#D1E7F9";
     export let buttonLink = "#";
     export let buttonTheme = "transparent";
-    export let ButtonVariant = "primary";
+    export let buttonVariant = "primary";
+    export let buttonTextSize = "text-lg";
+    export let buttonSize = "py-3 px-2"
 </script>
 
 <div class="rounded-sm shadow-md p-8 border border-gray-200" style="background-color: {backgroundColor};">
@@ -16,7 +18,9 @@
         {description}
         buttonText={buttonText}
         buttonLink={buttonLink}
-        ButtonTheme={buttonTheme}
-        ButtonVariant = {ButtonVariant}
+        buttonTheme={buttonTheme}
+        buttonVariant = {buttonVariant}
+        buttonTextSize = {buttonTextSize}
+        buttonSize = {buttonSize}
     />
 </div>
