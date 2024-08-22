@@ -9,12 +9,15 @@
     export let courseType = "Full Module Course (Certification Available)";
     export let buttonText = "Apply Here";
     export let buttonLink = "#";
-    export let ButtonTheme = "transparent";
+    export let buttonTheme = "transparent";
+    export let buttonVariant = "primary";
+    export let buttonTextSize = "text-md";
+    export let buttonSize = "px-3 py-2";
 </script>
 
 <div class="flex flex-col items-start text-left">
     <CourseCardTitle text={title} />
     <CourseCardBadge text={courseType} />
     <CourseCardDesc text={description} />
-    <ActionButton text={buttonText} href={buttonLink} theme = {ButtonTheme}/>
+    <ActionButton text={buttonText} href={buttonLink} theme = {buttonTheme} variant= {buttonVariant} size= {buttonTextSize} bordersize = {buttonSize}/>
 </div>

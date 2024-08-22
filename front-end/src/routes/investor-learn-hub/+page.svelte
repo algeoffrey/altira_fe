@@ -1,5 +1,5 @@
 <script>
-    import { Navbar, PageHeader } from '/src/lib/organisms';
+    import { Navbar, PageHeader, InvestorWealthPlanningSection } from '/src/lib/organisms';
   </script>
   
   <Navbar theme="black" />
@@ -18,3 +18,5 @@
   ]}
   extraText="<strong>For Founder Learn Hub</strong> please <a href='/founder-main' class='hover:underline'>click here</a>"
 />
+
+<InvestorWealthPlanningSection/>

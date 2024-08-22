@@ -12,3 +12,4 @@ export { default as LearnJoin } from "./LearnJoinCommunity.svelte";
 
 export { default as BeneficiarySection} from "./BeneficiarySection.svelte";
 export { default as FAQSection} from "./FAQSection.svelte";
+export { default as InvestorWealthPlanningSection} from './InvestorWealthPlanningSection.svelte';
