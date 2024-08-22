@@ -64,6 +64,6 @@
   <!-- Copyright -->
   <div class="text-center mt-10 md:mt-12">
     <p class="text-sm font-light mb-1">ALTIRA Group & Advisory</p>
-    <p class="text-xs font-light">Copyright © 2023</p>
+    <p class="text-xs font-light">Copyright © 2024</p>
   </div>
 </footer>
