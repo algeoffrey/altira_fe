@@ -11,15 +11,14 @@
     export let fontWeight = "font-normal";
     export let size = "text-md";
     export let bordersize = "px-12 py-2 md:px-28 md:py-2"
-  </script>
-  
-  <section class="py-20 bg-gray-100">
-    <div class="container px-12 md:px-28 md:mx-24 flex flex-col text-left">
-      <h2 class="text-center md:text-left px-12 md:px-28 mb-8 text-xl md:text-[2rem] font-semibold">{title}</h2>
-      <p class="md:text-left px-14 md:px-28 mb-8 text-sm md:text-base font-light mb-8 max-w-5xl">{description}</p>
-      <div class="md:px-28 md:text-left text-center">
+</script>
+
+<section class="py-20 bg-gray-100 relative">
+    <div class="w-full max-w-6xl mx-auto px-4 md:px-8 lg:px-16 flex flex-col text-left">
+      <h2 class="text-left mb-8 text-xl md:text-[2rem] font-semibold">{title}</h2>
+      <p class="text-left mb-8 text-sm md:text-base font-light mb-8">{description}</p>
+      <div class="text-left">
         <ActionButton {text} {theme} {variant} {href} {fontWeight} {size} {bordersize}/>
       </div>
     </div>
-  </section>
-  
+</section>

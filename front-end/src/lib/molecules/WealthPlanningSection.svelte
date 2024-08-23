@@ -20,8 +20,8 @@
     ];
 </script>
 
-<section class="bg-white">
-    <section class="py-12 md:py-16 px-6 md:px-16 max-w-full md:max-w-7xl mx-auto">
+<section class="bg-white py-12 md:py-16 relative">
+    <section class="max-w-8xl mx-32">
         <!-- Title and Description -->
         <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-6">{title}</h2>
 

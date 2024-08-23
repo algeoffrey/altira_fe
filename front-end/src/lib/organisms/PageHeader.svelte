@@ -19,7 +19,7 @@
 
 <section class="relative w-full" style="background-color: {backgroundColor};">
   <div
-    class="container mx-auto py-14 px-4 md:lg:px-12 flex justify-between items-center"
+    class="container py-12 pl-6 ml-6 md:pl-16 md:ml-16 flex justify-between items-center"
   >
     <TitleWithSubtitle
       title={displayTitle}
