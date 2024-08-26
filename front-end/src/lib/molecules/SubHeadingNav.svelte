@@ -1,13 +1,21 @@
 <script>
-    import NavLink from '/src/lib/atoms/SubHeadingLink.svelte';
+  import NavLink from '/src/lib/atoms/SubHeadingLink.svelte';
   
-    export let links = []; // Array of { name, href }
-    export let color = "#FFFFFF";
-  </script>
-  
-  <nav class="flex items-center space-x-9 text-[0.95rem]">
-    {#each links as { name, href }}
-      <NavLink href={href} text={name} color={color} />
+  export let links = [];
+  export let color = "text-#363338";
+  export let coursePage = false;
+</script>
+
+<nav class="flex items-center {coursePage ? 'space-x-2 md:space-x-3' : 'space-x-9'}">
+    {#each links as { name, href }, i}
+        <NavLink 
+            href={href} 
+            text={name} 
+            color={color}
+            weight={coursePage && i === links.length - 1 ? 'font-semibold' : 'font-light'}
+        />
+        {#if i < links.length - 1 && coursePage}
+            <span class="font-bold {color}">/</span>
+        {/if}
     {/each}
-  </nav>
-  
+</nav>

@@ -2,6 +2,7 @@
     export let href = "#";
     export let text = "Link";
     export let theme = "transparent";
+    export let fontWeight = "font-thin";
 
     const textColorClass = theme === 'transparent' || theme === 'custom' 
         ? 'text-black' 
@@ -12,6 +13,6 @@
         : 'hover:text-gray-300';
 </script>
 
-<a href={href} class={`${textColorClass} ${hoverTextColorClass}`}>
+<a href={href} class={`${textColorClass} ${hoverTextColorClass} ${fontWeight}`}>
     {text}
 </a>

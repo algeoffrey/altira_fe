@@ -30,14 +30,14 @@
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
             courseType: "Full Module Course (Certification Available)",
             backgroundColor: "#D0E1ED",
-            buttonLink: "#"
+            buttonLink: "/investor-course-early-stage-investing-in-emerging-companies"
         },
         {
             title: "Wealth Planning Fundamentals",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
             courseType: "Investor Masterclass",
             backgroundColor: "#CFC9EF",
-            buttonLink: "#"
+            buttonLink: "/about"
         }
     ]}
 />

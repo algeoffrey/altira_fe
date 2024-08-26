@@ -13,13 +13,14 @@
   export let titleColor = "#FFFFFF";
   export let subHeaderTextColor = "#FFFFFF";
   export let extraText = "";
+  export let coursePage = false;
 
   const displayTitle = customTitle || title;
 </script>
 
 <section class="relative w-full" style="background-color: {backgroundColor};">
   <div
-    class="container py-12 pl-6 ml-6 md:pl-16 md:ml-16 flex justify-between items-center"
+    class="container py-[3.8rem] pl-6 ml-6 md:pl-16 md:ml-16 flex justify-between items-center"
   >
     <TitleWithSubtitle
       title={displayTitle}
@@ -30,21 +31,16 @@
     />
   </div>
 
-  <script>
-    export let secondaryColor = "#f8f8f8";
-    export let subHeaderLinks = [];
-    export let subHeaderTextColor = "#000";
-    export let extraText = "";
-</script>
-
 <div
-    class="w-full h-12 flex justify-between items-center"
+    class="w-full h-11 flex justify-between items-center"
     style="background-color: {secondaryColor};"
 >
     <!-- Navigation Links -->
-    <div class={"px-6 mx-6 md:px-16 lg:px-16 md:mx-16 lg:mx-16"}>
-        <Navigation links={subHeaderLinks} color={subHeaderTextColor} />
+
+    <div class={"px-6 mx-6 md:px-16 md:mx-16"}>
+        <Navigation links={subHeaderLinks} color={subHeaderTextColor} coursePage={coursePage} />
     </div>
+
 
     <!-- Extra Text -->
     {#if extraText}
@@ -55,4 +51,3 @@
 </div>
 
 </section>
-
