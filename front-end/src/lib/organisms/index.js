@@ -16,3 +16,6 @@ export { default as FAQSection} from "./FAQSection.svelte";
 export { default as InvestorWealthPlanningSection} from './InvestorWealthPlanningSection.svelte';
 export { default as BecomeInvestorSection} from './BecomeInvestorSection.svelte';
 export { default as EnterpriseFinanceSection} from './EnterpriseFinanceSection.svelte';
+
+export { default as CourseDescSection} from './CourseDescSection.svelte';
+export { default as OtherCourseSection} from './OtherCourseSection.svelte';

@@ -1,5 +1,5 @@
 <script>
-    import { Navbar, PageHeader} from '/src/lib/organisms';
+    import { Navbar, PageHeader, CourseDescSection, OtherCourseSection, Footer} from '/src/lib/organisms';
   </script>
   
   <Navbar theme="black" />
@@ -17,3 +17,7 @@
     { name: "Early Stage Investing in Emerging Companies", href: "#" }
   ]}
 />
+
+<CourseDescSection/>
+<OtherCourseSection/>
+<Footer/>
