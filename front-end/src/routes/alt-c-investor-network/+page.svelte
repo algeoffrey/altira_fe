@@ -1,5 +1,5 @@
 <script>
-    import { Navbar,PageHeader, Footer} from '/src/lib/organisms';
+    import { Navbar,PageHeader, FeatureSection, StatisticSection, Footer} from '/src/lib/organisms';
   </script>
   
   <Navbar theme="black" />
@@ -17,3 +17,6 @@
     { name: "FAQs", href: "/alt-c-investor-network#FAQs" }
   ]}
 />
+
+<FeatureSection/>
+<StatisticSection/>

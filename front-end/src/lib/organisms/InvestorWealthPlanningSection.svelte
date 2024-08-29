@@ -13,7 +13,7 @@
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
         courseType: "Full Module Course (Certification Available)",
         backgroundColor: "#D0E1ED",
-        buttonLink: "/investor-course-early-stage-investing-in-emerging-compas",
+        buttonLink: "/investor-course-early-stage-investing-in-emerging-companies",
       },
       {
         title: "Wealth Planning Fundamentals",

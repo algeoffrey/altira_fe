@@ -36,7 +36,7 @@
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
             courseType: "Masterclasses (Certification Available)",
             backgroundColor: "#D0E1ED",
-            buttonLink: "/investor-course-thematic-investing-strategy-&-principles",
+            buttonLink: "/investor-course-thematic-investing-strategy-principles",
             buttonText: "Apply Here",
           },
           {

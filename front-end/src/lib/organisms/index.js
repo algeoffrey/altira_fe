@@ -19,3 +19,6 @@ export { default as EnterpriseFinanceSection} from './EnterpriseFinanceSection.s
 
 export { default as CourseDescSection} from './CourseDescSection.svelte';
 export { default as OtherCourseSection} from './OtherCourseSection.svelte';
+
+export { default as FeatureSection} from './FeatureSection.svelte';
+export { default as StatisticSection} from './StatisticSection.svelte';
