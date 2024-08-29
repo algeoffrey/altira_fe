@@ -2,9 +2,9 @@
   import CoursePageTemplate from '/src/lib/templates/CoursePageTemplate.svelte';
 
   let subHeaderLinks = [
-    { name: "Home", href: "/" },
-    { name: "Learn-Hub", href: "/investor-learn-hub" },
-    { name: "Early Stage Investing in Emerging Companies", href: "#" }
+    { name: "Home", href: "#" },
+    { name: "Learn-Hub", href: "#" },
+    { name: "Venture Innovation Leadership Program", href: "#" }
   ];
 
   let courseSections = [
@@ -16,7 +16,7 @@
     },
     {
       type: "text",
-      title: "Early Stage Investing in Emerging Companies",
+      title: "Venture Innovation Leadership Program",
       titleSize: "text-3xl",
       titleWeight: "font-semibold",
       content: `
@@ -85,19 +85,19 @@
     {
       courses: [
         {
+          title: "Early Stage & Startup Investing",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
+          courseType: "Masterclasses (Certification Available)",
+          backgroundColor: "#CFC9EF",
+          buttonLink: "/investor-course-early-stage-investing-in-emerging-companies",
+          buttonText: "Apply Here",
+        },
+        {
           title: "Wealth Planning Fundamentals",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
           courseType: "Masterclasses (Certification Available)",
           backgroundColor: "#CFC9EF",
           buttonLink: "investor-course-wealth-planning-fundamentals",
-          buttonText: "Apply Here",
-        },
-        {
-          title: "Family Enterprise Innovation",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
-          courseType: "Masterclasses (Certification Available)",
-          backgroundColor: "#D0E1ED",
-          buttonLink: "/investor-course-family-enterprise-innovation",
           buttonText: "Apply Here",
         }
       ]
@@ -105,21 +105,21 @@
     {
       courses: [
         {
+          title: "Family Enterprise Innovation",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
+          courseType: "Masterclasses (Certification Available)",
+          backgroundColor: "#D0E1ED",
+          buttonLink: "/investor-course-family-enterprise-innovation",
+          buttonText: "Apply Here",
+        },
+        {
           title: "Innovative Financing & Structuring",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
           courseType: "Masterclasses (Certification Available)",
           backgroundColor: "#CFC9EF",
           buttonLink: "/investor-course-innovative-financing-&-structuring",
           buttonText: "Apply Here",
-        },
-        {
-          title: "Thematic Investing Strategy & Principles",
-          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
-          courseType: "Masterclasses (Certification Available)",
-          backgroundColor: "#D0E1ED",
-          buttonLink: "/investor-course-thematic-investing-strategy-principles",
-          buttonText: "Apply Here",
-        },
+        }
       ]
     }
   ];

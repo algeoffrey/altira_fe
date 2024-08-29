@@ -9,8 +9,12 @@
     export let buttonLink = "#";
 </script>
 
-<div class="bg-white shadow-md rounded-lg p-8 md:p-10 m-5 text-center border border-gray-200 flex flex-col items-center">
-    <CardTitle text={title} size="text-lg" />
-    <ListText items={content} />
+<div class="bg-white shadow-md rounded-lg p-6 m-2 text-center border border-gray-200 flex flex-col items-center">
+    <div class="pb-6">
+        <CardTitle text={title} size="text-xl" />
+    </div>
+    <div class="pl-6">
+        <ListText items={content} />
+    </div>
     <ActionButton text={buttonText} href={buttonLink} fontWeight="font-light" />
 </div>

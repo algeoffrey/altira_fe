@@ -37,7 +37,7 @@
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
             courseType: "Investor Masterclass",
             backgroundColor: "#CFC9EF",
-            buttonLink: "/about"
+            buttonLink: "/investor-course-wealth-planning-fundamentals"
         }
     ]}
 />

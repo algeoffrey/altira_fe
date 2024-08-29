@@ -15,7 +15,7 @@
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
             courseType: "Masterclasses (Certification Available)",
             backgroundColor: "#D0E1ED",
-            buttonLink: "#",
+            buttonLink: "/investor-course-family-enterprise-innovation",
             buttonText: "Apply Here",
           },
           {
@@ -23,7 +23,7 @@
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
             courseType: "Masterclasses (Certification Available)",
             backgroundColor: "#CFC9EF",
-            buttonLink: "#",
+            buttonLink: "/investor-course-venture-innovation-leadership-program",
             buttonText: "Apply Here",
           }
         ]
@@ -36,7 +36,7 @@
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
             courseType: "Masterclasses (Certification Available)",
             backgroundColor: "#D0E1ED",
-            buttonLink: "#",
+            buttonLink: "/investor-course-thematic-investing-strategy-&-principles",
             buttonText: "Apply Here",
           },
           {
@@ -44,7 +44,7 @@
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
             courseType: "Masterclasses (Certification Available)",
             backgroundColor: "#CFC9EF",
-            buttonLink: "#",
+            buttonLink: "/investor-course-innovative-financing-&-structuring",
             buttonText: "Apply Here",
           }
         ]

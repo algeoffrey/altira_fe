@@ -5,7 +5,7 @@
     export let links = [
         { name: "About", href: "/about" },
         { name: "Solutions", href: "/solutions" },
-        { name: "Investors", href: "/asset-owners" },
+        { name: "Investors", href: "/asset-owners-&-investors" },
         { name: "Learn Hub", href: "/investor-learn-hub" }
     ];
 
@@ -37,7 +37,7 @@
             : 'bg-[#363338] shadow-md'}`}>
     
     <!-- Logo -->
-    <div class="md:lg:pl-10"><NavLogo logoSrc={logoSrc} href="/" theme={theme} /></div>
+    <div class="md:lg:pl-9"><NavLogo logoSrc={logoSrc} href="/" theme={theme} /></div>
     
 
     <!-- Navigation Links -->
@@ -52,8 +52,8 @@
 
     <!-- Action Buttons (Desktop) -->
     <div class="hidden md:flex items-center space-x-6 lg:md:pr-8 ml-auto">
-        <ActionButton text="Investor Track" theme={theme} variant="primary" bordersize="px-5 py-1.5" size="text-md"/>
-        <ActionButton text="Raise Capital" theme={theme} variant="secondary" bordersize="px-5 py-1.5" size="text-xl/12"/>
+        <ActionButton text="Investor Track" href = "/alt-c-investor-network"    theme={theme} variant="primary" bordersize="px-5 py-1.5" size="text-md"/>
+        <ActionButton text="Raise Capital" href= "/founder-main" theme={theme} variant="secondary" bordersize="px-5 py-1.5" size="text-xl/12"/>
     </div>
 
     <!-- Mobile Menu (Visible when Menu is Open) -->
@@ -71,8 +71,8 @@
 
             <!-- Mobile Action Buttons -->
             <div class="flex flex-col space-y-4 w-full items-center">
-                <ActionButton text="Investor Track" theme={theme} variant="primary" />
-                <ActionButton text="Raise Capital" theme={theme} variant="secondary" />
+                <ActionButton text="Investor Track" theme={theme} variant="primary" href="/alt-c-investor-network" />
+                <ActionButton text="Raise Capital" theme={theme} variant="secondary" href = "/founder-main" />
             </div>
         </div>
     {/if}

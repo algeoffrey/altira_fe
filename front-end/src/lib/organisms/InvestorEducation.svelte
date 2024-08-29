@@ -7,6 +7,8 @@
   export let buttonSize = "px-8 py-2";
   export let buttonTheme =  "black";
   export let buttonVariant = "secondary";
+  export let sectionTitle = "Asset Owner & Investor Education";
+  export let introParagraph = "Becoming a pioneer sounds intimidating, but we are here to guide you to make your ambition come true. Whether you are an investor who is looking for a new asset class for your investment or an asset owner who wants to be part of innovation, we provide a comprehensive learning program to master investing in early-stage ventures."
 
   export let courses = [
     {
@@ -15,7 +17,7 @@
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
       courseType: "Full Module Course (Certification Available)",
       backgroundColor: "#D0E1ED",
-      buttonLink: "#",
+      buttonLink: "/investor-course-early-stage-investing-in-emerging-companies",
     },
     {
       title: "Wealth Planning Fundamentals",
@@ -23,7 +25,7 @@
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
       courseType: "Investor Masterclass",
       backgroundColor: "#CFC9EF",
-      buttonLink: "#",
+      buttonLink: "/investor-course-wealth-planning-fundamentals",
     },
   ];
 
@@ -32,17 +34,11 @@
 
 <section class="py-12 bg-gray-50">
   <div class="container mx-auto px-4 md:px-6 lg:px-8">
-    <h2 class="text-2xl md:text-3xl font-semibold text-center mb-6">
-      Asset Owner & Investor Education
+    <h2 class="text-customBlack text-2xl md:text-3xl font-bold text-center mb-6 pt-6">
+      {sectionTitle}
     </h2>
-    <p
-      class="text-center text-sm md:text-base mb-12 max-w-3xl mx-auto font-thin"
-    >
-      Becoming a pioneer sounds intimidating, but we are here to guide you to
-      make your ambition come true. Whether you are an investor who is looking
-      for a new asset class for your investment or an asset owner who wants to
-      be part of innovation, we provide a comprehensive learning program to
-      master investing in early-stage ventures.
+    <p class="text-base text-center lg:text-lg mb-6 md:mb-8 max-w-lg md:max-w-4xl lg:max-w-5xl mx-auto font-light">
+     {introParagraph}
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-16 max-w-full md:max-w-6xl px-4 md:px-12 mx-auto">
       {#each courses as course}

@@ -2,13 +2,13 @@
     import { Navbar, PageHeader, MissionAndStory, TeamSection, SponsorSection, LearnJoin, Footer } from '/src/lib/organisms';
   </script>
   
-  <Navbar theme="custom" />
+  <Navbar theme="black" />
 
   <PageHeader
   title="About"
   backgroundColor="#00CFE8"
   secondaryColor="#6166DC"
-  titleColor="#000000"
+  titleColor="#363338"
   subHeaderTextColor= "#FFFFFF"
   subHeaderLinks={[
     { name: "Mission & Story", href: "/about#mission" },

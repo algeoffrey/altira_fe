@@ -14,14 +14,14 @@
             description: "We're Alt-C investor network, part of ALTIRA, an innovation platform that helps early stage startups and ventures scale through Funding + Learning + Network + Collaboration",
             courseType: "", 
             backgroundColor: "#D3E8F8",
-            buttonLink: "#",
+            buttonLink: "/alt-c-investor-network",
         },
         {
             title: "Learn Hub",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
             courseType: "Investor Masterclass",
             backgroundColor: "#FBD7D7",
-            buttonLink: "#",
+            buttonLink: "/investor-learn-hub",
         }
     ];
 

@@ -3,7 +3,7 @@
 
   export let buttonText = "JOIN COURSE";
   export let buttonHref = "#";
-  export let duration = 0;  // Dynamic value for duration
+  export let duration = 0;
   export let date = "June 29, 2024";
   export let price = "Rp. 1,000,000";
 </script>

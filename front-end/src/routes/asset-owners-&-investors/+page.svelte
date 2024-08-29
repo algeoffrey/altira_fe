@@ -13,9 +13,9 @@
   titleColor="#FFFFFF"
   subHeaderTextColor= "#000000"       
   subHeaderLinks={[
-    { name: "Investor Platform", href: "/asset-owners#platform" },
-    { name: "Enterprise Innovation", href: "/asset-owners#innovation" },
-    { name: "Wealth Planning & Solutions", href: "/asset-owners#wealth" }
+    { name: "Investor Platform", href: "/asset-owners-&-investors#platform" },
+    { name: "Enterprise Innovation", href: "/asset-owners-&-investors#innovation" },
+    { name: "Wealth Planning & Solutions", href: "/asset-owners-&-investors#wealth" }
   ]}
 />
 

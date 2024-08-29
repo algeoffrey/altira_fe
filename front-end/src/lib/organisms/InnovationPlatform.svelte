@@ -7,34 +7,35 @@
             title: "Wealth Solutions",
             content: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Praesent nec nibh eu sapien luctus porta quis in dolor.", "Aenean a quam fermentum, scelerisque leo sollicitudin."],
             buttonText: "More Info",
-            buttonLink: "/solutions"
+            buttonLink: "/asset-owners-&-investors"
         },
         {
             title: "Investor Network",
             content: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Praesent nec nibh eu sapien luctus porta quis in dolor.", "Aenean a quam fermentum, scelerisque leo sollicitudin."],
             buttonText: "More Info",
-            buttonLink: "/investor-network"
+            buttonLink: "/alt-c-investor-network"
         },
         {
             title: "Enterprise Innovation",
             content: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.", "Praesent nec nibh eu sapien luctus porta quis in dolor.", "Aenean a quam fermentum, scelerisque leo sollicitudin."],
             buttonText: "More Info",
-            buttonLink: "#"
+            buttonLink: "/solutions"
         }
     ];
 </script>
 
 <section class="py-8 md:py-12 bg-gray-100">
-    <div class="container mx-auto px-4 md:px-4 lg:px-6 text-center">
-        <CardTitle text="Innovation Platform" size="text-2xl md:text-3xl font-bold" />
-        <p class="text-sm md:text-base mb-6 md:mb-8 max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto font-light">
+    <div class="mx-auto px-4 md:px-4 lg:px-6 text-center">
+        <h3 class="text-customBlack text-2xl md:text-4xl font-bold pb-6">Innovation Platform</h3>
+        <p class="text-base lg:text-lg mb-6 md:mb-8 max-w-lg md:max-w-4xl lg:max-w-5xl mx-auto font-light">
             Empower investors and asset owners to invest in the future they dream of. Groundbreaking ideas are nurtured in this innovation ecosystem. Learn more about how to contribute to this elite mission.
         </p>
   
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-xs sm:max-w-md md:max-w-full mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12 max-w-lg sm:max-w-4xl md:max-w-5xl mx-auto">
             {#each cards as {title, content, buttonText, buttonLink}}
                 <InfoCard {title} {content} {buttonText} {buttonLink} />
             {/each}
         </div>
     </div>
 </section>
+

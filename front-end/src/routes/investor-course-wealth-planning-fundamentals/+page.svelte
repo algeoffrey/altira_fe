@@ -4,7 +4,7 @@
   let subHeaderLinks = [
     { name: "Home", href: "/" },
     { name: "Learn-Hub", href: "/investor-learn-hub" },
-    { name: "Early Stage Investing in Emerging Companies", href: "#" }
+    { name: "Wealth Planning Fundamentals", href: "#" }
   ];
 
   let courseSections = [
@@ -16,7 +16,7 @@
     },
     {
       type: "text",
-      title: "Early Stage Investing in Emerging Companies",
+      title: "Wealth Planning Fundamentals",
       titleSize: "text-3xl",
       titleWeight: "font-semibold",
       content: `
@@ -85,11 +85,11 @@
     {
       courses: [
         {
-          title: "Wealth Planning Fundamentals",
+          title: "Early Stage & Startup Investing",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, vulputate.",
           courseType: "Masterclasses (Certification Available)",
           backgroundColor: "#CFC9EF",
-          buttonLink: "investor-course-wealth-planning-fundamentals",
+          buttonLink: "/investor-course-early-stage-investing-in-emerging-companies",
           buttonText: "Apply Here",
         },
         {

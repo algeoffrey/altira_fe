@@ -5,6 +5,9 @@
   export let title = "Invest early in the future you believe in, today";
   export let description =
     "Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.";
+  
+  export let buttonLink = "/investor-learn-hub"
+  
   let menuOpen = false;
 
   function toggleMenu() {
@@ -28,7 +31,7 @@
     <div class="mt-6 flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-5 md:space-x-4">
     <!-- "Become an Investor" Button -->
     <ActionButton
-        href="/asset-owners"
+        href="{buttonLink}"
         text="Become an Investor"
         theme="custom"
         variant="secondary"

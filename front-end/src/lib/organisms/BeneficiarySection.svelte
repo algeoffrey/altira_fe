@@ -13,7 +13,7 @@
                 "Aenean a quam fermentum, scelerisque leo sollicitudin, rutrum ligula."
             ],
             buttonText: "Learn more",
-            buttonLink: "#"
+            buttonLink: "/asset-owners-&-investors"
         },
         {
             subtitle: "Corporate Innovators",
