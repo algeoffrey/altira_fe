@@ -10,18 +10,20 @@ export { default as MissionAndStory } from "./MissionAndStory.svelte";
 export { default as TeamSection } from "./TeamSection.svelte";
 export { default as LearnJoin } from "./LearnJoinCommunity.svelte";
 
-export { default as BeneficiarySection} from "./BeneficiarySection.svelte";
-export { default as FAQSection} from "./FAQSection.svelte";
+export { default as BeneficiarySection } from "./BeneficiarySection.svelte";
+export { default as FAQSection } from "./FAQSection.svelte";
 
-export { default as InvestorWealthPlanningSection} from './InvestorWealthPlanningSection.svelte';
-export { default as BecomeInvestorSection} from './BecomeInvestorSection.svelte';
-export { default as EnterpriseFinanceSection} from './EnterpriseFinanceSection.svelte';
+export { default as InvestorWealthPlanningSection } from "./InvestorWealthPlanningSection.svelte";
+export { default as BecomeInvestorSection } from "./BecomeInvestorSection.svelte";
+export { default as EnterpriseFinanceSection } from "./EnterpriseFinanceSection.svelte";
 
-export { default as CourseDescSection} from './CourseDescSection.svelte';
-export { default as OtherCourseSection} from './OtherCourseSection.svelte';
+export { default as CourseDescSection } from "./CourseDescSection.svelte";
+export { default as OtherCourseSection } from "./OtherCourseSection.svelte";
 
-export { default as FeatureSection} from './FeatureSection.svelte';
-export { default as StatisticSection} from './StatisticSection.svelte';
-export { default as FeatureStatisticSection} from './FeatureStatisticSection.svelte';
-export { default as EducationInvestorSection} from './EducationInvestorSection.svelte';
-export { default as EarlyStageInvestment} from './EarlyStageInvesmentSection.svelte';
+export { default as FeatureSection } from "./FeatureSection.svelte";
+export { default as StatisticSection } from "./StatisticSection.svelte";
+export { default as FeatureStatisticSection } from "./FeatureStatisticSection.svelte";
+export { default as EducationInvestorSection } from "./EducationInvestorSection.svelte";
+export { default as EarlyStageInvestment } from "./EarlyStageInvesmentSection.svelte";
+export { default as MembershipSection } from "./MembershipSection.svelte";
+export { default as PricingTableSection } from "./PricingTable.svelte";
