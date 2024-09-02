@@ -23,7 +23,7 @@
   </script>
   
   <section class="py-8 bg-white">
-    <h3 class="text-customBlack text-3xl md:text-3xl font-bold text-center mb-8 max-w-4xl mx-auto py-6">{title}</h3>
+    <h3 class="text-customBlack text-3xl md:text-3xl font-bold text-center mb-8 max-w-[60%] mx-auto py-5 leading-relaxed">{title}</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
       {#each features as feature}
         <FeatureCard {...feature} />

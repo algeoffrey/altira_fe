@@ -1,5 +1,5 @@
 <script>
-    import { Navbar,PageHeader, FeatureSection, StatisticSection, Footer} from '/src/lib/organisms';
+    import { Navbar,PageHeader, FeatureStatisticSection, EducationInvestorSection, EarlyStageInvestment, Footer} from '/src/lib/organisms';
   </script>
   
   <Navbar theme="black" />
@@ -18,5 +18,6 @@
   ]}
 />
 
-<FeatureSection/>
-<StatisticSection/>
+<FeatureStatisticSection/>
+<EducationInvestorSection/>
+<EarlyStageInvestment/>

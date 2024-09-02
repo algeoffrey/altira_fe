@@ -22,3 +22,6 @@ export { default as OtherCourseSection} from './OtherCourseSection.svelte';
 
 export { default as FeatureSection} from './FeatureSection.svelte';
 export { default as StatisticSection} from './StatisticSection.svelte';
+export { default as FeatureStatisticSection} from './FeatureStatisticSection.svelte';
+export { default as EducationInvestorSection} from './EducationInvestorSection.svelte';
+export { default as EarlyStageInvestment} from './EarlyStageInvesmentSection.svelte';
