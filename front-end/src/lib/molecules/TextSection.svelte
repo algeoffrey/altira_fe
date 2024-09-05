@@ -10,7 +10,7 @@
   </script>
   
   <div class="mb-6">
-    <div class="{titleGap}">
+    <div class="{titleGap} mr-12">
         <CardTitle text={title} size= {titleSize} weight={titleWeight} align="text-left"/>
     </div>
     <Paragraph text={content} textAlign="text-left" />

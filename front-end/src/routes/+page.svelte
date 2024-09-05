@@ -54,7 +54,6 @@
         { imgSrc: "/images/aavishkaar_group.svg", altText: "aavishkaar group" }
     ]}
     linkText="See More >"
-    seeMoreLink="#"
 />
 
 <SponsorSection 
@@ -68,7 +67,6 @@
         { imgSrc: "/images/bina_nusantara.svg", altText: "aavishkar capital group" }
     ]}
     linkText="See More >"
-    seeMoreLink="#"
 />
 
 
@@ -95,7 +93,6 @@
         { imgSrc: "/images/fazz.svg", altText: "fazz" },
     ]}
     linkText="See More >"
-    seeMoreLink="#"
 />
 
 <SponsorSection 
@@ -118,7 +115,6 @@
         { imgSrc: "/images/riliv.svg", altText: "riliv" },
     ]}
     linkText="See More >"
-    seeMoreLink="#"
 />
 
 <SponsorSection 
@@ -148,7 +144,6 @@ logos={[
     { imgSrc: "/images/filantropi_indonesia.svg", altText: "filantropi indonesia" },
 ]}
 linkText="See More >"
-seeMoreLink="#"
 />
 
 <Footer />

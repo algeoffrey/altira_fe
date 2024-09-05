@@ -11,40 +11,53 @@
   export let title = "";
   export let subtitle = "";
   export let paragraph = "";
-  export let seeMoreLink = "#";
+  export let seeMoreLink = "/ecosystem-profile";
   export let linkText = "See More >";
+  export let showmore = "Y";
 </script>
 
-<section class="py-6 bg-white">
-  <div class="mx-auto px-2 md:px-4 lg:px-6 max-w-6xl text-center">
-    <!-- Title -->
-    {#if title}
-      <SponsorSectionTitle text={title} size="text-2xl md:text-3xl font-bold" />
-    {/if}
-
-    <!-- Subtitle -->
-    {#if subtitle}
-      <Subtitle text={subtitle} size="text-xl md:text-2xl" />
-    {/if}
-
-    <div class="mx-auto max-w-4xl">
-      <Paragraph
-      text={paragraph}
-      size="text-base md:text-lg"
-      fontStyle="font-light"
-      textAlign="text-center"
-    />
+<section class="bg-white relative py-12">
+  <div class="max-w-10xl mx-32">
+    <div class="text-center">
+      <!-- Title -->
+      {#if title}
+        <SponsorSectionTitle text={title} size="text-2xl md:text-3xl lg:text-4xl font-extrabold" />
+      {/if}
+  
+      <!-- Subtitle -->
+      {#if subtitle}
+        <Subtitle text={subtitle} size="text-xl md:text-xl lg:text-[2rem] text-customBlack pt-6 md:pt-8" />
+      {/if}
+  
+      <!-- Paragraph -->
+      <div class="max-w-4xl mx-auto mt-4">
+        <Paragraph
+          text={paragraph}
+          size="text-base md:text-lg lg:text-xl"
+          fontStyle="font-light"
+          textAlign="text-center"
+        />
+      </div>
     </div>
-
-
+  
     <!-- Logo Grid -->
-    <div class="flex justify-center items-center py-8 flex-wrap gap-6">
+    <div class="flex justify-center items-center pb-6">
       <LogoGrid {logos} {maxColumns} {maxRows} />
     </div>
+  
+    {#if showmore === "Y"}
+      <!-- See More Link -->
+      <div class="text-right mt-6 mr-16">
+        <LinkButton href={seeMoreLink} text={linkText} />
+      </div>
+    {/if}
 
-    <!-- See More Link -->
-    <div class="text-right mt-2 max-w-5xl mx-auto">
-      <LinkButton href={seeMoreLink} text={linkText} />
-    </div>
   </div>
 </section>
+
+<style>
+  /* Control the maximum width of the entire container */
+  .container {
+    max-width: 1200px; /* Adjust this value depending on your desired max width */
+  }
+</style>

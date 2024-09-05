@@ -27,3 +27,19 @@ export { default as EducationInvestorSection } from "./EducationInvestorSection.
 export { default as EarlyStageInvestment } from "./EarlyStageInvesmentSection.svelte";
 export { default as MembershipSection } from "./MembershipSection.svelte";
 export { default as PricingTableSection } from "./PricingTable.svelte";
+export { default as NewsLetterSection} from './NewsLetterSection.svelte'
+
+export { default as ConnectFundraiseSection} from './ConnectFundraiseSection.svelte';
+export { default as FundraiseFAQSection} from './FundraiseFAQSection.svelte';
+export { default as FounderCourseSection} from './FounderCourseSection.svelte';
+export { default as InvestorCourseSection} from './InvestorCourseSection.svelte';
+export { default as EventPitchSection} from './EventPitchSection.svelte';
+
+export { default as FounderDescSection} from './FounderDescSection.svelte';
+export { default as OtherFounderCourse} from './OtherFounderCourse.svelte';
+
+export { default as ShowcaseSection} from './ShowcaseSection.svelte';
+export { default as NetworkCapacity} from './NetworkCapacitySection.svelte';
+export { default as PastProgram} from './PastProgram.svelte';
+
+export { default as SampleMember} from './SampleMember.svelte';

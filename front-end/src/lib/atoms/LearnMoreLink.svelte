@@ -3,4 +3,4 @@
     export let text = "Learn More >";
 </script>
 
-<a href={href} class="text-sm font-thin hover:underline">{text}</a>
+<a href={href} class="text-base font-thin hover:underline">{text}</a>

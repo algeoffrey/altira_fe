@@ -27,15 +27,15 @@
 
 </script>
 
-<section class="py-14 bg-[#F4F4F4] relative max-w-full md:max-w-8xl">
-    <div class="container mx-auto py-4 px-4 md:px-12">
+<section class="py-14 bg-[#F4F4F4] relative max-w-8xl">
+    <div class="container mx-16 py-4">
       <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-12">
         {title}
       </h2>
-      <p class="text-center text-base md:text-[1.05rem] leading-relaxed mb-6 pb-4 font-thin max-w-2xl md:max-w-6xl mx-auto">
+      <p class="text-center text-base md:text-[1.05rem] leading-relaxed mb-6 pb-4 font-thin mx-32">
         {introParagraph}
       </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-16 max-w-full md:max-w-6xl px-4 md:px-12 mx-auto">
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-16 mx-32">
         {#each courses as course}
           <div class="flex justify-center md:justify-left">
             <CourseCard 

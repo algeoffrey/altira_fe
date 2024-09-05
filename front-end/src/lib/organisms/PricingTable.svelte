@@ -24,7 +24,7 @@
     ];
 </script>
 
-<section class="bg-white py-12 max-w-6xl mx-auto relative">
+<section class="bg-white py-16 my-12 max-w-10xl mx-32 relative">
     <!-- Highlight Box -->
     <div class="highlight-box"></div>
     
@@ -72,7 +72,7 @@
                     <div class="col-span-4">{feature.name}</div>
                 </div>
             {:else}
-                <div class={feature.highlight ? 'relative z-20' : ''}>
+                <div class={feature.highlight ? 'relative z-10' : ''}>
                     <FeatureRow
                         feature={feature.name}
                         inspireAvailable={feature.inspire}
@@ -113,7 +113,7 @@
         top: 5%;
         left: 25%;
         width: 25%;
-        height: 94%;
+        height: 92%;
         background-color: #E8E8E81A; /* Tailwind gray-100 with opacity */
         border: 1px solid #d7cbcb; /* Tailwind gray-300 */
         border-radius: 0.5rem; /* Tailwind rounded-lg */

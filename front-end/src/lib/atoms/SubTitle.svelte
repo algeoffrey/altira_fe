@@ -4,6 +4,6 @@
     export let weight = "font-bold";
 </script>
 
-<h3 class={`${weight} ${size} py-4 mt-8`}>
+<h3 class={`${weight} ${size} py-4`}>
     {text}
 </h3>

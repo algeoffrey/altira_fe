@@ -4,31 +4,31 @@
   import FooterLinksGroup from "../molecules/FooterLinksGroup.svelte";
 
   const socialIcons = [
-    { iconSrc: "/images/instagram_icon.svg", altText: "Instagram", link: "#" },
-    { iconSrc: "/images/linkedin_icon.svg", altText: "LinkedIn", link: "#" },
+    { iconSrc: "/images/instagram_icon.svg", altText: "Instagram", link: "https://www.instagram.com/altira.sea/?hl=en" },
+    { iconSrc: "/images/linkedin_icon.svg", altText: "LinkedIn", link: "https://www.linkedin.com/company/altira/" },
     { iconSrc: "/images/email_icon.svg", altText: "Email", link: "#" },
   ];
 
   const column1Links = [
-    { text: "People", href: "#" },
-    { text: "Story & Mission", href: "#" },
-    { text: "Track Records", href: "#" },
-    { text: "Ecosystem Profile", href: "#" },
-    { text: "Glossary", href: "#" },
+    { text: "People", href: "/our-people" },
+    { text: "Story & Mission", href: "/about" },
+    { text: "Track Records", href: "/ecosystem-profile" },
+    { text: "Ecosystem Profile", href: "ecosystem-profile" },
+    { text: "Glossary", href: "/glossary" },
   ];
 
   const column2Links = [
-    { text: "Become an Investor", href: "#" },
-    { text: "Investor Education", href: "#" },
-    { text: "Wealth Solutions", href: "#" },
-    { text: "Enterprise Innovation", href: "#" },
+    { text: "Become an Investor", href: "/alt-c-investor-network" },
+    { text: "Investor Education", href: "/investor-learn-hub" },
+    { text: "Wealth Solutions", href: "/asset-owners-&-investors" },
+    { text: "Enterprise Innovation", href: "/asset-owners-&-investors" },
   ];
 
   const column3Links = [
-    { text: "Raise Capital", href: "#" },
-    { text: "FoundrX Hub", href: "#" },
-    { text: "Founders Learn-Hub", href: "#" },
-    { text: "Founders Programs", href: "#" },
+    { text: "Raise Capital", href: "/founder-main" },
+    { text: "FoundrX Hub", href: "/founder-main" },
+    { text: "Founders Learn-Hub", href: "/founder-main" },
+    { text: "Founders Programs", href: "/founder-main" },
   ];
 </script>
 

@@ -42,22 +42,26 @@
 </script>
 
 <section class="bg-gray-100 py-12">
-    <div class="text-center mb-8 max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-4">Membership Edition</h2>
-        <p class="text-base font-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum.</p>
+    <div class="text-center mb-8 max-w-8xl mx-32 px-4">
+        <h2 class="text-3xl font-bold mb-6">Membership Edition</h2>
+        <p class="md:text-base lg:text-lg font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-5xl mx-auto px-12">
+
+    <!-- Grid Container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {#each cards as card}
-            <MembershipCardContent
-                title={card.title}
-                description={card.description}
-                buttonText={card.buttonText}
-                buttonHref={card.buttonHref}
-                buttonVariant="primary"
-                buttonTheme="transparent"
-                features={card.features}
-                price={card.price}
-            />
+            <div class="flex justify-center">
+                <MembershipCardContent
+                    title={card.title}
+                    description={card.description}
+                    buttonText={card.buttonText}
+                    buttonHref={card.buttonHref}
+                    buttonVariant="primary"
+                    buttonTheme="transparent"
+                    features={card.features}
+                    price={card.price}
+                />
+            </div>
         {/each}
     </div>
 </section>

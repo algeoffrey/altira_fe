@@ -3,16 +3,16 @@
 </script>
 
 <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-center">
+    <div class="max-w-10xl mx-32 flex flex-col md:flex-row items-center">
         
         <!-- Text Content -->
-        <div class="md:w-1/2 text-left mb-8 md:mb-0">
-            <h2 class="text-xl md:text-[2rem] font-semibold mb-4">Access Highly-Vetted Early Stage Investments</h2>
-            <p class="text-sm md:text-base font-light">Invest early alongside professional investors and top venture capital firms in Indonesian-related and Southeast Asian rising companies.</p>
+        <div class="md:w-1/3 text-left mb-8 md:mb-0">
+            <h2 class="text-[1.9rem] font-extrabold text-customBlack mb-12 leading-normal">Access Highly-Vetted <br/> Early Stage Investments</h2>
+            <p class="text-lg font-light">Invest early alongside professional investors <br/>and top venture capital firms in Indonesian-related and Southeast Asian rising companies.</p>
         </div>
         
         <!-- Logo Grid with Slide Controls -->
-        <div class="md:w-1/2 flex justify-center relative">
+        <div class="md:w-2/3 pl-12 ml-12">
             <LogoGrid/>
         </div>
         
