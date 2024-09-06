@@ -52,7 +52,7 @@
 </script>
 
 
-<section class="py-16 bg-white" id="advisory">
+<section class="py-16 bg-white" id="governance">
     <div class="mx-32 pr-16">
         <!-- Header -->
         <h2 class="text-3xl text-customBlack font-semibold text-center mb-12">Governance Board</h2>

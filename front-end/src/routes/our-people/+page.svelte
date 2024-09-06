@@ -5,6 +5,7 @@
       SampleMember,
       AdvisoryBoard,
       GovernanceBoard,
+      InvestmentCouncil,
       Footer} from '/src/lib/organisms';
   </script>
   
@@ -26,3 +27,6 @@
 <SampleMember/>
 <AdvisoryBoard/>
 <GovernanceBoard/>
+<InvestmentCouncil/>
+
+<Footer/>
