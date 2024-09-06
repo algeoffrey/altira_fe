@@ -102,10 +102,4 @@
     </div>
 </section>
 
-<style>
-    /* Optional additional padding for spacing between the members */
-    .bordered-member {
-        margin-bottom: 16px;
-        padding: 16px;
-    }
-</style>
+

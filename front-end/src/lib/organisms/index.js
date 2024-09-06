@@ -44,3 +44,4 @@ export { default as PastProgram} from './PastProgram.svelte';
 
 export { default as SampleMember} from './SampleMember.svelte';
 export { default as AdvisoryBoard} from './AdvisoryBoard.svelte';
+export { default as GovernanceBoard} from './GovernanceBoard.svelte';

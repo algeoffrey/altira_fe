@@ -4,6 +4,7 @@
       PageHeader,
       SampleMember,
       AdvisoryBoard,
+      GovernanceBoard,
       Footer} from '/src/lib/organisms';
   </script>
   
@@ -24,3 +25,4 @@
 
 <SampleMember/>
 <AdvisoryBoard/>
+<GovernanceBoard/>
