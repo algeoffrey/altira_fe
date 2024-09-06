@@ -46,3 +46,6 @@ export { default as SampleMember} from './SampleMember.svelte';
 export { default as AdvisoryBoard} from './AdvisoryBoard.svelte';
 export { default as GovernanceBoard} from './GovernanceBoard.svelte';
 export { default as InvestmentCouncil} from './InvestmentCouncil.svelte';
+
+
+export { default as GlossaryIndex} from './GlossaryIndex.svelte';

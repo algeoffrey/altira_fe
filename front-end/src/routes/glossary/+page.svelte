@@ -2,6 +2,7 @@
     import { 
       Navbar, 
       PageHeader, 
+      GlossaryIndex,
       Footer} from '/src/lib/organisms';
   </script>
   
@@ -37,3 +38,5 @@
     { name: "W", href: "/glosarry#indexW"},
   ]}
 />
+
+<GlossaryIndex/>
