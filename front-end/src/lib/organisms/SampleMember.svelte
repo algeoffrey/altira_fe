@@ -20,10 +20,10 @@
 </script>
 
 <section class="py-16 bg-[#F8F8F8]">
-    <div class="mx-32 max-w-8xl">
-        <div class="grid grid-cols-8 gap-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-wrap justify-center gap-4">
             {#each teamMembers as member}
-                <a href={"#" + member.id} class="inline text-base p-2 font-thin bg-white rounded-lg shadow text-center hover:bg-gray-200 transition">
+                <a href={"#" + member.id} class="block text-base font-thin bg-white p-2 rounded-lg shadow text-center hover:bg-gray-200 transition">
                     {member.name}
                 </a>
             {/each}

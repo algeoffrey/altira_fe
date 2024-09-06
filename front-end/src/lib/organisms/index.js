@@ -43,3 +43,4 @@ export { default as NetworkCapacity} from './NetworkCapacitySection.svelte';
 export { default as PastProgram} from './PastProgram.svelte';
 
 export { default as SampleMember} from './SampleMember.svelte';
+export { default as AdvisoryBoard} from './AdvisoryBoard.svelte';

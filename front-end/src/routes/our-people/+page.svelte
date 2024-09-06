@@ -3,6 +3,7 @@
       Navbar, 
       PageHeader,
       SampleMember,
+      AdvisoryBoard,
       Footer} from '/src/lib/organisms';
   </script>
   
@@ -22,3 +23,4 @@
 />
 
 <SampleMember/>
+<AdvisoryBoard/>
