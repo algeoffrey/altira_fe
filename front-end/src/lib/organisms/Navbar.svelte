@@ -14,6 +14,7 @@
     const dispatch = createEventDispatcher();
 
     let currentTheme = theme;
+    let customBlack = '#363338'; // Correctly declare custom black color
     $: logoSrc = currentTheme === 'black' ? '/images/altira-logo-white.svg' : '/images/altira-logo-black.svg';
 
     function toggleMenu() {
@@ -29,7 +30,7 @@
     }
 
     function handleScroll() {
-        if (window.scrollY > 50) {  // Adjust for header hero
+        if (window.scrollY > 50) {
             currentTheme = 'black'; // Change to black when scrolled past hero
         } else {
             currentTheme = theme; // Return to the original theme (transparent)
@@ -47,7 +48,7 @@
     });
 </script>
 
-<nav class={`sticky top-0 flex items-center justify-start p-4 transition-all duration-500 ${currentTheme === 'transparent' 
+<nav class={`sticky top-0 flex items-center justify-start p-2 transition-all duration-500 ${currentTheme === 'transparent' 
     ? 'bg-transparent left-0 w-full z-10' 
     : currentTheme === 'white' 
         ? 'bg-white shadow-md z-10' 
@@ -80,7 +81,7 @@
         <!-- Primary Button -->
         <a href="/alt-c-investor-network" 
            class={`transition-all duration-300 px-5 py-1.5 text-md border rounded-md 
-                  ${currentTheme === 'black' ? 'bg-black text-white' : 'bg-customBlack text-white'} 
+                  ${currentTheme === 'black' ? 'bg-black text-white' : `bg-[${customBlack}] text-white`} 
                   ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}>
             Investor Track
         </a>
@@ -88,7 +89,7 @@
         <!-- Secondary Button -->
         <a href="/founder-main" 
            class={`transition-all duration-300 px-5 py-1.5 text-md border rounded-md 
-                  ${currentTheme === 'black' ? 'border-white bg-white text-customBlack' : 'border-black bg-transparent text-black'} 
+                  ${currentTheme === 'black' ? 'border-white bg-white text-[${customBlack}]' : 'border-black bg-transparent text-black'} 
                   ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}>
             Raise Capital
         </a>
