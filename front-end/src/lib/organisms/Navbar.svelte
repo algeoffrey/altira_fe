@@ -30,7 +30,7 @@
     }
 
     function handleScroll() {
-        if (window.scrollY > 50) {
+        if (typeof window !== 'undefined' && window.scrollY > 50) {
             currentTheme = 'black'; // Change to black when scrolled past hero
         } else {
             currentTheme = theme; // Return to the original theme (transparent)
@@ -39,12 +39,16 @@
 
     // Set up scroll event listener
     onMount(() => {
-        window.addEventListener('scroll', handleScroll);
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', handleScroll);
+        }
     });
 
     // Clean up event listener when component is destroyed
     onDestroy(() => {
-        window.removeEventListener('scroll', handleScroll);
+        if (typeof window !== 'undefined') {
+            window.removeEventListener('scroll', handleScroll);
+        }
     });
 </script>
 
