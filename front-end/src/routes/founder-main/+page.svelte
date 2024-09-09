@@ -25,7 +25,7 @@ import {
   titleColor="#FFFFFF"
   subHeaderTextColor="#000000"
   subHeaderLinks={[
-    { name: "FAQs", href: "/founder-main#faqs" },
+    { name: "FAQs", href: "/founder-main#FAQs" },
     { name: "Advisory", href: "/founder-main#advisory" },
     { name: "Masterclasses", href: "/founder-main#masterclasses" },
     { name: "Events & Pitches", href: "/founder-main#events-pitches" },
@@ -64,7 +64,7 @@ import {
             { imgSrc: "/images/fazz.svg", altText: "fazz" },
         ]}
         linkText="See More >"
-        seeMoreLink="#"
+        seeMoreLink="/ecosystem-profile"
     />
 
       <SponsorSection 
@@ -87,7 +87,7 @@ import {
               { imgSrc: "/images/riliv.svg", altText: "riliv" },
           ]}
           linkText="See More >"
-          seeMoreLink="#"
+          seeMoreLink="/ecosystem-profile"
       />
     </div>
 
@@ -119,7 +119,7 @@ import {
             { imgSrc: "/images/filantropi_indonesia.svg", altText: "filantropi indonesia" },
         ]}
         linkText="See More >"
-        seeMoreLink="#"
+        seeMoreLink="/ecosystem-profile"
         />
     </div>
 

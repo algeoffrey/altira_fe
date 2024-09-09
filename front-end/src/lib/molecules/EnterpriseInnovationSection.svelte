@@ -20,7 +20,7 @@
     ];
 </script>
 
-<section class="py-12 bg-[#F8F8F8] relative">
+<section class="py-12 bg-[#F8F8F8] relative" id="innovation">
     <section class="py-8 md:py-12 lg:py-16 max-w-8xl mx-32">
         <!-- Title and Description -->
         <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-6 md:mb-8 lg:mb-10">{title}</h2>

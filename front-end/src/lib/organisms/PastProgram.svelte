@@ -36,7 +36,7 @@
 <section class="py-16 bg-white">
     <div class="max-w-8xl mx-32">
 
-        <h2 class="text-[2rem] text-customBlack font-extrabold text-center mb-8">Past Program & Events</h2>
+        <h2 class="text-[2rem] text-customBlack font-extrabold text-center mb-8" id="past-programs">Past Program & Events</h2>
         
         <!-- Container for Event Cards -->
         <div class="grid grid-rows-3 gap-2 mx-32 max-w-6xl">

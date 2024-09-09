@@ -13,7 +13,7 @@
   subHeaderLinks={[
     { name: "Showcases & Pitches", href: "/program-and-event#showcases" },
     { name: "Networking & Capacity Building", href: "/program-and-event#networking" },
-    { name: "Past Program & Events", href: "/program-and-event#pastProgram" }
+    { name: "Past Program & Events", href: "/program-and-event#past-programs" }
   ]}
 />
 

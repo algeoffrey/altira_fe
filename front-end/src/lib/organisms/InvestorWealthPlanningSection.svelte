@@ -34,7 +34,7 @@
     <p class="text-left text-sm md:text-[1.05rem] leading-relaxed mb-8 md:mb-12 pb-12 font-thin">
       {introText}
     </p>
-    <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-12">
+    <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-12" id = "investing-wealth-planning">
       {title}
     </h2>
     <div class="flex justify-center mx-14 px-14">

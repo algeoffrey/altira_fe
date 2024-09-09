@@ -58,7 +58,7 @@
     };
 </script>
 
-<section class="py-16 bg-[#F4F4F4]">
+<section class="py-16 bg-[#F4F4F4]" id="masterclasses">
   <div class="max-w-8xl mx-32">
     <h2 class="text-2xl md:text-[2rem] font-bold text-center mb-12">
       Foundrx Learn HUB

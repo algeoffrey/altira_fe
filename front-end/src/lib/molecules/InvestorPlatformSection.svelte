@@ -23,12 +23,12 @@
             subtitle: "Investment Council",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum. Nam suscipit molestie augue, ac finibus lacus mattis in. Curabitur id convallis sem, et pulvinar turpis. Maecenas sagittis dui non risus commodo, fringilla interdum tortor gravida. Integer porttitor ante sit amet sem efficitur tincidunt.",
             buttonText: "Our People",
-            buttonLink: "#"
+            buttonLink: "/our-people"
         }
     ];
 </script>
 
-<section class="py-12 bg-white relative">
+<section class="py-12 bg-white relative" id="platform">
 
     <!-- Intro Text -->
     <p class="text-left text-sm md:text-base font-light mb-12 py-6 max-w-8xl mx-32">

@@ -15,17 +15,17 @@
   titleColor="#000000"         
   subHeaderTextColor="#FFFFFF"
   subHeaderLinks={[
-    { name: "Institutional Supporter", href: "/ecosystem-profile#Institutional"},
-    { name: "Strategic Partners", href: "/ecosystem-profile#Strategic"},
-    { name: "Network Ecosystem", href: "/ecosystem-profile#Network"},
-    { name: "Track Record ", href: "/ecosystem-profile#Track"},
+    { name: "Institutional Supporters", href: "/ecosystem-profile#Institutional-Supporters"},
+    { name: "Strategic Partners", href: "/ecosystem-profile#Strategic-Partners"},
+    { name: "Network Ecosystem", href: "/ecosystem-profile#Network-Ecosystem"},
+    { name: "Track Record ", href: "/ecosystem-profile#Track-Record"},
   ]}
 />
 
 
 <div class="py-6 mt-6 mb-4">
   
-  <div class="pb-6 mb-6">
+  <div class="pb-6 mb-6" id="Institutional-Supporters">
     <SponsorSection 
     title="Institutional Supporters"
     maxColumns={5}
@@ -42,7 +42,7 @@
     />
   </div>
 
-  <div class="pb-6 mb-6">
+  <div class="pb-6 mb-6" id = "Strategic-Partners">
     <SponsorSection 
       title="Strategic Patners"
       maxColumns={4}
@@ -58,7 +58,7 @@
     />
   </div>
 
-  <div class="pb-6 mb-6">
+  <div class="pb-6 mb-6" id = "Network-Ecosystem">
     <SponsorSection 
       title="Network Ecosystem"
       maxColumns={9}
@@ -133,7 +133,7 @@
     />
   </div>
 
-   <div>
+   <div id="Track-Record">
       <SponsorSection 
       title="Track Record & Recent Investments"
       subtitle = "Innovation Pioneers"

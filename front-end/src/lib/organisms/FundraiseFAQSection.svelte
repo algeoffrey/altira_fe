@@ -31,7 +31,7 @@
     ];
 </script>
 
-<section class="pt-12 bg-[#F8F8F8] relative">
+<section class="pt-12 bg-[#F8F8F8] relative" id = "FAQs">
     <!-- Header Section -->
     <section class="pt-12 pb-4 md:pt-16 md:py-12 max-w-8xl mx-32">
         <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-6">{title}</h2>

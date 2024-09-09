@@ -13,8 +13,8 @@
   subHeaderTextColor="#000000"
   subHeaderLinks={[
     { name: "Investing & Wealth Planning", href: "/investor-learn-hub#investing-wealth-planning" },
-    { name: "Enterprise Innovation", href: "/investor-learn-hub-enterprise-innovation" },
-    { name: "Alternative Finance", href: "/investor-learn-hub-alternative-finance" }
+    { name: "Enterprise Innovation", href: "/investor-learn-hub#enterprise-innovation" },
+    { name: "Alternative Finance", href: "/investor-learn-hub#alternative-finance" }
   ]}
   extraText="<strong>For Founder Learn Hub</strong> please <a href='/founder-main' class='hover:underline'>click here</a>"
 />

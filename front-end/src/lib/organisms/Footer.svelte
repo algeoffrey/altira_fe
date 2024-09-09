@@ -11,8 +11,8 @@
 
   const column1Links = [
     { text: "People", href: "/our-people" },
-    { text: "Story & Mission", href: "/about" },
-    { text: "Track Records", href: "/ecosystem-profile" },
+    { text: "Story & Mission", href: "/about#mission" },
+    { text: "Track Records", href: "/ecosystem-profile#Track-Record" },
     { text: "Ecosystem Profile", href: "ecosystem-profile" },
     { text: "Glossary", href: "/glossary" },
   ];
@@ -20,15 +20,15 @@
   const column2Links = [
     { text: "Become an Investor", href: "/alt-c-investor-network" },
     { text: "Investor Education", href: "/investor-learn-hub" },
-    { text: "Wealth Solutions", href: "/asset-owners-&-investors" },
-    { text: "Enterprise Innovation", href: "/asset-owners-&-investors" },
+    { text: "Wealth Solutions", href: "/asset-owners-&-investors#wealth" },
+    { text: "Enterprise Innovation", href: "/asset-owners-&-investors#innovation" },
   ];
 
   const column3Links = [
-    { text: "Raise Capital", href: "/founder-main" },
+    { text: "Raise Capital", href: "/founder-main#advisory" },
     { text: "FoundrX Hub", href: "/founder-main" },
-    { text: "Founders Learn-Hub", href: "/founder-main" },
-    { text: "Founders Programs", href: "/founder-main" },
+    { text: "Founders Learn-Hub", href: "/founder-main#masterclasses" },
+    { text: "Founders Programs", href: "/founder-main#events-pitches" },
   ];
 </script>
 

@@ -36,7 +36,7 @@
 <PricingTableSection/>
 <NewsLetterSection/>
 
-<div class="py-12 mt-6 mb-4">
+<div class="py-12 mt-6 mb-4" id = "track-record">
   
   <div class="pb-6 mb-6">
     <SponsorSection 
@@ -51,7 +51,7 @@
         { imgSrc: "/images/aavishkaar_group.svg", altText: "aavishkaar group" }
     ]}
     linkText="See More >"
-    seeMoreLink="#"
+    seeMoreLink="/ecosystem-profile"
     />
   </div>
 
@@ -67,7 +67,7 @@
           { imgSrc: "/images/bina_nusantara.svg", altText: "aavishkar capital group" }
       ]}
       linkText="See More >"
-      seeMoreLink="#"
+      seeMoreLink="/ecosystem-profile"
     />
   </div>
 
@@ -95,7 +95,7 @@
           { imgSrc: "/images/fazz.svg", altText: "fazz" },
       ]}
       linkText="See More >"
-      seeMoreLink="#"
+      seeMoreLink="/ecosystem-profile"
   />
 
     <SponsorSection 
@@ -118,7 +118,7 @@
             { imgSrc: "/images/riliv.svg", altText: "riliv" },
         ]}
         linkText="See More >"
-        seeMoreLink="#"
+        seeMoreLink="/ecosystem-profile"
     />
    </div>
    

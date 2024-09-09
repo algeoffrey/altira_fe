@@ -32,7 +32,7 @@
     ];
 </script>
 
-<section class="py-12 px-6 bg-white">
+<section class="py-12 px-6 bg-white" id="corporates">
 
     <!-- Title and Description -->
     <h2 class="text-center text-2xl md:text-3xl font-semibold mb-6">{title}</h2>

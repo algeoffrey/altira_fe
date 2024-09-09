@@ -23,6 +23,6 @@
                 : `border-black bg-[${customBlack}] text-white`;
 </script>
 
-<button onclick="location.href='{href}'" type="button" class={`rounded ${bordersize} ${buttonClasses} ${fontWeight} ${size} ${fullWidth ? 'w-full' : ''} flex justify-center items-center`}>
+<button onclick="location.href='{href}'"  type="button" class={`rounded ${bordersize} ${buttonClasses} ${fontWeight} ${size} ${fullWidth ? 'w-full' : ''} flex justify-center items-center`}>
     {text}
 </button>

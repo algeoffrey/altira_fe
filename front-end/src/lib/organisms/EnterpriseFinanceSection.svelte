@@ -8,6 +8,7 @@
 
     export let sections = [
       {
+        id: "enterprise-innovation",
         title: "Enterprise Innovation",
         courses: [
           {
@@ -29,6 +30,7 @@
         ]
       },
       {
+        id: "alternative-finance",
         title: "Alternative Finance",
         courses: [
           {
@@ -55,7 +57,7 @@
 <section class="pt-16 bg-white">
     <div class="py-6 max-w-8xl mx-32">
         {#each sections as section}
-            <h2 class="text-2xl md:text-[2rem] font-semibold text-center mb-16">
+            <h2 class="text-2xl md:text-[2rem] font-semibold text-center mb-16" id= {section.id}>
                 {section.title}
             </h2>
             <div class="flex justify-center">

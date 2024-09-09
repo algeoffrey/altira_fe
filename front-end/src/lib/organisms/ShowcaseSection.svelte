@@ -34,7 +34,7 @@
             {introParagraph}
         </p>
 
-        <h2 class="text-[2rem] text-customBlack font-extrabold text-center mb-8">Showcases & Pitches</h2>
+        <h2 class="text-[2rem] text-customBlack font-extrabold text-center mb-8" id = "showcases">Showcases & Pitches</h2>
         
         <!-- Container for Event Cards -->
         <div class="grid grid-rows-3 gap-2 mx-32 max-w-6xl">
