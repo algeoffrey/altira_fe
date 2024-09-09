@@ -105,15 +105,110 @@
             { term: "Liquidity Event", definition: "An event that allows a VC to realize a gain or loss on an investment. The ending of a private equity provider’s involvement in a business venture with a view to realizing an internal return on investment." },
             { term: "Lock-up Period", definition: "The period of time that certain stockholders have agreed to waive their right to sell their shares of a public company. Lockup periods usually last for 180 days from the IPO." }
         ],
-        
 
+        M: [
+            { term: "Management Fee", definition: "Compensation for the management of a venture fund’s activities, paid from the fund to the general partner or investment advisor. This compensation generally includes an annual management fee." },
+            { term: "Management Team", definition: "The persons who oversee the activities of a venture capital fund." },
+            { term: "Market Capitalization", definition: "The total dollar value of all outstanding shares. Computed as shares multiplied by current price per share. Prior to an IPO, market capitalization is arrived at by estimating a company’s future growth and by comparing a company with similar public or private corporations." },
+            { term: "Merger", definition: "Combination of two or more corporations in which greater efficiency is supposed to be achieved by the elimination of duplicate plant, equipment, and staff, and the reallocation of capital assets to increase sales and profits in the enlarged company." },
+            { term: "Mezzanine Financing", definition: "Refers to the stage of venture financing for a company immediately prior to its IPO. Investors entering in this round have lower risk of loss than those investors who have invested in an earlier round." },
+            { term: "Mutual Fund", definition: "A mutual fund, or an open-end fund, sells as many shares as investor demand requires. As money flows in, the fund grows. If money flows out of the fund, the number of the fund’s outstanding shares drops." }
+        ],
+        N: [
+            { term: "Net Asset Value (NAV)", definition: "NAV is calculated by adding the value of all of the investments in the fund and dividing by the number of shares of the fund that are outstanding. NAV calculations are required for all mutual funds (or open-end funds) and closed-end funds." },
+            { term: "Net Financing Cost", definition: "Also called the cost of carry, or simply, carry, the difference between the cost of financing the purchase of an asset and the asset’s cash yield." },
+            { term: "Net Income", definition: "The net earnings of a corporation after deducting all costs of selling, depreciation, interest expense, and taxes." },
+            { term: "Net Present Value", definition: "An approach used in capital budgeting where the present value of cash inflow is subtracted from the present value of cash outflows." },
+            { term: "New Issue", definition: "A stock or bond offered to the public for the first time. New issues may be initial public offerings by previously private companies or additional stock or bond issues by companies already public." },
+            { term: "Newco", definition: "The typical label for any newly organized company, particularly in the context of a leveraged buyout." },
+            { term: "No Shop, No Solicitation Clauses", definition: "A no shop, no solicitation, or exclusivity clause requires the company to negotiate exclusively with the investor and not solicit an investment proposal from anyone else for a set period of time after the term sheet is signed." },
+            { term: "Nonaccredited", definition: "An investor not considered accredited for a Regulation D offering." }
+        ],
+        O: [
+            { term: "Offering Documents", definition: "Documents evidencing a private-placement transaction. These include some combination of a purchase agreement, subscription agreement, notes or stock certificates, warrants, registration-rights agreement, stockholder or investment agreement, investor questionnaire, and other documents required by the particular deal." },
+            { term: "Open-end Fund", definition: "An open-end fund, or a mutual fund, generally sells as many shares as investor demand requires. As money flows in, the fund grows. If money flows out, the number of the fund's outstanding shares drops." },
+            { term: "Option", definition: "A security granting the holder the right to purchase a specified number of a company’s securities at a designated price at some point in the future. Options can be incentive stock options (ISOs), statutory options, or non-qualified stock options (NSOs)." },
+            { term: "Option Pool", definition: "The number of shares set aside for future issuance to employees of a private company." },
+            { term: "Outstanding Stock", definition: "The amount of common shares of a corporation that are in the hands of investors. It is equal to the amount of issued shares less treasury stock." },
+            { term: "Oversubscription", definition: "Occurs when demand for shares exceeds the supply or number of shares offered for sale. As a result, underwriters or investment bankers must allocate the shares among investors." },
+            { term: "Oversubscription Privilege", definition: "In a rights issue, this refers to an arrangement by which shareholders are given the right to apply for any shares that are not purchased." }
+        ],
+        P: [
+            { term: "Pari Passu", definition: "At an equal rate or pace, without preference." },
+            { term: "Participating Preferred", definition: "A preferred stock in which the holder is entitled to the stated dividend and also to additional dividends on a specified basis upon payment of dividends to the common stockholders." },
+            { term: "Participating Preferred Stock", definition: "Preferred stock that has the right to share on a pro-rata basis with any distributions to the common stock upon liquidation, after already receiving the preferred-liquidity preference." },
+            { term: "Partnership", definition: "A nontaxable entity in which each partner shares in the profits, losses, and liabilities of the partnership. Each partner is responsible for the taxes on its share of profits and losses." },
+            { term: "Partnership Agreement", definition: "The contract that specifies the compensation and conditions governing the relationship between investors (LPs) and the venture capitalists (GPs) for the duration of a private equity fund’s life." },
+            { term: "PIK Debt Securities", definition: "(Payment in Kind) PIK debt are bonds that may pay bondholders compensation in a form other than cash." },
+            { term: "PIPE", definition: "Private Investment in Public Equity. Private offering followed by a resale registration." },
+            { term: "PIV", definition: "Pooled Investment Vehicle. A legal entity that pools various investors' capital and deploys it according to a specific investment strategy." },
+            { term: "Placement Agent", definition: "The investment bank, broker, or other person that locates investors to purchase securities from the company in a private offering, in exchange for a commission." },
+            { term: "Portfolio Companies", definition: "Companies in which a given fund has invested." },
+            { term: "Post-Money Valuation", definition: "The valuation of a company immediately after the most recent round of financing. This value is calculated by multiplying the company's total number of shares by the share price of the latest financing." },
+            { term: "Pre-Money Valuation", definition: "The valuation of a company prior to a round of investment. This amount is determined by using various calculation models, such as discounted P/E ratios or multiples of future cash flow." },
+            { term: "Preemptive Right", definition: "A shareholder's right to acquire an amount of shares in a future offering at current prices per share paid by new investors." },
+            { term: "Preferred Dividend", definition: "A dividend ordinarily accruing on preferred shares payable where declared and superior in right of payment to common dividends." },
+            { term: "Preferred Stock", definition: "A class of capital stock that may pay dividends at a specified rate and that has priority over common stock in the payment of dividends and the liquidation of assets." },
+            { term: "Private Equity", definition: "Equity securities of companies that have not 'gone public' (are not listed on a public exchange). Private equities are generally illiquid and thought of as a long-term investment." },
+            { term: "Private Offering/Private Placement", definition: "Sale of unregistered, restricted securities by the company." },
+            { term: "Private Placement Memorandum", definition: "Also known as an Offering Memorandum. A document that outlines the terms of securities to be offered in a private placement." },
+            { term: "Private Securities", definition: "Private securities are securities that are not registered and do not trade on an exchange. The price per share is set through negotiation between the buyer and the seller." },
+            { term: "Promissory Note", definition: "Debt instrument in which the maker promises to pay the holder according to its terms." },
+            { term: "Prospectus", definition: "A formal offer to sell securities that provides an investor with the necessary information to make an informed decision." },
+            { term: "Public Company", definition: "A company that has securities that have been sold in a registered offering and traded on a stock exchange or NASDAQ." },
+            { term: "Put Option", definition: "The right to sell a security at a given price (or range) within a given time period." }
+        ],
+        R: [
+            { term: "Recapitalization", definition: "The reorganization of a company’s capital structure. A company may seek to save on taxes by replacing preferred stock with bonds to gain interest deductibility. Recapitalization can be an alternative exit strategy for venture capitalists and leveraged-buyout sponsors." },
+            { term: "Reconfirmation", definition: "The act a broker/dealer makes with an investor to confirm a transaction." },
+            { term: "Redeemable Preferred Stock", definition: "Redeemable preferred stock, also known as exploding preferred, at the holder's option after typically five years, gives the holders leverage to induce the company to arrange a liquidity event." },
+            { term: "Registered Offering", definition: "A transaction in which a company sells specified securities to the public under a Registration Statement declared effective by the SEC." },
+            { term: "Registration", definition: "The SEC’s review process of all securities intended to be sold to the public. The SEC requires that a registration statement be filed with any public securities offering." },
+            { term: "Registration Obligation", definition: "The obligation of a company to register the shares issued to an investor in a private offering for resale to the public through a Registration Statement that has been declared effective by the SEC." },
+            { term: "Registration Rights", definition: "The right to require that a company register restricted shares. Demand Registered Rights enable the shareholder to request registration at any time." },
+            { term: "Registration Rights Agreement", definition: "Separate agreement in which the investor’s registration rights are evidenced." },
+            { term: "Reporting Company", definition: "A company that is registered with the SEC under the Exchange Act." },
+            { term: "Resale Registration", definition: "Registration by a company of the investor’s sale of the shares purchased by the investor in a private offering." },
+            { term: "Restricted Securities", definition: "Public securities that are not freely tradable due to SEC regulations." },
+            { term: "Restricted Shares", definition: "Shares acquired in a private placement considered restricted and not sold in a public offering until appropriate holding periods have expired." },
+            { term: "Right of First Refusal", definition: "The right of first refusal gives the holder the right to meet any other offer before the proposed contract is accepted." },
+            { term: "Rights Offering", definition: "Issuance of 'rights' to current shareholders allowing them to purchase additional shares at a discount to market price." },
+            { term: "Risk", definition: "The chance of loss on an investment due to factors such as inflation, interest rates, default, or political issues." }
+        ],
+        S: [
+            { term: "Seed Funding", definition: "The first round of capital for a start-up business. Seed money usually takes the structure of a loan or an investment in preferred stock or convertible bonds, although sometimes it is common stock." },
+            { term: "Seed Stage Financing", definition: "An initial state of a company’s growth characterized by a founding management team, business-plan development, prototype development, and beta testing." },
+            { term: "Senior Securities", definition: "Securities that have a preferential claim over common stock on a company’s earnings and in the case of liquidation. Generally, preferred stock and bonds are considered senior securities." },
+            { term: "Series A Preferred Stock", definition: "The first round of stock offered during the seed or early-stage round by a portfolio company to the venture investor or fund." },
+            { term: "Shell Corporation", definition: "A corporation with no assets and no business. Typically, shell corporations are designed for the purpose of going public and later acquiring existing businesses." },
+            { term: "Stock Options", definition: "The right to purchase or sell a stock at a specified price within a stated period. Stock options are often used as a form of employee incentive and compensation." },
+            { term: "Strategic Investors", definition: "Corporate or individual investors that add value to investments they make through industry and business synergies or personal ties that assist companies in raising additional capital." },
+            { term: "Subscription Agreement", definition: "The application submitted by an investor wishing to join a limited partnership." },
+            { term: "Subordinated [Note] [Debt]", definition: "Debt which by its terms has no right to be paid until another debt holder is paid. Also referred to as 'junior' debt." },
+            { term: "Syndication", definition: "Underwriters or broker/dealers who sell a security as a group." }
+        ],
+        T: [
+            { term: "Tag-Along Rights / Rights of Co-Sale", definition: "A minority-shareholder protection affording the right to include their shares in any sale of control and at the offered price." },
+            { term: "Tender Offer", definition: "An offer to purchase stock made directly to the shareholders. One of the more common ways hostile takeovers are implemented." },
+            { term: "Term Sheet", definition: "A summary of the terms the investor is prepared to accept. A non-binding outline of the principal points which the Stock Purchase Agreement and related agreements will cover in detail." },
+            { term: "Time Value of Money", definition: "The basic principle that money can earn interest; therefore, something that is worth $1 today will be worth more in the future if invested. Also referred to as future value." }
+        ],
 
+        U: [
+            { term: "Underwritten Offering", definition: "Registered offering that is sold through a consortium of investment banks assembled by one or more lead investment banks." },
+            { term: "Unit Offering", definition: "Private or public offering of securities in groups of more than one security. Most often a share of stock and warrant to purchase some number of shares of stock." }
+        ],
 
+        V: [
+            { term: "Venture Capital Financing", definition: "An investment in a startup business that is perceived to have excellent growth prospects but does not have access to capital markets." },
+            { term: "Voting Right", definition: "The common stockholders’ right to vote their stock in the affairs of the company. Preferred stock usually has the right to vote when preferred dividends are in default for a specified amount of time." }
+        ],
 
-
-
-
-
+        W: [
+            { term: "Warrant", definition: "A type of security that entitles the holder to buy a proportionate amount of common stock or preferred stock at a specified price for a period of years." },
+            { term: "Write-off", definition: "The act of changing the value of an asset to an expense or a loss. A write-off is used to reduce or eliminate the value of an asset and reduce profits." },
+            { term: "Write-up/Write-down", definition: "An upward or downward adjustment of the value of an asset for accounting and reporting purposes. These adjustments are estimates and tend to be subjective, usually based on events affecting the investee company or its securities." }
+        ]
     };
 </script>
 
@@ -129,7 +224,7 @@
             {#each Object.keys(terms) as letter}
                 <div class="col-span-1">
                     <!-- Letter Header -->
-                    <h3 class="text-xl font-semibold mb-4 border-b border-gray-300" id="i{letter}">{letter}</h3>
+                    <h3 class="text-xl font-semibold mb-4 border-b border-gray-300" id="index{letter}">{letter}</h3>
                     {#each terms[letter] as entry}
                         <!-- Link to Definition -->
                         <a class="block text-gray-900 font-light leading-8 hover:text-blue-600" href="#{entry.term}">
@@ -159,24 +254,5 @@
     </div>
 </section>
 
-
-<!-- 
-C: [
-    { term: "CAGR", definition: "Compound Annual Growth Rate. The year-over-year growth rate applied to an investment or other aspect of a firm using a base amount." },
-    { term: "Call Option", definition: "The right to buy a security at a given price (or range) within a specific time period." },
-    { term: "Capital (or Assets) Under Management", definition: " The amount of capital available to a fund-management team for venture investments." },
-    { term: "Capital Gains:", definition: "The difference between an asset’s purchase price and selling price, when the selling price is greater. Long-term capital gains (on assets held for a year or longer) are taxed at a lower rate than ordinary income. },
-    { term: "Capitalization Table", definition: "Also called a “Cap Table,” this is a table showing the total amount of the various securities issued by a firm. This typically includes the amount of investment obtained from each source and the securities distributed — e.g., common and preferred shares, options, warrants, etc. — and respective capitalization ratios." },
-    { term: "", definition: "" },
-    { term: "", definition: "" },
-    { term: "", definition: "" },
-    { term: "", definition: "" },
-    { term: "", definition: "" },
-    { term: "", definition: "" },
-    { term: "", definition: "" },
-    { term: "", definition: "" },
-    
-
-], -->
 
 

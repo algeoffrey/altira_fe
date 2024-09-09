@@ -20,24 +20,24 @@
     ];
 </script>
 
-<section class="py-12 bg-white relative">
+<section class="py-12 bg-white relative" id="mission">
         <!-- Paragraph at the top -->
-        <p class="text-left text-sm md:text-base font-light mb-12 py-6 max-w-8xl mx-32">
+        <p class="text-left text-sm md:text-base font-light mb-6 pb-6 max-w-8xl mx-32">
             {@html paragraphContent}
         </p>
-        <div class="pt-12"><Heading text="Mission and Story" size="text-[2rem]"/></div>
+        <div class="pt-6"><Heading text="Mission and Story" size="text-[2rem]"/></div>
 
         <!-- Second Row: TextWithHeading and VennDiagram -->
-        <div class="flex flex-col md:flex-row justify-between items-start mt-10 max-w-8xl mx-32">
+        <div class="flex flex-col md:flex-row justify-between items-start mt-10 max-w-8xl mx-32 px-16">
             <!-- Text with Headings (Mission and Story) -->
-            <div class="w-full w-3/5 space-y-8 pr-6">
+            <div class="w-full w-2/5 space-y-8 pr-6">
                 <TextWithHeading heading="Our Mission" type="mission" content={missionContent} />
                 <TextWithHeading heading="Our Story" type="story" content={storyContent} />
             </div>
             
             <!-- Venn Diagram Container -->
-            <div class="w-full w-2/3 py-16 pr-4 flex justify-center">
-                <div class="max-w-lg md:max-w-xl">
+            <div class="w-full w-3/5 py-6 px-4 flex justify-center">
+                <div class="max-w-xl">
                     <VennDiagram alt="Venn Diagram representing Mission and Story" />
                 </div>
             </div>

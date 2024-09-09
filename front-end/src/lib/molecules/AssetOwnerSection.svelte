@@ -11,7 +11,7 @@
     export let buttonLink = "#";
 </script>
 
-<section class="flex flex-col md:flex-col items-center justify-between py-12 px-6 bg-[#F8F8F8]">
+<section class="flex flex-col md:flex-col items-center justify-between py-12 px-6 bg-[#F8F8F8]" id="asset-owners">
     <h2 class="text-center text-2xl md:text-3xl font-semibold mb-6">{title}</h2>
 
     <!-- Text Content -->

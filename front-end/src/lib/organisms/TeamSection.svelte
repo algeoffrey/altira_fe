@@ -128,15 +128,15 @@
     }
 </script>
 
-<section class="py-10 bg-gray-100">
-    <div class="container mx-auto px-4 md:px-8">
-        <h2 class="text-3xl font-bold text-center mb-14">People</h2>
+<section class="py-10 bg-gray-100 relative" id="people">
+    <div class="max-w-10xl mx-32">
+        <h2 class="text-[2rem] text-customBlack font-bold text-center mb-14">People</h2>
         
-        <h3 class="text-2xl font-light-semibold text-center mb-8">Advisory Board</h3>
+        <h3 class="text-[1.5rem] font-semibold text-customBlack text-center mb-12">Advisory Board</h3>
         <div class="flex justify-center">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[100rem] w-full">
                 {#each advisoryBoard as member, i}
-                    <div class={`w-full ${isLastOdd(i, advisoryBoard.length) ? 'sm:flex sm:justify-center' : ''}`}>
+                    <div class={`w-full flex justify-center`}>
                         <ProfileCard 
                             src={member.src}
                             alt={member.alt}
@@ -149,11 +149,11 @@
             </div>
         </div>
 
-        <h3 class="text-2xl font-light-semibold text-center mt-16 mb-8">Governance Board</h3>
-        <div class="flex justify-center">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-3xl w-full">
+        <h3 class="text-[1.5rem] font-semibold text-customBlack text-center mb-12 mt-16">Governance Board</h3>
+        <div class="flex justify-center ">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 max-w-7xl w-4/5">
                 {#each governanceBoard as member, i}
-                    <div class={`w-full ${isLastOdd(i, governanceBoard.length) ? 'sm:flex sm:justify-center' : ''}`}>
+                    <div class={`w-full flex justify-center`}>
                         <ProfileCard 
                             src={member.src}
                             alt={member.alt}
@@ -166,9 +166,9 @@
             </div>
         </div>
 
-        <h3 class="text-2xl font-light-semibold text-center mt-16 mb-8">Investment Council</h3>
+        <h3 class="text-[1.5rem] font-semibold text-customBlack text-center mb-12 mt-16">Investment Council</h3>
         <div class="flex justify-center">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-3xl w-full">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 max-w-7xl w-4/5">
                 {#each investmentCouncil as member, i}
                     <div class="w-full flex justify-center">
                         <ProfileCard 
