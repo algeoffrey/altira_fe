@@ -52,13 +52,14 @@
     });
 </script>
 
-<nav class={`sticky top-0 flex items-center justify-start p-2 transition-all duration-500 ${currentTheme === 'transparent' 
-    ? 'bg-transparent left-0 w-full z-10' 
+<nav class={`sticky top-0 flex items-center justify-start p-4 transition-all duration-500 z-10 
+    ${currentTheme === 'transparent' 
+    ? 'bg-transparent left-0 w-full' 
     : currentTheme === 'white' 
-        ? 'bg-white shadow-md z-10' 
+        ? 'bg-white shadow-md' 
         : currentTheme === 'custom' 
-            ? 'bg-[#5CE1E6] shadow-md z-10' 
-            : 'bg-black shadow-md z-10'}`}>
+            ? 'bg-[#5CE1E6] shadow-md' 
+            : 'bg-black shadow-md'}`}>
     
     <!-- Logo -->
     <div class="md:lg:pl-9">
@@ -127,3 +128,4 @@
         </div>
     {/if}
 </nav>
+

@@ -24,30 +24,32 @@
   >
     <TitleWithSubtitle
       title={displayTitle}
-      titleWeight= {titleWeight}
+      titleWeight={titleWeight}
       {subtitle}
       {titleColor}
       subtitleColor={titleColor}
     />
   </div>
 
-<div
-    class="w-full h-11 flex justify-between items-center"
+  <!-- Sticky Sub-header Navigation -->
+
+</section>
+
+<section class="sticky top-16 z-20">
+  <div
+    class="w-full h-11 flex justify-between items-center " 
     style="background-color: {secondaryColor};"
->
+  >
     <!-- Navigation Links -->
-
-    <div class={"px-6 mx-6 md:px-16 md:mx-16"}>
-        <Navigation links={subHeaderLinks} color={subHeaderTextColor} coursePage={coursePage} />
+    <div class="px-6 mx-6 md:px-16 md:mx-16">
+      <Navigation links={subHeaderLinks} color={subHeaderTextColor} coursePage={coursePage} />
     </div>
-
 
     <!-- Extra Text -->
     {#if extraText}
-        <div class="ml-auto text-right px-12 md:px-20 md:mx-16 lg:px-16 lg:px-16">
-            <ExtraText text={extraText} color={subHeaderTextColor} />
-        </div>
+      <div class="ml-auto text-right px-12 md:px-20 md:mx-16 lg:px-16 lg:px-16">
+        <ExtraText text={extraText} color={subHeaderTextColor} />
+      </div>
     {/if}
-</div>
-
-</section>
+  </div>
+</section>  
