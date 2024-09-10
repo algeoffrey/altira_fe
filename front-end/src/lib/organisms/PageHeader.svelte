@@ -18,9 +18,10 @@
   const displayTitle = customTitle || title;
 </script>
 
+<!-- Page Header Section -->
 <section class="relative w-full" style="background-color: {backgroundColor};">
   <div
-    class="container py-[3.8rem] pl-6 ml-6 md:pl-16 md:ml-16 flex justify-between items-center"
+    class="container pt-[8rem] pb-[3rem] pl-6 ml-6 md:pl-16 md:ml-16 flex justify-between items-center"
   >
     <TitleWithSubtitle
       title={displayTitle}
@@ -30,14 +31,13 @@
       subtitleColor={titleColor}
     />
   </div>
-
-  <!-- Sticky Sub-header Navigation -->
-
 </section>
 
+<!-- Sticky Sub-header Navigation -->
+<!-- The `top-16` ensures that this section is below the navbar. Adjust the value to match your navbar's height. -->
 <section class="sticky top-16 z-20">
   <div
-    class="w-full h-11 flex justify-between items-center " 
+    class="w-full h-11 flex justify-between items-center" 
     style="background-color: {secondaryColor};"
   >
     <!-- Navigation Links -->

@@ -213,7 +213,7 @@
 </script>
 
 <section class="py-16 bg-gray-50" id="glossary">
-    <div class="mx-auto max-w-6xl px-4">
+    <div class="ml-16 pl-16 max-w-8xl">
         <!-- Introductory Paragraph -->
         <p class="text-base font-thin text-gray-700 mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at.

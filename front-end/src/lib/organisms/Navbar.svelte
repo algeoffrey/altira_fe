@@ -14,47 +14,44 @@
     const dispatch = createEventDispatcher();
 
     let currentTheme = theme;
-    let customBlack = '#363338'; // Correctly declare custom black color
-    $: logoSrc = currentTheme === 'black' ? '/images/altira-logo-white.svg' : '/images/altira-logo-black.svg';
+    let isSticky = false;  // Add a flag for sticky state
 
+    // Handle toggle of the menu
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
-
         if (isMenuOpen) {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = '';
         }
-
         dispatch('toggleMenu', { isMenuOpen });
     }
 
+    // Handle scroll and toggle navbar position from absolute to fixed
     function handleScroll() {
-        if (typeof window !== 'undefined' && window.scrollY > 50) {
-            currentTheme = 'black'; // Change to black when scrolled past hero
+        if (window.scrollY > 0) { // Adjust the value to when you want the navbar to become sticky
+            isSticky = true;
+            currentTheme = 'black';  // You can also adjust the theme when sticky
         } else {
-            currentTheme = theme; // Return to the original theme (transparent)
+            isSticky = false;
+            currentTheme = theme;
         }
     }
 
     // Set up scroll event listener
     onMount(() => {
-        if (typeof window !== 'undefined') {
-            window.addEventListener('scroll', handleScroll);
-        }
+        window.addEventListener('scroll', handleScroll);
     });
 
     // Clean up event listener when component is destroyed
     onDestroy(() => {
-        if (typeof window !== 'undefined') {
-            window.removeEventListener('scroll', handleScroll);
-        }
+        window.removeEventListener('scroll', handleScroll);
     });
 </script>
 
-<nav class={`sticky top-0 flex items-center justify-start p-4 transition-all duration-500 z-10 
-    ${currentTheme === 'transparent' 
-    ? 'bg-transparent left-0 w-full' 
+<!-- The sticky behavior will switch between absolute and fixed -->
+<nav class={`${isSticky ? 'fixed top-0' : 'absolute top-0'} left-0 w-full flex items-center justify-start p-4 transition-all duration-500 z-50 ${currentTheme === 'transparent' 
+    ? 'bg-transparent' 
     : currentTheme === 'white' 
         ? 'bg-white shadow-md' 
         : currentTheme === 'custom' 
@@ -63,7 +60,7 @@
     
     <!-- Logo -->
     <div class="md:lg:pl-9">
-        <NavLogo logoSrc={logoSrc} href="/" theme={currentTheme} />
+        <NavLogo logoSrc={currentTheme === 'black' ? '/images/altira-logo-white.svg' : '/images/altira-logo-black.svg'} href="/" theme={currentTheme} />
     </div>
 
     <!-- Navigation Links -->
@@ -86,7 +83,7 @@
         <!-- Primary Button -->
         <a href="/alt-c-investor-network" 
            class={`transition-all duration-300 px-5 py-1.5 text-md border rounded-md 
-                  ${currentTheme === 'black' ? 'bg-black text-white' : `bg-[${customBlack}] text-white`} 
+                  ${currentTheme === 'black' ? 'bg-black text-white' : `bg-[#363338] text-white`} 
                   ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}>
             Investor Track
         </a>
@@ -94,7 +91,7 @@
         <!-- Secondary Button -->
         <a href="/founder-main" 
            class={`transition-all duration-300 px-5 py-1.5 text-md border rounded-md 
-                  ${currentTheme === 'black' ? 'border-white bg-white text-[${customBlack}]' : 'border-black bg-transparent text-black'} 
+                  ${currentTheme === 'black' ? 'border-white bg-white text-[#363338]' : 'border-black bg-transparent text-black'} 
                   ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}>
             Raise Capital
         </a>
@@ -128,4 +125,3 @@
         </div>
     {/if}
 </nav>
-
