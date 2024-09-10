@@ -29,7 +29,7 @@
 
     // Handle scroll and toggle navbar position from absolute to fixed
     function handleScroll() {
-        if (window.scrollY > 0) { // Adjust the value to when you want the navbar to become sticky
+        if (window && window.scrollY > 0) { // Adjust the value to when you want the navbar to become sticky
             isSticky = true;
             currentTheme = 'black';  // You can also adjust the theme when sticky
         } else {
@@ -40,12 +40,16 @@
 
     // Set up scroll event listener
     onMount(() => {
-        window.addEventListener('scroll', handleScroll);
+        if (typeof window !== 'undefined') { // Check if window is defined (client-side only)
+            window.addEventListener('scroll', handleScroll);
+        }
     });
 
     // Clean up event listener when component is destroyed
     onDestroy(() => {
-        window.removeEventListener('scroll', handleScroll);
+        if (typeof window !== 'undefined') {
+            window.removeEventListener('scroll', handleScroll);
+        }
     });
 </script>
 
