@@ -10,3 +10,5 @@ export { default as PartnersBuildersSection } from "./PartnersBuilderSection.sve
 export { default as InvestorPlatformSection } from "./InvestorPlatformSection.svelte";
 export { default as EnterpriseInnovationSection } from "./EnterpriseInnovationSection.svelte";
 export { default as WealthPlanningSection } from "./WealthPlanningSection.svelte";
+
+export { default as BackToTopButton } from "./BackToTopButton.svelte";

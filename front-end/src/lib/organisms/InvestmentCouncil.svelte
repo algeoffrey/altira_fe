@@ -192,29 +192,7 @@
                 </div>
             </div>
         {/each}
-
-        <!-- Back to Top Button -->
-        <div class="text-center mt-8">
-            <button on:click={scrollToTop} class="back-to-top-button px-6 py-2 text-customBlack rounded-full shadow-lg focus:outline-none">
-                BACK TO TOP
-            </button>
-        </div>
     </div>
 </section>
 
-
-<style>
-    /* Back to Top button styling */
-    .back-to-top-button {
-        background-color: white;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        font-weight: 500;
-        transition: transform 0.2s;
-    }
-
-    /* Button hover effect */
-    .back-to-top-button:hover {
-        transform: scale(1.05);
-    }
-</style>
 

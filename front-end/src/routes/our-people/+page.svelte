@@ -7,6 +7,8 @@
       GovernanceBoard,
       InvestmentCouncil,
       Footer} from '/src/lib/organisms';
+
+      import BackToTopButton from "/src/lib/molecules/BackToTopButton.svelte";
   </script>
   
   <Navbar theme="black" />
@@ -28,5 +30,5 @@
 <AdvisoryBoard/>
 <GovernanceBoard/>
 <InvestmentCouncil/>
-
+<BackToTopButton/>
 <Footer/>
