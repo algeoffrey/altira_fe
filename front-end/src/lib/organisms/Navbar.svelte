@@ -12,9 +12,10 @@
     export let theme = 'transparent'; // Default theme is 'transparent'
     let isMenuOpen = false;
     const dispatch = createEventDispatcher();
-
     let currentTheme = theme;
     let isSticky = false;  // Add a flag for sticky state
+
+    const scrollOffset = 100; // Adjust the number of pixels to offset
 
     // Handle toggle of the menu
     function toggleMenu() {
@@ -29,26 +30,57 @@
 
     // Handle scroll and toggle navbar position from absolute to fixed
     function handleScroll() {
-        if (window && window.scrollY > 0) { // Adjust the value to when you want the navbar to become sticky
+        if (window && window.scrollY > 0) {
             isSticky = true;
-            currentTheme = 'black';  // You can also adjust the theme when sticky
+            currentTheme = 'black';
         } else {
             isSticky = false;
             currentTheme = theme;
         }
     }
 
-    // Set up scroll event listener
+    // Handle navigation click and scroll with an offset
+    function handleNavigationClick(event) {
+        const targetId = event.currentTarget.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            // Prevent the default smooth scrolling behavior
+            event.preventDefault();
+
+            // Get the position of the target element
+            const targetPosition = targetElement.offsetTop - scrollOffset;
+
+            // Scroll smoothly to the calculated position
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth',
+            });
+        }
+    }
+
+    // Set up scroll event listener and handle navigation click events
     onMount(() => {
-        if (typeof window !== 'undefined') { // Check if window is defined (client-side only)
+        if (typeof window !== 'undefined') {
             window.addEventListener('scroll', handleScroll);
+
+            // Attach click event listeners to all navigation links
+            const navLinks = document.querySelectorAll('nav a'); // Adjust selector as needed
+            navLinks.forEach(link => {
+                link.addEventListener('click', handleNavigationClick);
+            });
         }
     });
 
-    // Clean up event listener when component is destroyed
+    // Clean up event listeners on destroy
     onDestroy(() => {
         if (typeof window !== 'undefined') {
             window.removeEventListener('scroll', handleScroll);
+
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.removeEventListener('click', handleNavigationClick);
+            });
         }
     });
 </script>
