@@ -35,7 +35,9 @@
         text="Become an Investor"
         theme="custom"
         variant="secondary"
-        size="text-xl"
+        size="text-[1.1rem]"
+        fontWeight= "font-md"
+        bordersize = "py-2 px-4"
     />
 
     <!-- "For founders, please click here" Message -->

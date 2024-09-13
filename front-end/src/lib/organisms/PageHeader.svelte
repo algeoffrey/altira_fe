@@ -37,7 +37,7 @@
 <!-- The `top-16` ensures that this section is below the navbar. Adjust the value to match your navbar's height. -->
 <section class="sticky top-16 z-20">
   <div
-    class="w-full h-11 flex justify-between items-center" 
+    class="w-full h-14 flex justify-between items-center" 
     style="background-color: {secondaryColor};"
   >
     <!-- Navigation Links -->

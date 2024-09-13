@@ -18,7 +18,7 @@
   <div class="flex flex-col h-full justify-between">
     <div>
       <!-- Title Section -->
-      <div class="mb-4 min-h-[4rem]">
+      <div class="mb-4 min-h-[3rem]">
         <CourseCardTitle text={title} />
       </div>
   
@@ -31,7 +31,7 @@
   
       <!-- Description Section -->
       <div class="mb-6">
-        <div class="min-h-[4rem]">
+        <div class="min-h-[3rem]">
           <CourseCardDesc text={description} />
         </div>
       </div>

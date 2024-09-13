@@ -4,6 +4,8 @@
       PageHeader, 
       GlossaryIndex,
       Footer} from '/src/lib/organisms';
+
+    import BackToTopButton from "/src/lib/molecules/BackToTopButton.svelte";
   </script>
   
   <Navbar theme="black" />
@@ -40,4 +42,5 @@
 />
 
 <GlossaryIndex/>
+<BackToTopButton/>
 <Footer/>

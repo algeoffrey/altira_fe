@@ -118,7 +118,7 @@
     <div class="hidden md:flex items-center space-x-6 lg:md:pr-8 ml-auto">
         <!-- Primary Button -->
         <a href="/alt-c-investor-network" 
-           class={`transition-all duration-300 px-5 py-1.5 text-md border rounded-md 
+           class={`transition-all duration-300 px-4 py-1.5 text-md border rounded-md font-[400]
                   ${currentTheme === 'black' ? 'bg-black text-white' : `bg-[#363338] text-white`} 
                   ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}>
             Investor Track
@@ -126,7 +126,7 @@
 
         <!-- Secondary Button -->
         <a href="/founder-main" 
-           class={`transition-all duration-300 px-5 py-1.5 text-md border rounded-md 
+           class={`transition-all duration-300 px-4 py-1.5 text-md border rounded-md font-[400]
                   ${currentTheme === 'black' ? 'border-white bg-white text-[#363338]' : 'border-black bg-transparent text-black'} 
                   ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}>
             Raise Capital

@@ -14,7 +14,7 @@
 
     // Scroll handling logic (only runs on client side)
     function handleScroll() {
-        if (window.scrollY > 200 && !footerInView) {
+        if (window.scrollY > 0 && !footerInView) {
             isVisible = true;
         } else {
             isVisible = false;

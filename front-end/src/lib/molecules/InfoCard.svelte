@@ -11,7 +11,7 @@
 
 <div class="bg-white shadow-md rounded-lg p-6 m-2 text-center border border-gray-200 flex flex-col items-center">
     <div class="pb-6">
-        <CardTitle text={title} size="text-xl" />
+        <CardTitle text={title} size="text-[1.4rem]" />
     </div>
     <div class="pl-6">
         <ListText items={content} />

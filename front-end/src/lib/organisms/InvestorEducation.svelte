@@ -34,13 +34,13 @@
 
 <section class="py-12 bg-gray-50">
   <div class="container mx-auto px-4 md:px-6 lg:px-8">
-    <h2 class="text-customBlack text-2xl md:text-3xl font-bold text-center mb-6 pt-6">
+    <h2 class="text-customBlack text-2xl md:text-[2rem] font-bold text-center mb-6 pt-6">
       {sectionTitle}
     </h2>
-    <p class="text-base text-center lg:text-lg mb-6 md:mb-8 max-w-lg md:max-w-4xl lg:max-w-5xl mx-auto font-light">
+    <p class="text-base text-center lg:text-md mb-8 md:mb-12 max-w-lg md:max-w-4xl lg:max-w-5xl mx-auto font-light">
      {introParagraph}
     </p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-16 max-w-full md:max-w-6xl px-4 md:px-12 mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:gap-10 max-w-full md:max-w-6xl px-4 md:px-12 mx-auto">
       {#each courses as course}
         <div class="flex justify-left">
           <CourseCard 
