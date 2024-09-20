@@ -126,7 +126,7 @@
 
         <!-- Secondary Button -->
         <a href="/founder-main" 
-           class={`transition-all duration-300 px-4 py-1.5 text-md border rounded-md font-[400]
+           class={`transition-all duration-300 px-4 py-1.5 text-md border rounded-md font-[600]
                   ${currentTheme === 'black' ? 'border-white bg-white text-[#363338]' : 'border-black bg-transparent text-black'} 
                   ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}>
             Raise Capital
