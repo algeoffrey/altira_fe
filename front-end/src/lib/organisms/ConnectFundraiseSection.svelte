@@ -29,11 +29,11 @@
     ];
 </script>
 
-<section class="py-14 bg-[#F4F4F4] relative max-w-8xl" id="connect-fundraise">
-    <div class="container ml-32 py-4">
+<section class="py-14 bg-[#F8F8F8] relative max-w-8xl" id="connect-fundraise">
+    <div class="mx-32 py-4">
 
         <!-- Intro Paragraph -->
-        <p class="text-left text-base md:text-[1rem] leading-relaxed mb-12 pb-12 font-thin max-w-8xl">
+        <p class="text-left text-[1.05rem] leading-relaxed mb-12 pb-12 font-md max-w-8xl">
             {introParagraph1}
         </p>
 
@@ -44,12 +44,12 @@
             </h2>
 
             <!-- Intro Paragraph -->
-            <p class="text-left text-base md:text-[1rem] leading-relaxed mb-6 pb-4 font-thin max-w-6xl">
+            <p class="text-left text-[1.05rem] md:text-[1rem] leading-relaxed mb-6 pb-4 font-md max-w-8xl">
                 {introParagraph2}
             </p>
 
             <!-- Course Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-16 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-14 px-32 max-w-8xl">
                 {#each courses as course}
                     <div class="justify justify-center items-stretch align-items-center">
                         <CourseCard 

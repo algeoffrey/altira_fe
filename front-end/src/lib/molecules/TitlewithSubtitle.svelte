@@ -14,10 +14,11 @@
   
   <div class="flex items-self-end">
     {#if subtitle}
-    <p class="absolute bottom-[3.2rem] right-24 sm:text-md md:text-lg lg:text-xl font-light text-right" style="color: {subtitleColor};">
+    <p class="absolute bottom-[3.2rem] right-[8rem] text-lg text-right opacity-90" style="color: {subtitleColor}; font-weight: 100;">
       {subtitle}
     </p>
   {/if}
   </div>
 
-</div>
+</div>5
+
