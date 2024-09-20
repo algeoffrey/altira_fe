@@ -31,19 +31,17 @@
     ];
 </script>
 
-<section class="pt-12 bg-[#F8F8F8] relative" id = "FAQs">
-    <!-- Header Section -->
-    <section class="pt-12 pb-4 md:pt-16 md:py-12 max-w-8xl mx-32">
-        <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-6">{title}</h2>
-        <p class="text-center text-sm md:text-[1.2rem] font-thin mb-8 px-4 md:px-8 lg:px-14 mx-auto leading-relaxed">
+<section class="py-12 bg-[#F8F8F8] relative" id="FAQs">
+    <section class="py-2 pb-4 max-w-8xl mx-32">
+        <h2 class="text-customBlack text-center text-[2rem] font-[800] mb-6">{title}</h2>
+        <p class="text-center text-[1.063rem] font-[400] mb-8 px-4 md:px-8 lg:px-14 mx-auto leading-relaxed">
             {introParagraph}
         </p>
         
-        <!-- FAQ Section -->
-        <div class="text-base md:text-[1.15rem]">
+        <div class="text-[1.063rem] font-[400]">
             {#each faqs as faq}
                 <FAQItem question={faq.question} answer={faq.answer} />
             {/each}
-        </div>
+            </div>
+        </section>
     </section>
-</section>
