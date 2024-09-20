@@ -12,26 +12,28 @@
     export let courses = [
         {
             title: "Good Counsel",
+            subtitle: "Startup Consult Hour",
             description: "Team up with the experts and be a business-driven fundraiser.",
             courseType: "Startup Consult Hour",
             backgroundColor: "#D3E8F8",
-            buttonLink: "/good-counsel",
+            buttonLink: "#",
         },
         {
             title: "Raise Me Up",
+            subtitle: "Apply to Fundraise",
             description: "Spend less time fundraising, more time building your business.",
             courseType: "Apply to Fundraise",
             backgroundColor: "#FBD7D7",
-            buttonLink: "/raise-me-up",
+            buttonLink: "#",
         }
     ];
 </script>
 
-<section class="py-14 bg-[#F4F4F4] relative max-w-8xl">
-    <div class="container mx-16 pl-114 py-4">
+<section class="py-14 bg-[#F4F4F4] relative max-w-8xl" id="connect-fundraise">
+    <div class="container ml-32 py-4">
 
         <!-- Intro Paragraph -->
-        <p class="text-left text-base md:text-[1rem] leading-relaxed mb-12 pb-12 font-thin max-w-6xl">
+        <p class="text-left text-base md:text-[1rem] leading-relaxed mb-12 pb-12 font-thin max-w-8xl">
             {introParagraph1}
         </p>
 
@@ -47,11 +49,12 @@
             </p>
 
             <!-- Course Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 px-16 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-16 max-w-6xl">
                 {#each courses as course}
                     <div class="justify justify-center items-stretch align-items-center">
                         <CourseCard 
                             title={course.title}
+                            subtitle={course.subtitle}
                             description={course.description}
                             backgroundColor={course.backgroundColor}
                             buttonLink={course.buttonLink}

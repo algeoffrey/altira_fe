@@ -2,6 +2,7 @@
   import CourseCardContent from "../molecules/CourseCardContent.svelte";
 
   export let title = "Course Title";
+  export let subtitle = ""; // Set subtitle to empty string by default
   export let description =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit.";
   export let courseType = "Full Module Course (Certification Available)";
@@ -20,6 +21,7 @@
 >
   <CourseCardContent
     {title}
+    {subtitle} 
     {courseType}
     {description}
     {buttonText}

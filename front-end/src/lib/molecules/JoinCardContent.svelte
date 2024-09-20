@@ -1,10 +1,11 @@
 <script>
     import CourseCardTitle from '/src/lib/atoms/CourseCardTitle.svelte';
     import CourseCardDesc from '/src/lib/atoms/CourseCardDesc.svelte';
-    import CourseCardBadge from '/src/lib/atoms/CourseCardBadge.svelte';
+    import CourseCardSubtitle from '/src/lib/atoms/CourseCardSubtitle.svelte';
     import ActionButton from '/src/lib/atoms/ActionButton.svelte';
   
     export let title = "Course Title";
+    export let subtitle = ""
     export let description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit.";    
     export let buttonText = "Apply Here";
     export let buttonLink = "#";
@@ -18,13 +19,20 @@
     <div>
       <!-- Title Section -->
       <div class="mb-2 min-h-[2rem]">
-        <CourseCardTitle text={title} size = "text-3xl"/>
+        <CourseCardTitle text={title} size = "text-3xl" weight="font-[800]"/>
       </div>
   
+          <!-- Subtitle Section -->
+      {#if subtitle !== false && subtitle !== ""}
+        <div class="mb-4 min-h-[1rem]">
+          <CourseCardSubtitle text={subtitle} />
+        </div>
+      {/if}
+
       <!-- Description Section -->
-      <div class="mb-8">
+      <div class="mb-2">
         <div class="min-h-[4rem]">
-          <CourseCardDesc text={description} />
+          <CourseCardDesc text={description} weight="font-md" />
         </div>
       </div>
     </div>

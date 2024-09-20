@@ -25,6 +25,7 @@ import {
   titleColor="#FFFFFF"
   subHeaderTextColor="#000000"
   subHeaderLinks={[
+    { name: "Connect & Fundraise", href: "/founder-main#connect-fundraise" },
     { name: "FAQs", href: "/founder-main#FAQs" },
     { name: "Advisory", href: "/founder-main#advisory" },
     { name: "Masterclasses", href: "/founder-main#masterclasses" },
