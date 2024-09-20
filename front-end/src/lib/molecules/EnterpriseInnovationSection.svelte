@@ -23,15 +23,15 @@
 <section class="py-12 bg-[#F8F8F8] relative" id="innovation">
     <section class="py-8 md:py-12 lg:py-16 max-w-8xl mx-32">
         <!-- Title and Description -->
-        <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-6 md:mb-8 lg:mb-10">{title}</h2>
+        <h2 class="text-customBlack text-center text-[2rem] font-[800] mb-6 md:mb-8 lg:mb-10">{title}</h2>
 
         <!-- Sections -->
         {#each sections as section}
             <div class="mb-8 md:mb-10 lg:mb-12 py-4">
-                <CardTitle text={section.subtitle} size="text-xl md:text-[1.7rem]" align="text-left" weight="font-light-bold" />
-                <p class="text-sm md:text-base lg:text-lg text-left md:text-justify font-light mt-4 md:mt-6 lg:mt-8 mb-4 md:mb-6 lg:mb-8 leading-relaxed">{section.description}</p>
+                <CardTitle text={section.subtitle} size="text-[1.563rem]" align="text-left" weight="font-[600]" />
+                <p class="text-[1rem] text-left md:text-justify font-[400] mt-4 md:mt-6 lg:mt-8 mb-4 md:mb-6 lg:mb-8 leading-relaxed">{section.description}</p>
                 <div class="mt-4 flex justify-end">
-                    <ActionButton text={section.buttonText} href={section.buttonLink} theme="transparent" variant="secondary" bordersize="px-4 py-2 md:px-5 md:py-3" size="text-xs md:text-sm lg:text-base" fontWeight="font-medium" />
+                    <ActionButton text={section.buttonText} href={section.buttonLink} theme="transparent" variant="secondary" bordersize="px-4 py-2 md:px-5 md:py-3" size="text-[1rem]" fontWeight="font-[500]" />
                 </div>
             </div>
         {/each}

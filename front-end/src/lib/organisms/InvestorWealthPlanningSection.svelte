@@ -31,14 +31,14 @@
   
 <section class="py-12 bg-white relative">
   <div class="py-4 max-w-10xl mx-32">
-    <p class="text-left text-sm md:text-[1.05rem] leading-relaxed mb-8 md:mb-12 pb-12 font-thin">
+    <p class="text-left text-[1rem] leading-relaxed mb-8 md:mb-12 pb-12 font-[400]">
       {introText}
     </p>
     <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-12" id = "investing-wealth-planning">
       {title}
     </h2>
     <div class="flex justify-center mx-14 px-14">
-        <div class="grid grid-cols-1 sm:grid-cols-2 justify-center gap-6 md:gap-8 lg:gap-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 justify-center gap-12">
             {#each courses as course}
               <div class="flex justify-center md:justify-left">
                 <CourseCard 

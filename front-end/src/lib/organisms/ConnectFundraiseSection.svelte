@@ -29,7 +29,7 @@
     ];
 </script>
 
-<section class="py-14 bg-[#F8F8F8] relative max-w-8xl" id="connect-fundraise">
+<section class="py-14 bg-white relative max-w-8xl" id="connect-fundraise">
     <div class="mx-32 py-4">
 
         <!-- Intro Paragraph -->

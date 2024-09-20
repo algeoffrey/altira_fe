@@ -39,7 +39,7 @@
 
 <!-- Sticky Sub-header Navigation -->
 <!-- The `top-16` ensures that this section is below the navbar. Adjust the value to match your navbar's height. -->
-<section class="sticky top-16 z-20">
+<section class="sticky top-16 z-50">
   <div
     class="w-full h-14 flex justify-between items-center" 
     style="background-color: {secondaryColor};"

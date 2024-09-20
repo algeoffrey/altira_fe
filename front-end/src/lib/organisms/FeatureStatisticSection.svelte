@@ -7,7 +7,7 @@
 
 <section class="py-12 px-8 md:px-8 lg:px-32 bg-white">
     <div class="max-w-8xl mx-auto text-justify justify-left">
-        <p class="text-base md:text-base lg:text-lg my-5 leading-relaxed font-thin">{introParagraph}</p>
+        <p class="text-[1rem] my-5 leading-relaxed font-[400]">{introParagraph}</p>
     </div>
     <div class="mt-12 max-w-8xl mx-auto                                            
 |">

@@ -29,8 +29,8 @@
 
 <section class="bg-gray-100 py-16 px-4">
     <div class="max-w-8xl mx-32 text-left">
-        <h2 class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-6">{title}</h2>
-        <p class="max-w-2xl text-customBlack md:text-md lg:text-lg xl:text-xl font-md mb-8">{description}</p>
+        <h2 class="text-customBlack text-[1.875rem] font-[800] mb-6">{title}</h2>
+        <p class="max-w-2xl text-customBlack text-[1.125rem] font-[400] mb-8">{description}</p>
         <form on:submit|preventDefault={handleSubmit} class="flex flex-col md:flex-row items-center justify-start space-y-4 md:space-y-0 md:space-x-4">
             <div class="flex items-center border rounded-lg overflow-hidden w-full md:w-auto border border-gray">
                 <div class="p-4 bg-white">

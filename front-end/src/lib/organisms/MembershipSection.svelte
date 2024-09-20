@@ -44,9 +44,9 @@
 </script>
 
 <section class="bg-gray-100 py-12" id = "network-membership">
-    <div class="text-center mb-8 max-w-8xl mx-32 px-4">
-        <h2 class="text-3xl font-bold mb-6">Membership Edition</h2>
-        <p class="md:text-base lg:text-lg font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum.</p>
+    <div class="text-center mb-8 max-w-8xl mx-32 px-2">
+        <h2 class="text-customBlack text-[1.875rem] font-[800] mb-6">Membership Edition</h2>
+        <p class="text-[1.125rem] font-[400]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum.</p>
     </div>
 
     <!-- Grid Container -->

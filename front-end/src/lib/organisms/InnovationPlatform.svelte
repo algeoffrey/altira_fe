@@ -26,8 +26,8 @@
 
 <section class="py-8 md:py-12 bg-gray-100">
     <div class="mx-auto px-4 md:px-4 lg:px-6 text-center">
-        <h3 class="text-customBlack text-xl md:text-[2rem] font-bold pb-6">Innovation Platform</h3>
-        <p class="text-base lg:text-md mb-6 md:mb-8 max-w-lg md:max-w-4xl lg:max-w-5xl mx-auto font-light">
+        <h3 class="text-customBlack text-[2rem] font-[800] pb-6">Innovation Platform</h3>
+        <p class="text-[1rem] font-[400] mb-6 md:mb-8 max-w-lg md:max-w-4xl lg:max-w-5xl mx-auto font-light">
             Empower investors and asset owners to invest in the future they dream of. Groundbreaking ideas are nurtured in this innovation ecosystem. Learn more about how to contribute to this elite mission.
         </p>
   

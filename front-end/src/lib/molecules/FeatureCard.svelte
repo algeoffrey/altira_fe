@@ -10,6 +10,6 @@
         <img src="{icon}" alt="{alt}">
     </div>
     <h4 class="font-bold text-2xl py-6">{title}</h4>
-    <p class="text-base text-gray-600 px-10">{content}</p>
+    <p class="text-[1rem] text-black font-[400] px-10">{content}</p>
   </div>
   
