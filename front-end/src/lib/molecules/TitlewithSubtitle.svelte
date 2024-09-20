@@ -14,7 +14,7 @@
   
   <div class="flex items-self-end">
     {#if subtitle}
-    <p class="absolute top-12 right-24 sm:text-md md:text-lg lg:text-xl font-light text-right" style="color: {subtitleColor};">
+    <p class="absolute bottom-[3.2rem] right-24 sm:text-md md:text-lg lg:text-xl font-light text-right" style="color: {subtitleColor};">
       {subtitle}
     </p>
   {/if}

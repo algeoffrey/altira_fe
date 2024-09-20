@@ -14,6 +14,8 @@
   export let subHeaderTextColor = "#FFFFFF";
   export let extraText = "";
   export let coursePage = false;
+  export let subtitleMarginLeft = "ml-auto";
+  export let subtitleMarginRight = "";
 
   const displayTitle = customTitle || title;
 </script>
@@ -29,6 +31,8 @@
       {subtitle}
       {titleColor}
       subtitleColor={titleColor}
+      {subtitleMarginLeft}
+      {subtitleMarginRight}
     />
   </div>
 </section>
