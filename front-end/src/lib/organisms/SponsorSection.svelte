@@ -19,17 +19,14 @@
 <section class="bg-white relative py-12">
   <div class="max-w-10xl mx-32">
     <div class="text-center">
-      <!-- Title -->
       {#if title}
         <SponsorSectionTitle text={title} size="text-2xl md:text-3xl lg:text-4xl font-extrabold" />
       {/if}
   
-      <!-- Subtitle -->
       {#if subtitle}
         <Subtitle text={subtitle} size="text-xl md:text-xl lg:text-[2rem] text-customBlack pt-6 md:pt-8" />
       {/if}
   
-      <!-- Paragraph -->
       <div class="max-w-4xl mx-auto mt-4">
         <Paragraph
           text={paragraph}
@@ -46,7 +43,6 @@
     </div>
   
     {#if showmore === "Y"}
-      <!-- See More Link -->
       <div class="text-right mt-6 mr-16">
         <LinkButton href={seeMoreLink} text={linkText} />
       </div>
@@ -56,8 +52,7 @@
 </section>
 
 <style>
-  /* Control the maximum width of the entire container */
   .container {
-    max-width: 1200px; /* Adjust this value depending on your desired max width */
+    max-width: 1200px;
   }
 </style>

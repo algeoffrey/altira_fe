@@ -37,7 +37,7 @@
     class="container mx-auto md:px-6 lg:px-8 flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start space-y-12 md:space-y-0"
   >
     <!-- Logo and Social Icons -->
-    <div class="flex flex-col items-center md:items-start space-y-6">
+    <div class="flex flex-col  pl-9 items-center md:items-start space-y-6">
       <div class="w-full flex justify-center md:justify-start">
         <AltiraLogo size="h-10" />
       </div>

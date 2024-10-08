@@ -10,8 +10,10 @@
   </script>
   
   <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
-    <Avatar src={src} alt={alt} />
-    <div class="pb-6">
+    <div class="p-1">
+      <Avatar src={src} alt={alt} />
+    </div>
+    <div class="pb-6 px-2">
       <ProfileInfo {name} {role} {title} />
     </div>
   </div>

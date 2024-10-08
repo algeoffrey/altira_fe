@@ -63,7 +63,7 @@
             { imgSrc: "/images/imajin.svg", altText: "imajin" },
             { imgSrc: "/images/my_robin.svg", altText: "my robin" },
             { imgSrc: "/images/meatless_kingdom.svg", altText: "meatless kingdom" },
-            { imgSrc: "/images/surpluss.svg", altText: "surpluss" },
+            { imgSrc: "/images/surplus.png", altText: "surplus" },
             { imgSrc: "/images/kasual.svg", altText: "kasual" },
             { imgSrc: "/images/riliv.svg", altText: "riliv" },
         ]}
