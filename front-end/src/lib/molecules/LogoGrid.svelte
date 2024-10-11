@@ -69,6 +69,9 @@
 
     export let maxColumns = 4;
     export let maxRows = 2;
+    export let gap = 15;
+    export let width = 211;
+    export let height = 211;
 
     let currentIndex = 0;
 
@@ -110,10 +113,10 @@
     {/if}
 
     <!-- Logo Grid -->
-    <div class="grid gap-6 px-12" style="grid-template-columns: repeat({maxColumns}, 1fr);">
+    <div class="grid gap-[{gap}px] px-6" style="grid-template-columns: repeat({maxColumns}, 1fr);">
         {#each visibleLogos as logo}
             <div class="flex justify-center items-center">
-                <LogoImage imgSrc={logo.imgSrc} altText={logo.altText}/>
+                <LogoImage imgSrc={logo.imgSrc} altText={logo.altText} width={width} height={height} />
             </div>
         {/each}
     </div>

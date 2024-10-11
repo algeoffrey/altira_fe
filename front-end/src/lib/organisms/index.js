@@ -3,6 +3,7 @@ export { default as HeaderHero } from "./HeaderHome.svelte";
 export { default as InnovationPlatform } from "./InnovationPlatform.svelte";
 export { default as InvestorEducation } from "./InvestorEducation.svelte";
 export { default as SponsorSection } from "./SponsorSection.svelte";
+export { default as AllSponsorSection } from "./AllSponsorSection.svelte";
 export { default as Footer } from "./Footer.svelte";
 
 export { default as PageHeader } from "./PageHeader.svelte";
@@ -27,25 +28,24 @@ export { default as EducationInvestorSection } from "./EducationInvestorSection.
 export { default as EarlyStageInvestment } from "./EarlyStageInvesmentSection.svelte";
 export { default as MembershipSection } from "./MembershipSection.svelte";
 export { default as PricingTableSection } from "./PricingTable.svelte";
-export { default as NewsLetterSection} from './NewsLetterSection.svelte'
+export { default as NewsLetterSection } from "./NewsLetterSection.svelte";
 
-export { default as ConnectFundraiseSection} from './ConnectFundraiseSection.svelte';
-export { default as FundraiseFAQSection} from './FundraiseFAQSection.svelte';
-export { default as FounderCourseSection} from './FounderCourseSection.svelte';
-export { default as InvestorCourseSection} from './InvestorCourseSection.svelte';
-export { default as EventPitchSection} from './EventPitchSection.svelte';
+export { default as ConnectFundraiseSection } from "./ConnectFundraiseSection.svelte";
+export { default as FundraiseFAQSection } from "./FundraiseFAQSection.svelte";
+export { default as FounderCourseSection } from "./FounderCourseSection.svelte";
+export { default as InvestorCourseSection } from "./InvestorCourseSection.svelte";
+export { default as EventPitchSection } from "./EventPitchSection.svelte";
 
-export { default as FounderDescSection} from './FounderDescSection.svelte';
-export { default as OtherFounderCourse} from './OtherFounderCourse.svelte';
+export { default as FounderDescSection } from "./FounderDescSection.svelte";
+export { default as OtherFounderCourse } from "./OtherFounderCourse.svelte";
 
-export { default as ShowcaseSection} from './ShowcaseSection.svelte';
-export { default as NetworkCapacity} from './NetworkCapacitySection.svelte';
-export { default as PastProgram} from './PastProgram.svelte';
+export { default as ShowcaseSection } from "./ShowcaseSection.svelte";
+export { default as NetworkCapacity } from "./NetworkCapacitySection.svelte";
+export { default as PastProgram } from "./PastProgram.svelte";
 
-export { default as SampleMember} from './SampleMember.svelte';
-export { default as AdvisoryBoard} from './AdvisoryBoard.svelte';
-export { default as GovernanceBoard} from './GovernanceBoard.svelte';
-export { default as InvestmentCouncil} from './InvestmentCouncil.svelte';
+export { default as SampleMember } from "./SampleMember.svelte";
+export { default as AdvisoryBoard } from "./AdvisoryBoard.svelte";
+export { default as GovernanceBoard } from "./GovernanceBoard.svelte";
+export { default as InvestmentCouncil } from "./InvestmentCouncil.svelte";
 
-
-export { default as GlossaryIndex} from './GlossaryIndex.svelte';
+export { default as GlossaryIndex } from "./GlossaryIndex.svelte";
