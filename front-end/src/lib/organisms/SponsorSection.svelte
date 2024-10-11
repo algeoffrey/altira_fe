@@ -34,7 +34,7 @@
       <div class="max-w-4xl mx-auto mt-4">
         <Paragraph
           text={paragraph}
-          size="text-base md:text-lg lg:text-xl font-[400"
+          size="text-[1rem] font-[400]"
           fontStyle="font-light"
           textAlign="text-center"
         />

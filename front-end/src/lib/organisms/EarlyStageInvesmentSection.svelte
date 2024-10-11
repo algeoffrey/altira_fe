@@ -11,7 +11,6 @@
             <p class="text-lg font-light">Invest early alongside professional investors <br/>and top venture capital firms in Indonesian-related and Southeast Asian rising companies.</p>
         </div>
         
-        <!-- Logo Grid with Slide Controls -->
         <div class="md:w-2/3 pl-12 ml-12">
             <LogoGrid/>
         </div>
