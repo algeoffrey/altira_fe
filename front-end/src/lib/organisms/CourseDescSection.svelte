@@ -83,7 +83,7 @@
 </script>
 
 <section class="py-12 bg-white relative">
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-8xl mx-32">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-8xl mx-auto px-8">
   
     <!-- Left Column-->
     <div class="lg:col-span-2 space-y-6">

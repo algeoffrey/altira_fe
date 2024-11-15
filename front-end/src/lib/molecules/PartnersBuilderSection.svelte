@@ -24,14 +24,14 @@
 
         <!-- Title and Description -->
         <h2 class="text-center text-2xl md:text-3xl font-semibold mb-6">{title}</h2>
-        <p class="text-center text-sm md:text-base font-light mb-4 py-4 max-w-8xl mx-32">{mainDescription}</p>
-        <div class="mt-8 flex justify-end mb-2 py-4 max-w-8xl mx-32">
+        <p class="text-center text-[1rem] md:text-base font-light mb-4 py-4 max-w-8xl mx-auto px-8 leading-relaxed">{mainDescription}</p>
+        <div class="mt-8 flex justify-end mb-2 py-4 max-w-8xl mx-auto px-8">
             <ActionButton text={buttonText} href={buttonLink} theme="transparent" variant="secondary" bordersize="px-5 py-1" size="text-md md:text-lg" fontWeight="font-medium" />
         </div>
 
         <!-- Sections -->
         {#each sections as section, i}
-            <div class="mb-2 py-4 max-w-8xl mx-32">
+            <div class="mb-2 py-4 max-w-8xl mx-auto px-8">
                 <CardTitle text={section.subtitle} size="text-2xl" align="text-left" weight="font-thin-bold" />
                 <p class="text-base font-light mt-6 mb-6 leading-relaxed">{section.description}</p>
             </div>

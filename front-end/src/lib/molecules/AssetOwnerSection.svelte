@@ -15,7 +15,7 @@
     <h2 class="text-center text-2xl md:text-3xl font-semibold mb-6">{title}</h2>
 
     <!-- Text Content -->
-    <div class="mb-8 md:mb-0 font-light mb-12 py-6 max-w-8xl mx-32">
+    <div class="mb-8 md:mb-0 font-light mb-12 py-6 max-w-8xl mx-auto px-8">
         {#each paragraphs as paragraph}
             <p class="text-base font-light mb-6 leading-relaxed">{paragraph}</p>
         {/each}

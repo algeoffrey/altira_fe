@@ -2,11 +2,14 @@
   import TitleWithSubtitle from "../molecules/TitlewithSubtitle.svelte";
   import Navigation from "../molecules/SubHeadingNav.svelte";
   import ExtraText from "../atoms/ExtraText.svelte";
+  import HamburgerButton from "../atoms/HamburgerButton.svelte";
+  import NavLogo from "../atoms/AltiraLogo.svelte";
+  import { onMount } from "svelte";
 
   export let title = "Page Title";
   export let titleWeight = "bold";
   export let customTitle = null;
-  export let subtitle = "";
+  export let subtitle = "";  // This will be conditionally rendered
   export let backgroundColor = "#f8f9fa";
   export let secondaryColor = "#6c757d";
   export let subHeaderLinks = [];
@@ -17,43 +20,100 @@
   export let subtitleMarginLeft = "ml-auto";
   export let subtitleMarginRight = "";
 
+  // Define the main navbar links for both desktop and mobile views
+  export let links = [
+    { name: "About", href: "/about" },
+    { name: "Solutions", href: "/solutions" },
+    { name: "Investors", href: "/asset-owners-&-investors" },
+    { name: "Learn Hub", href: "/investor-learn-hub" }
+  ];
+
   const displayTitle = customTitle || title;
+  let isMobile = false;
+  let isMenuOpen = false;
+
+  // Check screen size on mount to determine layout
+  onMount(() => {
+    isMobile = window.innerWidth < 768;
+    window.addEventListener("resize", () => {
+      isMobile = window.innerWidth < 768;
+    });
+  });
+
+  // Function to handle hamburger menu toggle for mobile
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+  }
 </script>
 
 <!-- Page Header Section -->
 <section class="relative w-full" style="background-color: {backgroundColor};">
   <div
-    class="container pt-[8rem] pb-[3rem] pl-6 ml-6 md:pl-16 md:ml-16 flex justify-between items-center"
+    class="container pt-[2rem] pb-[2rem] md:pt-[8rem] md:pb-[3rem] pl-8 px-2 md:px-4 mx-auto flex justify-between items-center"
   >
     <TitleWithSubtitle
       title={displayTitle}
       titleWeight={titleWeight}
-      {subtitle}
       {titleColor}
+      subtitle={isMobile ? "" : subtitle} 
       subtitleColor={titleColor}
       {subtitleMarginLeft}
       {subtitleMarginRight}
     />
+
+    {#if isMobile}
+      <!-- Mobile Hamburger Menu Button -->
+      <HamburgerButton isOpen={isMenuOpen} toggleMenu={toggleMenu} ariaLabel="Toggle Menu" />
+    {/if}
   </div>
 </section>
 
-<!-- Sticky Sub-header Navigation -->
-<!-- The `top-16` ensures that this section is below the navbar. Adjust the value to match your navbar's height. -->
-<section class="sticky top-16 z-50">
-  <div
-    class="w-full h-14 flex justify-between items-center" 
-    style="background-color: {secondaryColor};"
-  >
-    <!-- Navigation Links -->
-    <div class="px-6 mx-6 md:px-16 md:mx-16">
-      <Navigation links={subHeaderLinks} color={subHeaderTextColor} coursePage={coursePage} />
+{#if !isMobile}
+  <!-- Sticky Sub-header Navigation for Desktop and Tablet -->
+  <section class="sticky top-16 z-40">
+    <div class="w-full h-14 flex justify-between items-center" style="background-color: {secondaryColor};">
+      <!-- Navigation Links -->
+      <div class="px-6 mx-6 md:px-16 md:mx-16">
+        <Navigation links={subHeaderLinks} color={subHeaderTextColor} coursePage={coursePage} />
+      </div>
+
+      <!-- Extra Text (Visible only on desktop) -->
+      {#if extraText}
+        <div class="text-right px-4">
+          <ExtraText text={extraText} color={subHeaderTextColor} />
+        </div>
+      {/if}
+    </div>
+  </section>
+{:else if isMenuOpen}
+  <!-- Mobile Menu Overlay -->
+  <div class="fixed inset-0 w-full h-full bg-customBlack z-50 p-8 flex flex-col space-y-8 items-center justify-center">
+    <!-- Close Button for Mobile Menu -->
+    <button type="button" class="absolute top-6 right-6 z-50 text-3xl" on:click={toggleMenu} aria-label="Close Menu">
+      <img width="25px" src="/images/icon/close_icon.svg" alt="Close menu" />
+    </button>
+
+    <!-- Mobile Logo -->
+    <div>
+      <NavLogo logoSrc='/images/altira-logo-white.svg' href="/" size={12} />
     </div>
 
-    <!-- Extra Text -->
-    {#if extraText}
-      <div class="ml-auto text-right px-12 md:px-20 md:mx-16 lg:px-16 lg:px-16">
-        <ExtraText text={extraText} color={subHeaderTextColor} />
-      </div>
-    {/if}
+    <!-- Mobile Action Buttons -->
+    <div class="flex flex-col space-y-8 w-full items-center text-[0.813rem]">
+      <a href="/founder-main" class="transition-all duration-300 px-5 py-1.5 text-md border bg-white text-customBlack rounded-md">
+        Raise Capital
+      </a>
+      <a href="/alt-c-investor-network" class="transition-all duration-300 px-5 py-1.5 text-md border bg-transparent text-white rounded-md">
+        Investor Track
+      </a>
+    </div>
+
+    <!-- Navigation Links (Mobile) -->
+    <ul class="flex flex-col space-y-8 text-center text-[0.813rem] text-white">
+      {#each links as { name, href }}
+        <li><a href={href} on:click={toggleMenu}>{name}</a></li>
+      {/each}
+    </ul>
   </div>
-</section>  
+{/if}

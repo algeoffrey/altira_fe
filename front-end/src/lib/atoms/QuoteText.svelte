@@ -3,6 +3,6 @@
     export let quoteColor = "#5F4BDB";
 </script>
 
-<p class="font-bold leading-relaxed  text-center max-w-5xl mx-auto text-4xl md:text-[2.75rem] lg:text-[2.75rem]" style="color: {quoteColor};">
-    “ {@html quote} ”
+<p class="font-[900] leading-relaxed text-[2.25rem] sm:text-[2.25rem] md:text-[2.5rem]" style="color: {quoteColor};">
+    “{@html quote}”
 </p>

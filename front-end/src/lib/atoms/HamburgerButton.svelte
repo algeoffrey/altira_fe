@@ -2,18 +2,23 @@
     export let isOpen = false;
     export let toggleMenu;
     export let ariaLabel = "Toggle Menu";
+    export let hamburgerColor = "black";
 </script>
 
-<button type="button" class="ml-auto md:hidden" on:click={toggleMenu} aria-label={ariaLabel}>
+<button 
+    type="button" 
+    class="ml-auto md:hidden" 
+    on:click={toggleMenu} 
+    aria-label={ariaLabel}
+>
     {#if isOpen}
-        <!-- Close Icon -->
-        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
+        <img width = "25px" src="/images/icon/close_icon.svg" alt="Close menu"/>
     {:else}
-        <!-- Hamburger Icon -->
-        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
+        <img width= "24px" height= "25px" 
+            src={hamburgerColor === "black" 
+                ? "/images/icon/icon_hamburger_black.svg" 
+                : "/images/icon/icon_hamburger_white.svg"} 
+            alt="Hamburger button to expand menu"
+        />
     {/if}
 </button>

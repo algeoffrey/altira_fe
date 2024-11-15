@@ -145,34 +145,16 @@
 </script>
 
 <section class="py-10 bg-gray-100 relative" id="people">
-    <div class="max-w-10xl mx-32">
-        <h2 class="text-[2rem] text-customBlack font-bold text-center mb-14">People</h2>
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Section Title -->
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 md:mb-14 text-customBlack">People</h2>
         
-        <h3 class="text-[1.5rem] font-semibold text-customBlack text-center mb-12">Advisory Board</h3>
+        <!-- Advisory Board -->
+        <h3 class="text-xl md:text-2xl font-semibold text-center mb-8 md:mb-12 text-customBlack">Advisory Board</h3>
         <div class="flex justify-center">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[100rem] w-full">
-                {#each advisoryBoard as member, i}
-                    <a href="{member.href}">
-                        <div class={`w-full flex justify-center`}>
-                            <ProfileCard 
-                                src={member.src}
-                                alt={member.alt}
-                                name={member.name}
-                                role={member.role}
-                                title={member.title} 
-                            />
-                        </div>
-                    </a>
-                {/each}
-            </div>
-        </div>
-
-        <h3 class="text-[1.5rem] font-semibold text-customBlack text-center mb-12 mt-16">Governance Board</h3>
-        <div class="flex justify-center ">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 max-w-7xl w-4/5">
-                {#each governanceBoard as member, i}
-                <a href={member.href}>
-                    <div class={`w-full flex justify-center`}>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-5xl">
+                {#each advisoryBoard as member}
+                    <a href="{member.href}" class="flex justify-center">
                         <ProfileCard 
                             src={member.src}
                             alt={member.alt}
@@ -180,31 +162,47 @@
                             role={member.role}
                             title={member.title} 
                         />
-                    </div>
-                </a>
-                {/each}
-            </div>
-        </div>
-
-        <h3 class="text-[1.5rem] font-semibold text-customBlack text-center mb-12 mt-16">Investment Council</h3>
-        <div class="flex justify-center">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 max-w-7xl w-4/5">
-                {#each investmentCouncil as member, i}
-                    <a href={member.href}>
-                        <div class="w-full flex justify-center">
-                            <ProfileCard 
-                                src={member.src}
-                                alt={member.alt}
-                                name={member.name}
-                                role={member.role}
-                                title={member.title} 
-                            />
-                        </div>
                     </a>
                 {/each}
             </div>
         </div>
 
-        
+        <!-- Governance Board -->
+        <h3 class="text-xl md:text-2xl font-semibold text-center mt-10 md:mt-16 mb-8 md:mb-12 text-customBlack">Governance Board</h3>
+        <div class="flex justify-center">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl">
+                {#each governanceBoard as member}
+                    <a href="{member.href}" class="flex justify-center align-baseline">
+                        <ProfileCard 
+                            src={member.src}
+                            alt={member.alt}
+                            name={member.name}
+                            role={member.role}
+                            title={member.title} 
+                        />
+                    </a>
+                {/each}
+            </div>
+        </div>
+
+        <!-- Investment Council -->
+        <h3 class="text-xl md:text-2xl font-semibold text-center mt-10 md:mt-16 mb-8 md:mb-12 text-customBlack">Investment Council</h3>
+        <div class="flex justify-center">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl">
+                {#each investmentCouncil as member}
+                    <a href="{member.href}" class="flex justify-center">
+                        <ProfileCard 
+                            src={member.src}
+                            alt={member.alt}
+                            name={member.name}
+                            role={member.role}
+                            title={member.title} 
+                        />
+                    </a>
+                {/each}
+            </div>
+        </div>
     </div>
 </section>
+
+

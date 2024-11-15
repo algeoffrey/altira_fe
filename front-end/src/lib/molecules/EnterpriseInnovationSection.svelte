@@ -21,7 +21,7 @@
 </script>
 
 <section class="py-12 bg-[#F8F8F8] relative" id="innovation">
-    <section class="py-8 md:py-12 lg:py-16 max-w-8xl mx-32">
+    <section class="py-8 md:py-12 lg:py-16 max-w-8xl mx-auto px-8">
         <!-- Title and Description -->
         <h2 class="text-customBlack text-center text-[2rem] font-[800] mb-6 md:mb-8 lg:mb-10">{title}</h2>
 

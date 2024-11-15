@@ -21,7 +21,7 @@
 </script>
 
 <section class="bg-white py-12 md:py-16 relative" id = "wealth">
-    <section class="max-w-8xl mx-32">
+    <section class="max-w-8xl mx-auto px-8">
         <!-- Title and Description -->
         <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-6">{title}</h2>
 

@@ -40,7 +40,6 @@
         bordersize = "py-2 px-4"
     />
 
-    <!-- "For founders, please click here" Message -->
     <HomeMsg
         message="For founders, please"
         linkText="click here"

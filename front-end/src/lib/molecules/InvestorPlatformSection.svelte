@@ -31,21 +31,21 @@
 <section class="py-12 bg-white relative" id="platform">
 
     <!-- Intro Text -->
-    <p class="text-left text-sm md:text-base font-light mb-12 py-6 max-w-8xl mx-32">
+    <p class="text-left text-sm md:text-base font-light mb-12 py-6 max-w-8xl mx-auto px-8">
         {introText}
     </p>
 
     <!-- Title and Description -->
-    <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-6 max-w-8xl mx-32">
+    <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-6 max-w-8xl mx-auto px-8">
         {title}
     </h2>
-    <p class="text-center text-sm md:text-base font-light mb-8 md:mb-12 max-w-8xl mx-32">
+    <p class="text-center text-sm md:text-base font-light mb-8 md:mb-12 max-w-8xl mx-auto px-8">
         {mainDescription}
     </p>
 
     <!-- Sections -->
     {#each sections as section}
-        <div class="mb-4 md:mb-6 py-2 md:py-4 max-w-8xl mx-32">
+        <div class="mb-4 md:mb-6 py-2 md:py-4 max-w-8xl mx-auto px-8">
             <CardTitle text={section.subtitle} size="text-lg md:text-[1.7rem]" align="text-left" weight="font-light-bold" />
             <p class="text-sm md:text-base text-left md:text-justify font-light mt-6 md:mt-8 mb-4 md:mb-6 leading-relaxed">
                 {section.description}

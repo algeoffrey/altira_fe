@@ -27,30 +27,31 @@
 
 </script>
 
-<section class="py-14 bg-[#F4F4F4] relative max-w-8xl">
-    <div class="container mx-16 py-4">
-      <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-12">
-        {title}
-      </h2>
-      <p class="text-center text-base md:text-[1.05rem] leading-relaxed mb-6 pb-4 font-thin mx-32">
-        {introParagraph}
-      </p>
-      <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-16 mx-32">
-        {#each courses as course}
-          <div class="flex justify-center md:justify-left">
-            <CourseCard 
-              title={course.title}
-              description={course.description}
-              backgroundColor={course.backgroundColor}
-              buttonLink={course.buttonLink}
-              buttonTheme={buttonTheme}
-              buttonVariant={buttonVariant}
-              buttonTextSize={buttonTextSize}
-              buttonSize={buttonSize}
-            />
-          </div>
-        {/each}
-      </div>
+<section class="py-14 bg-[#F4F4F4] relative max-w-screen-lg mx-auto">
+  <div class="container mx-auto py-4 px-4 md:px-16">
+    <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-12">
+      {title}
+    </h2>
+    <p class="text-center text-base md:text-[1.05rem] leading-relaxed mb-6 pb-4 font-thin mx-auto max-w-2xl">
+      {introParagraph}
+    </p>
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 px-4 md:px-0">
+      {#each courses as course}
+        <div class="flex justify-center md:justify-start">
+          <CourseCard 
+            title={course.title}
+            description={course.description}
+            backgroundColor={course.backgroundColor}
+            buttonLink={course.buttonLink}
+            buttonTheme={buttonTheme}
+            buttonVariant={buttonVariant}
+            buttonTextSize={buttonTextSize}
+            buttonSize={buttonSize}
+          />
+        </div>
+      {/each}
     </div>
-  </section>
+  </div>
+</section>
+
   

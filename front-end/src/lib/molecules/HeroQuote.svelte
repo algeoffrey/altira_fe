@@ -8,7 +8,7 @@
   export let authorColor = "#000000";  
 </script>
 
-<section class="flex flex-col items-center justify-center text-center py-20 md:py-24 my-8">
+<section class="flex flex-col items-center justify-center text-center tracking-[-0.015em] mx-12 sm:mx-16 py-20 md:py-24 my-8">
   <QuoteText {quote} {quoteColor} />
   <QuoteAuthor {author} {authorColor} />
 </section>

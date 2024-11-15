@@ -55,30 +55,34 @@
 </script>
   
 <section class="pt-16 bg-white">
-    <div class="py-6 max-w-8xl mx-32">
-        {#each sections as section}
-            <h2 class="text-2xl md:text-[2rem] font-semibold text-center mb-16" id= {section.id}>
-                {section.title}
-            </h2>
-            <div class="flex justify-center">
-                <div class="grid grid-cols-1 sm:grid-cols-2 justify-center gap-6 md:gap-8 lg:gap-16 mb-12 mx-14 px-14">
-                    {#each section.courses as course}
-                        <div class="flex justify-center md:justify-start mb-12">
-                            <CourseCard 
-                                title={course.title}
-                                description={course.description}
-                                courseType={course.courseType}
-                                backgroundColor={course.backgroundColor}
-                                buttonLink={course.buttonLink}
-                                buttonTheme={buttonTheme}
-                                buttonVariant={buttonVariant}
-                                buttonTextSize={buttonTextSize}
-                                buttonSize={buttonSize}
-                            />
-                        </div>
-                    {/each}
-                </div>
+  <div class="py-6 max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+    {#each sections as section}
+      <!-- Section Title -->
+      <h2 class="text-2xl md:text-[2rem] font-semibold text-center mb-8 md:mb-12" id={section.id}>
+        {section.title}
+      </h2>
+
+      <!-- Course Cards Grid -->
+      <div class="flex justify-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-12 w-full max-w-5xl px-12 sm:px-0">
+          {#each section.courses as course}
+            <div class="flex justify-center mb-8">
+              <CourseCard 
+                title={course.title}
+                description={course.description}
+                courseType={course.courseType}
+                backgroundColor={course.backgroundColor}
+                buttonLink={course.buttonLink}
+                buttonTheme={buttonTheme}
+                buttonVariant={buttonVariant}
+                buttonTextSize={buttonTextSize}
+                buttonSize={buttonSize}
+              />
             </div>
-        {/each}
-    </div>
+          {/each}
+        </div>
+      </div>
+    {/each}
+  </div>
 </section>
+

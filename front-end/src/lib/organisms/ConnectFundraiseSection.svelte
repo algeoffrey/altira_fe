@@ -30,10 +30,10 @@
 </script>
 
 <section class="py-14 bg-white relative max-w-8xl" id="connect-fundraise">
-    <div class="mx-32 py-4">
+    <div class="mx-auto px-8 py-4">
 
         <!-- Intro Paragraph -->
-        <p class="text-left text-[1.05rem] leading-relaxed mb-12 pb-12 font-md max-w-8xl">
+        <p class="text-left text-[1.05rem] leading-8 mb-12 pb-12 font-md max-w-8xl">
             {introParagraph1}
         </p>
 
@@ -49,7 +49,7 @@
             </p>
 
             <!-- Course Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-14 px-32 max-w-8xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-14 mx-auto px-8 max-w-8xl">
                 {#each courses as course}
                     <div class="justify justify-center items-stretch align-items-center">
                         <CourseCard 
