@@ -12,3 +12,4 @@ export { default as EnterpriseInnovationSection } from "./EnterpriseInnovationSe
 export { default as WealthPlanningSection } from "./WealthPlanningSection.svelte";
 
 export { default as BackToTopButton } from "./BackToTopButton.svelte";
+export { default as MobileLogoGrid } from "./MobileLogoGrid.svelte";

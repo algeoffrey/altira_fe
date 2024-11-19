@@ -14,10 +14,16 @@
       weight: "font-thin",
     },
     {
-      type: "text",
-      title: "Early Stage Investing in Emerging Companies",
-      titleSize: "text-3xl",
-      titleWeight: "font-semibold",
+      courseTitle: "Early Stage Investing in Emerging Companies",
+      size: "text-2xl lg:text-3xl",
+      align: "text-left",
+      weight: "font-semibold",
+    },
+    {
+      type: "",
+      title: "",
+      titleSize: "",
+      titleWeight: "",
       content: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Nam suscipit molestie augue, ac finibus lacus mattis in. Curabitur id convallis sem, et pulvinar turpis. Maecenas sagittis dui non risus commodo, fringilla interdum tortor gravida. Integer porttitor ante sit amet sem efficitur tincidunt. Etiam laoreet consequat ligula, eu tempus eros convallis porta. Etiam vel auctor metus. Praesent nec scelerisque nisi, nec rhoncus justo. Vivamus mollis lobortis suscipit. Aenean consectetur, felis in gravida accumsan, nunc ex tempus lacus, in ultrices dolor tellus ut augue. Mauris non purus et sapien sollicitudin rutrum nec facilisis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum posuere nisi, eu ornare nulla maximus ac.`
     },
@@ -83,10 +89,11 @@
 </script>
 
 <section class="py-12 bg-white relative">
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-8xl mx-auto px-8">
-  
-    <!-- Left Column-->
-    <div class="lg:col-span-2 space-y-6">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-8xl mx-auto px-8">
+    
+    <!-- Left Column -->
+    <div class="md:col-span-2 space-y-6">
+      <!-- Title Section -->
       <div>
         <CardTitle 
           text={courseSections[0].courseType} 
@@ -95,8 +102,32 @@
           weight={courseSections[0].weight} 
         />
       </div>
-      
-      {#each courseSections.slice(1) as section}
+      <div>
+        <CardTitle
+          text={courseSections[1].courseTitle} 
+          size={courseSections[1].size} 
+          align={courseSections[1].align} 
+          weight={courseSections[1].weight} 
+        />
+      </div>
+
+      <!-- Right Column Content (Placed after title on mobile) -->
+      <div class="block md:hidden space-y-6">
+        {#each courseSections.slice(2) as section}
+          {#if section.type === "image" || section.type === "learning-method" || section.type === "join-course"}
+            {#if section.type === "image"}
+              <ImageSection src={section.src} alt={section.alt} />
+            {:else if section.type === "learning-method"}
+              <LearningMethodCard title={section.title} content={section.content} />
+            {:else if section.type === "join-course"}
+              <JoinCourseCard buttonText={section.buttonText} duration={section.duration} date={section.date} price={section.price} />
+            {/if}
+          {/if}
+        {/each}
+      </div>
+
+      <!-- Main Content Sections -->
+      {#each courseSections.slice(2) as section}
         {#if section.type === "text" || section.type === "list"}
           {#if section.type === "text"}
             <TextSection title={section.title} titleSize={section.titleSize} titleWeight={section.titleWeight} content={section.content} />
@@ -107,9 +138,9 @@
       {/each}
     </div>
 
-    <!-- Right Column-->
-    <div class="lg:col-span-1 space-y-6 pt-6">
-      {#each courseSections.slice(1) as section}
+    <!-- Right Column (Tablet and Desktop) -->
+    <div class="hidden md:block md:col-span-1 space-y-6 pt-6">
+      {#each courseSections.slice(2) as section}
         {#if section.type === "image" || section.type === "learning-method" || section.type === "join-course"}
           {#if section.type === "image"}
             <ImageSection src={section.src} alt={section.alt} />
@@ -121,6 +152,7 @@
         {/if}
       {/each}
     </div>
-  
-  </div>  
+  </div>
 </section>
+
+

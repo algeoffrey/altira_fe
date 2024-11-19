@@ -9,8 +9,7 @@
     <div class="max-w-8xl mx-auto text-justify justify-left">
         <p class="text-[1rem] my-5 leading-relaxed font-[400]">{introParagraph}</p>
     </div>
-    <div class="mt-12 max-w-8xl mx-auto                                            
-|">
+    <div class="mt-12 max-w-8xl mx-auto">
         <FeatureSection />
     </div>
     <div class="mt-12 max-w-8xl mx-auto">

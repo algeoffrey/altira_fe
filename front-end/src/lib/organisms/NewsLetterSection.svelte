@@ -28,28 +28,47 @@
 </script>
 
 <section class="bg-gray-100 py-16 px-4">
-    <div class="max-w-8xl mx-32 text-left">
-        <h2 class="text-customBlack text-[1.875rem] font-[800] mb-6">{title}</h2>
-        <p class="max-w-2xl text-customBlack text-[1.125rem] font-[400] mb-8">{description}</p>
-        <form on:submit|preventDefault={handleSubmit} class="flex flex-col md:flex-row items-center justify-start space-y-4 md:space-y-0 md:space-x-4">
-            <div class="flex items-center border rounded-lg overflow-hidden w-full md:w-auto border border-gray">
-                <div class="p-4 bg-white">
-                    <img src="/images/mail.png" alt="Mail Icon" class="h-6 w-6" />
+    <div class="max-w-4xl mx-auto px-6 text-left">
+        <!-- Title -->
+        <h2 class="text-black text-2xl md:text-3xl font-extrabold mb-6">
+            {title}
+        </h2>
+        
+        <!-- Description -->
+        <p class="text-gray-700 text-base md:text-lg mb-8 leading-relaxed">
+            {description}
+        </p>
+
+        <!-- Form -->
+        <form 
+            on:submit|preventDefault={handleSubmit} 
+            class="flex flex-col md:flex-row items-stretch md:items-center gap-4"
+        >
+            <!-- Input Container -->
+            <div class="flex items-center border rounded-lg overflow-hidden w-full md:w-auto border-gray-300 bg-white">
+                <div class="p-3">
+                    <img src="/images/mail.png" alt="Mail Icon" class="h-5 w-5" />
                 </div>
                 <input 
                     type="email" 
                     placeholder={placeholder} 
                     bind:value={email} 
                     required 
-                    class="w-full h-[3.5rem] md:w-[30rem] focus:outline-none border-0 text-left placeholder-gray-400" 
+                    class="w-full h-12 md:h-14 focus:outline-none border-0 text-gray-600 placeholder-gray-400 px-3"
                 />
             </div>
-            <button type="submit" class="w-full md:w-auto bg-white text-customBlack px-6 py-4 rounded-lg shadow hover:bg-customBlack hover:text-white transition-colors font-semibold">
+
+            <!-- Button -->
+            <button 
+                type="submit" 
+                class=" w-full md:w-auto text-left md:text-center bg-customBlack text-white px-6 py-4 rounded-lg shadow hover:bg-gray-800 transition font-semibold"
+            >
                 {buttonText}
             </button>
         </form>
     </div>
 </section>
+
 
 <style>
     input::-webkit-input-placeholder {
