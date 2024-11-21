@@ -58,15 +58,14 @@
 </script>
 
 <section class="py-16 bg-[#F4F4F4]">
-  <div class="max-w-8xl mx-32">
-    <h2 class="text-2xl md:text-[2rem] font-bold text-center mb-12">
+  <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-xl sm:text-2xl md:text-[2rem] font-bold text-center mb-8 sm:mb-12">
       Other Courses You Might Like
     </h2>
 
-    
     <!-- Iterate through each section -->
     {#each sections as section}
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-16 mb-16 px-6 lg:px-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-16 mb-12 lg:mb-16 px-2 sm:px-4 lg:px-6">
         {#each section.courses as course}
           <CourseCard
             title={course.title}
@@ -84,13 +83,13 @@
     {/each}
 
     <!-- Additional Content Block: Text on the left, Button on the right -->
-    <div class="bg-[#E0E0E0] p-6 rounded-lg mt-12 flex items-center justify-between max-w-8xl mx-14 pr-12">
-      <p class="text-base md:text-base text-customBlack leading-relaxed max-w-3xl">
+    <div class="bg-[#E0E0E0] p-4 sm:p-6 rounded-lg mt-8 lg:mt-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 max-w-8xl mx-auto">
+      <p class="text-sm sm:text-base text-customBlack leading-relaxed max-w-full sm:max-w-3xl">
         {additionalContent.description}
       </p>
       <a 
         href={additionalContent.buttonLink} 
-        class="bg-customBlack text-white px-10 py-3 rounded-md text-md hover:bg-white hover:text-customBlack transition-colors"
+        class="bg-customBlack text-white px-6 sm:px-10 py-2 sm:py-3 rounded-md text-sm sm:text-md hover:bg-white hover:text-customBlack transition-colors"
       >
         {additionalContent.buttonText}
       </a>
@@ -98,3 +97,4 @@
 
   </div>
 </section>
+

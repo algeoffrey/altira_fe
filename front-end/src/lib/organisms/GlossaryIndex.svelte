@@ -213,21 +213,21 @@
 </script>
 
 <section class="py-16 bg-gray-50" id="glossary">
-    <div class="ml-16 pl-16 mr-16 pr-16 max-w-8xl">
+    <div class="px-4 sm:px-6 lg:px-16 max-w-7xl mx-auto">
         <!-- Introductory Paragraph -->
-        <p class="text-base font-thin text-gray-700 mb-8">
+        <p class="text-base sm:text-lg font-thin text-gray-700 mb-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at.
         </p>
 
-        <!-- Terms Index-->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+        <!-- Terms Index -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 mb-16">
             {#each Object.keys(terms) as letter}
-                <div class="col-span-1">
+                <div>
                     <!-- Letter Header -->
-                    <h3 class="text-xl font-semibold mb-4 border-b border-gray-300" id="index{letter}">{letter}</h3>
+                    <h3 class="text-lg sm:text-xl font-semibold mb-4 border-b border-gray-300" id="index{letter}">{letter}</h3>
                     {#each terms[letter] as entry}
                         <!-- Link to Definition -->
-                        <a class="block text-gray-900 font-light leading-8 hover:text-blue-600" href="#{entry.term}">
+                        <a class="block text-gray-900 font-light leading-6 sm:leading-8 hover:text-blue-600" href="#{entry.term}">
                             {entry.term}
                         </a>
                     {/each}
@@ -238,14 +238,14 @@
         <!-- Terms and Definitions -->
         <div>
             {#each Object.keys(terms) as letter}
-                <div class="col-span-1 mb-12">
+                <div class="mb-12">
                     <!-- Letter Header -->
-                    <h3 class="text-2xl font-semibold mb-4 border-b border-gray-300">{letter}</h3>
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 border-b border-gray-300">{letter}</h3>
                     <!-- List of Terms and Definitions -->
                     {#each terms[letter] as entry}
                         <div id={entry.term} class="mb-6">
-                            <p class="text-gray-900 font-semibold">{entry.term}:</p>
-                            <p class="text-gray-600 mb-4">{entry.definition}</p>
+                            <p class="text-gray-900 font-semibold text-base sm:text-lg">{entry.term}:</p>
+                            <p class="text-gray-600 text-sm sm:text-base leading-5 sm:leading-7">{entry.definition}</p>
                         </div>
                     {/each}
                 </div>
@@ -253,6 +253,7 @@
         </div>
     </div>
 </section>
+
 
 
 

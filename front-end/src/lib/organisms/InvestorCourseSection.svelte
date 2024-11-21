@@ -37,23 +37,23 @@
     export let learnMoreText = "Learn More >";
   </script>
   
-  <section class="py-16 bg-[#F8F8F8]">
-    <div class="max-w-8xl mx-32">
+  <section class="py-12 md:py-16 bg-[#F8F8F8]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-16">
       <!-- Section Title and Subtitle -->
-      <h2 class="text-2xl md:text-[2rem] font-bold text-center mb-4">
+      <h2 class="text-xl md:text-2xl lg:text-[2rem] font-bold text-center mb-4">
         {title}
       </h2>
-      <h3 class="text-lg text-center mb-6">
+      <h3 class="text-lg md:text-xl text-center mb-6">
         {subtitle}
       </h3>
   
       <!-- Intro Paragraph -->
-      <p class="text-center text-base md:text-[1rem] leading-relaxed mb-8 pb-6 font-thin px-6 lg:px-14">
+      <p class="text-center text-sm md:text-base lg:text-lg leading-relaxed mb-8 pb-6 font-thin px-4 sm:px-6 lg:px-12">
         {introParagraph}
       </p>
   
       <!-- Courses Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 mb-12 px-6 lg:px-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 mb-12 px-4 sm:px-6 lg:px-14">
         {#each sections as section}
           {#each section.courses as course}
             <CourseCard
@@ -72,11 +72,12 @@
       </div>
   
       <!-- Learn More Link -->
-      <div class="text-right pr-14">
-        <a href={learnMoreLink} class="text-customBlack hover:underline">
+      <div class="text-center md:text-right pr-0 md:pr-14">
+        <a href={learnMoreLink} class="text-customBlack hover:underline text-sm md:text-base">
           {learnMoreText}
         </a>
       </div>
     </div>
   </section>
+  
   

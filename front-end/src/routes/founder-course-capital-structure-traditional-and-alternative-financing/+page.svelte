@@ -15,8 +15,14 @@
       weight: "font-thin",
     },
     {
+      courseTitle: "Capital Structure: Traditional and Alternative Financing",
+      size: "text-2xl lg:text-3xl",
+      align: "text-left",
+      weight: "font-semibold",
+      },
+    {
       type: "text",
-      title: "Capital Structure: Traditional and Alternative Financing",
+      title: "",
       titleSize: "text-3xl",
       titleWeight: "font-semibold",
       content: `

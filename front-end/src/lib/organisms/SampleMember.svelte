@@ -19,7 +19,7 @@
     ];
 </script>
 
-<section class="py-16 bg-[#F8F8F8]">
+<section class="hidden md:flex py-16 bg-[#F8F8F8]">
     <div class="max-w-6xl mx-auto">
         <div class="flex flex-wrap justify-center gap-4">
             {#each teamMembers as member}

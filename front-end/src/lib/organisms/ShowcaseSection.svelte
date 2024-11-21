@@ -28,28 +28,32 @@
     ];
 </script>
 
-<section class="py-16">
-    <div class="max-w-8xl mx-32">
-        <p class="text-left text-base md:text-[1.05rem] leading-relaxed mb-12 pb-6 font-thin">
-            {introParagraph}
-        </p>
-
-        <h2 class="text-[2rem] text-customBlack font-extrabold text-center mb-8" id = "showcases">Showcases & Pitches</h2>
-        
-        <div class="grid grid-rows-3 gap-2 mx-32 max-w-6xl">
-            {#each events as event}
-                <div class="flex justify-center py-2">
-                    <EventCard 
-                    title={event.title}
-                    date={event.date}
-                    location={event.location}
-                    description={event.description}
-                    buttonLabel="Register"
-                    imageSrc={event.imageSrc}
-                />
-                </div>
-            {/each}
-        </div>
+<section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Intro Paragraph -->
+      <p class="text-left text-sm sm:text-base md:text-[1.05rem] leading-relaxed mb-8 pb-4 font-thin">
+        {introParagraph}
+      </p>
+  
+      <!-- Section Title -->
+      <h2 class="text-xl sm:text-2xl md:text-[2rem] text-customBlack font-extrabold text-center mb-6" id="showcases">
+        Showcases & Pitches
+      </h2>
+  
+      <!-- Events Grid -->
+      <div class="grid grid-cols-1 gap-6 mx-auto">
+        {#each events as event}
+          <EventCard 
+            title={event.title}
+            date={event.date}
+            location={event.location}
+            description={event.description}
+            buttonLabel="Register"
+            imageSrc={event.imageSrc}
+          />
+        {/each}
+      </div>
     </div>
-</section>
+  </section>
+  
 

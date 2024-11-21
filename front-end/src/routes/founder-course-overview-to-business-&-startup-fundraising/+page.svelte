@@ -15,8 +15,14 @@
       weight: "font-thin",
     },
     {
+      courseTitle: "Overview to Business & Startup Fundraising",
+      size: "text-2xl lg:text-3xl",
+      align: "text-left",
+      weight: "font-semibold",
+      },
+    {
       type: "text",
-      title: "Overview to Business & Startup Fundraising",
+      title: "",
       titleSize: "text-3xl",
       titleWeight: "font-semibold",
       content: `

@@ -32,12 +32,18 @@
   let isMobile = false;
   let isMenuOpen = false;
 
-  // Check screen size on mount to determine layout
+  // Efficiently handle screen size changes
   onMount(() => {
-    isMobile = window.innerWidth < 768;
-    window.addEventListener("resize", () => {
+    const updateIsMobile = () => {
       isMobile = window.innerWidth < 768;
-    });
+    };
+    updateIsMobile();
+    window.addEventListener("resize", updateIsMobile);
+
+    // Cleanup the event listener on component destroy
+    return () => {
+      window.removeEventListener("resize", updateIsMobile);
+    };
   });
 
   // Function to handle hamburger menu toggle for mobile
@@ -49,9 +55,7 @@
 
 <!-- Page Header Section -->
 <section class="relative w-full" style="background-color: {backgroundColor};">
-  <div
-    class="container pt-[2rem] pb-[2rem] md:pt-[8rem] md:pb-[3rem] pl-8 px-2 md:px-4 mx-auto flex justify-between items-center"
-  >
+  <div class="container pt-8 pb-8 md:pt-32 md:pb-12 px-4 mx-auto flex justify-between items-center">
     <TitleWithSubtitle
       title={displayTitle}
       titleWeight={titleWeight}
@@ -74,7 +78,7 @@
   <section class="sticky top-16 z-40">
     <div class="w-full h-14 flex justify-between items-center" style="background-color: {secondaryColor};">
       <!-- Navigation Links -->
-      <div class="px-6 mx-6 md:px-16 md:mx-16">
+      <div class="px-6 md:px-16">
         <Navigation links={subHeaderLinks} color={subHeaderTextColor} coursePage={coursePage} />
       </div>
 
@@ -100,17 +104,17 @@
     </div>
 
     <!-- Mobile Action Buttons -->
-    <div class="flex flex-col space-y-8 w-full items-center text-[0.813rem]">
-      <a href="/founder-main" class="transition-all duration-300 px-5 py-1.5 text-md border bg-white text-customBlack rounded-md">
+    <div class="flex flex-col space-y-8 w-full items-center text-sm">
+      <a href="/founder-main" class="transition duration-300 px-5 py-1.5 text-md border bg-white text-customBlack rounded-md">
         Raise Capital
       </a>
-      <a href="/alt-c-investor-network" class="transition-all duration-300 px-5 py-1.5 text-md border bg-transparent text-white rounded-md">
+      <a href="/alt-c-investor-network" class="transition duration-300 px-5 py-1.5 text-md border bg-transparent text-white rounded-md">
         Investor Track
       </a>
     </div>
 
     <!-- Navigation Links (Mobile) -->
-    <ul class="flex flex-col space-y-8 text-center text-[0.813rem] text-white">
+    <ul class="flex flex-col space-y-8 text-center text-sm text-white">
       {#each links as { name, href }}
         <li><a href={href} on:click={toggleMenu}>{name}</a></li>
       {/each}

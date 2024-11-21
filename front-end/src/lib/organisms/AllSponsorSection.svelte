@@ -8,10 +8,10 @@
     export let showNetworkEcosystems = true;
 </script>
 
-<div>   
+<div class="container mx-auto py-8 px-4 sm:px-8 md:px-12 lg:px-16">   
     {#if !showAll}
     
-    <div class="py-4 mt-6 mb-4">
+    <div class="space-y-8">
 
       {#if showInstitutionalSupporter}
       <div class="pb-2 mb-2" id="Institutional-Supporters">

@@ -20,37 +20,48 @@
 
 </script>
 
-<section class="bg-white relative py-12">
-  <div class="max-w-10xl mx-32">
+<section class="bg-white relative py-8 md:py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+    <!-- Title and Subtitle -->
     <div class="text-center">
       {#if title}
-        <SponsorSectionTitle text={title} size="text-[2rem] font-[800] text=customBlack" />
+        <SponsorSectionTitle 
+          text={title} 
+          size="text-lg md:text-2xl lg:text-[2rem] font-[800] text-customBlack" 
+        />
       {/if}
   
       {#if subtitle}
-        <Subtitle text={subtitle} size="text-[1.563rem] font-[600] text-customBlack pt-6 md:pt-8" />
+        <Subtitle 
+          text={subtitle} 
+          size="text-base md:text-lg lg:text-[1.563rem] font-[600] text-customBlack pt-4 md:pt-6 lg:pt-8" 
+        />
       {/if}
   
-      <div class="max-w-4xl mx-auto mt-4">
-        <Paragraph
-          text={paragraph}
-          size="text-[1rem] font-[400]"
-          fontStyle="font-light"
-          textAlign="text-center"
-        />
-      </div>
+      <!-- Paragraph -->
+      {#if paragraph}
+        <div class="max-w-4xl mx-auto mt-4 md:mt-6">
+          <Paragraph
+            text={paragraph}
+            size="text-sm md:text-base lg:text-[1rem] font-[400]"
+            fontStyle="font-light"
+            textAlign="text-center"
+          />
+        </div>
+      {/if}
     </div>
   
     <!-- Logo Grid -->
-    <div class="flex justify-center items-center pb-6">
+    <div class="flex justify-center items-center pb-6 md:pb-8">
       <LogoGrid {logos} {maxColumns} {maxRows} {gap} {width} {height} />
     </div>
   
+    <!-- Link Button -->
     {#if showmore === "Y"}
-      <div class="text-right mt-6 mr-16">
+      <div class="text-center md:text-right mt-6 md:mt-8">
         <LinkButton href={seeMoreLink} text={linkText} />
       </div>
     {/if}
-
   </div>
 </section>
+

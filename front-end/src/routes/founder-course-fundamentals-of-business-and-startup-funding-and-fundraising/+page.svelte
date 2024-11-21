@@ -15,8 +15,14 @@
       weight: "font-thin",
     },
     {
+      courseTitle: "Fundamentals of Business and Startup Funding and Fundraising",
+      size: "text-2xl lg:text-3xl",
+      align: "text-left",
+      weight: "font-semibold",
+      },
+    {
       type: "text",
-      title: "Fundamentals of Business and Startup Funding and Fundraising",
+      title: "",
       titleSize: "text-3xl",
       titleWeight: "font-semibold",
       content: `

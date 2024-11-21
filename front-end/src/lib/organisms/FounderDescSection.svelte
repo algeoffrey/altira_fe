@@ -14,6 +14,12 @@
         weight: "font-thin",
       },
       {
+      courseTitle: "Early Stage Investing in Emerging Companies",
+      size: "text-2xl lg:text-3xl",
+      align: "text-left",
+      weight: "font-semibold",
+      },
+      {
         type: "text",
         title: "Early Stage Investing in Emerging Companies",
         titleSize: "text-3xl",
@@ -83,45 +89,107 @@
   </script>
   
   <section class="py-12 bg-white relative">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-8xl mx-32">
-    
-      <!-- Left Column-->
-      <div class="lg:col-span-2 space-y-6">
-        <div class="">
-          <CardTitle 
-            text={courseSections[0].courseType} 
-            size={courseSections[0].size} 
-            align={courseSections[0].align} 
-            weight={courseSections[0].weight} 
-          />
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-8xl mx-auto px-8">
+      
+    <!-- Left Column -->
+    <div class="md:col-span-2 space-y-6">
+      <!-- Title Section -->
+      <div>
+        <CardTitle 
+          text={courseSections[0].courseType} 
+          size={courseSections[0].size} 
+          align={courseSections[0].align} 
+          weight={courseSections[0].weight} 
+        />
+      </div>
+      <div>
+        <CardTitle
+          text={courseSections[1].courseTitle} 
+          size={courseSections[1].size} 
+          align={courseSections[1].align} 
+          weight={courseSections[1].weight} 
+        />
+      </div>
+  
+        <!-- Right Column Content (After Title on Mobile) -->
+        <div class="block md:hidden space-y-6">
+          {#each courseSections.slice(1) as section}
+            {#if section.type === "image" || section.type === "learning-method" || section.type === "join-course"}
+              {#if section.type === "image"}
+                <ImageSection 
+                  src={section.src} 
+                  alt={section.alt} 
+                  class="w-full h-auto rounded-md shadow-md" 
+                />
+              {:else if section.type === "learning-method"}
+                <LearningMethodCard 
+                  title={section.title} 
+                  content={section.content} 
+                />
+              {:else if section.type === "join-course"}
+                <JoinCourseCard 
+                  buttonText={section.buttonText} 
+                  duration={section.duration} 
+                  date={section.date} 
+                  price={section.price} 
+                />
+              {/if}
+            {/if}
+          {/each}
         </div>
-        
+  
+        <!-- Main Content Sections -->
         {#each courseSections.slice(1) as section}
           {#if section.type === "text" || section.type === "list"}
             {#if section.type === "text"}
-              <TextSection title={section.title} titleSize={section.titleSize} titleWeight={section.titleWeight} content={section.content} />
+              <TextSection 
+                title={section.title} 
+                titleSize={section.titleSize} 
+                titleWeight={section.titleWeight} 
+                content={section.content} 
+              />
             {:else if section.type === "list"}
-              <ListSection title={section.title} titleSize={section.titleSize} titleWeight={section.titleWeight} content={section.content} items={section.items} />
+              <ListSection 
+                title={section.title} 
+                titleSize={section.titleSize} 
+                titleWeight={section.titleWeight} 
+                content={section.content} 
+                items={section.items} 
+              />
             {/if}
           {/if}
         {/each}
       </div>
   
-      <!-- Right Column-->
-      <div class="lg:col-span-1 space-y-6 pt-6">
+      <!-- Right Column (Tablet and Desktop) -->
+      <div class="hidden md:block md:col-span-1 space-y-6 pt-6">
         {#each courseSections.slice(1) as section}
           {#if section.type === "image" || section.type === "learning-method" || section.type === "join-course"}
             {#if section.type === "image"}
-              <ImageSection src={section.src} alt={section.alt} />
+              <ImageSection 
+                src={section.src} 
+                alt={section.alt} 
+                class="w-full h-auto rounded-md shadow-md" 
+              />
             {:else if section.type === "learning-method"}
-              <LearningMethodCard title={section.title} content={section.content} />
+              <LearningMethodCard 
+                title={section.title} 
+                content={section.content} 
+              />
             {:else if section.type === "join-course"}
-              <JoinCourseCard buttonText={section.buttonText} duration={section.duration} date={section.date} price={section.price} />
+                <JoinCourseCard 
+                  buttonText={section.buttonText} 
+                  duration={section.duration} 
+                  date={section.date} 
+                  price={section.price} 
+                />
+              {/if}
             {/if}
-          {/if}
-        {/each}
+          {/each}
       </div>
-    
     </div>  
   </section>
+  
+  
+  
   

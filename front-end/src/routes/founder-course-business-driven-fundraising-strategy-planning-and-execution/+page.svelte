@@ -15,8 +15,14 @@
       weight: "font-thin",
     },
     {
+      courseTitle: "Business-Driven Fundraising: Strategy, Planning and Execution",
+      size: "text-2xl lg:text-3xl",
+      align: "text-left",
+      weight: "font-semibold",
+      },
+    {
       type: "text",
-      title: "Business-Driven Fundraising: Strategy, Planning and Execution",
+      title: "",
       titleSize: "text-3xl",
       titleWeight: "font-semibold",
       content: `

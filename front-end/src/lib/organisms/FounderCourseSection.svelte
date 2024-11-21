@@ -59,18 +59,20 @@
 </script>
 
 <section class="py-16 bg-[#F4F4F4]" id="masterclasses">
-  <div class="max-w-8xl mx-auto px-8">
+  <div class="max-w-8xl mx-auto px-4 sm:px-8">
+    <!-- Title -->
     <h2 class="text-2xl md:text-[2rem] font-bold text-center mb-12">
       Foundrx Learn HUB
     </h2>
 
-    <p class="text-center text-base md:text-[1.05rem] leading-relaxed mb-12 pb-6 font-thin px-6 lg:px-14">
-        {introParagraph}
+    <!-- Intro Paragraph -->
+    <p class="text-center text-base md:text-[1.05rem] leading-relaxed mb-12 pb-6 font-thin px-4 sm:px-6 lg:px-14">
+      {introParagraph}
     </p>
     
     <!-- Iterate through each section -->
     {#each sections as section}
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-16 mb-16 px-6 lg:px-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-16 mb-16 px-4 sm:px-6 lg:px-14">
         {#each section.courses as course}
           <CourseCard
             title={course.title}
@@ -87,18 +89,18 @@
       </div>
     {/each}
 
-    <!-- Additional Content Block: Text on the left, Button on the right -->
-    <div class="bg-[#E0E0E0] p-6 rounded-lg mt-12 flex items-center justify-between max-w-8xl mx-14 pr-12">
+    <!-- Additional Content Block: Text on the left, Button on the right (hidden on mobile) -->
+    <div class="hidden lg:flex bg-[#E0E0E0] p-5 rounded-lg mt-12 items-center justify-between max-w-8xl lg:px-8 lg:mx-14">
       <p class="text-base md:text-base text-customBlack leading-relaxed max-w-3xl">
         {additionalContent.description}
       </p>
       <a 
         href={additionalContent.buttonLink} 
-        class="bg-customBlack text-white px-10 py-3 rounded-md text-md hover:bg-white hover:text-customBlack transition-colors"
+        class="bg-customBlack text-white p-4 lg:px-10 lg:py-3 rounded-md text-md hover:bg-white hover:text-customBlack transition-colors"
       >
         {additionalContent.buttonText}
       </a>
     </div>
-
   </div>
 </section>
+

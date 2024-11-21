@@ -53,37 +53,53 @@
 
 
 <section class="py-16 bg-white" id="governance">
-    <div class="mx-32 pr-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Header -->
-        <h2 class="text-3xl text-customBlack font-semibold text-center mb-12">Governance Board</h2>
-        
-        <!-- Members Section -->
-        {#each teamMembers as member}
-            <div class="flex flex-col md:flex-row mb-12 p-6" id={member.id}>
-                <!-- Left: Image and Info -->
-                <div class="flex-shrink-0 md:w-1/5 text-center md:text-left">
-                    <img src={member.image} alt={member.name} class="w-full h-auto max-w-xs rounded-sm mx-auto md:mx-0 mb-4 md:mb-6" />
-                    <h3 class="text-2xl font-semibold mb-4">{member.name}</h3>
-                    <p class="text-customBlack mb-1 font-thin">{member.organization}</p>
-                    <p class="text-customBlack mb-1 font-thin leading-8">{member.title}</p>
+        <h2 class="text-2xl sm:text-3xl text-customBlack font-semibold text-center mb-12">
+            Governance Board
+        </h2>
 
-                    <!-- Two Circles -->
-                    <div class="flex justify-center md:justify-start space-x-2 mt-2">
-                        <span class="w-6 h-6 bg-[#D9D9D9] rounded-full inline-block"></span>
-                        <span class="w-6 h-6 bg-[#D9D9D9] rounded-full inline-block"></span>
+        <!-- Members Section -->
+        <div class="grid gap-12">
+            {#each teamMembers as member}
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-start"> 
+                    <!-- Left: Image and Info -->
+                    <div class="col-span-1">
+                        <div class="grid grid-cols-2 md:grid-cols-1 gap-1 items-start">
+                            <!-- The first column for mobile -->
+                            <img 
+                                src={member.image} 
+                                alt={member.name} 
+                                class="w-28 h-28 sm:w-32 sm:h-32 lg:w-48 lg:h-48 object-cover mb-2 mx-auto md:mx-0" 
+                            />
+                    
+                            <!-- The second column for mobile -->
+                            <div class="text-left flex flex-col justify-center"> <!-- Added flexbox for alignment -->
+                                <h3 class="text-base sm:text-lg lg:text-2xl font-semibold mb-1 sm:mb-2">{member.name}</h3>
+                                <p class="text-gray-700 text-xs sm:text-sm mb-0 sm:mb-1">{member.organization}</p> <!-- Reduced text size -->
+                                <p class="text-gray-700 text-xs sm:text-sm mb-1">{member.title}</p>
+                                <!-- Two Circles (Only visible on tablet and desktop) -->
+                                <div class="hidden md:flex justify-start space-x-2 mt-2">
+                                    <span class="w-4 h-4 sm:w-6 sm:h-6 bg-[#D9D9D9] rounded-full inline-block"></span>
+                                    <span class="w-4 h-4 sm:w-6 sm:h-6 bg-[#D9D9D9] rounded-full inline-block"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <!-- Right: Description -->
+                    <div class="col-span-4 text-gray-800 text-base font-light leading-6">
+                        <p>
+                            {@html formatDescription(member.description)}
+                        </p>
                     </div>
                 </div>
-
-                <!-- Right: Description -->
-                <div class="md:w-4/5 md:pl-8">
-                    <!-- Use {@html} to inject raw HTML with line breaks -->
-                    <p class="text-customBlack font-light leading-6">
-                        {@html formatDescription(member.description)}
-                    </p>
-                </div>
-            </div>
-        {/each}
+            {/each}
+        </div>
     </div>
 </section>
+
 
 

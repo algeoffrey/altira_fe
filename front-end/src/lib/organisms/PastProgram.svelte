@@ -34,15 +34,16 @@
 </script>
 
 <section class="py-16 bg-white">
-    <div class="max-w-8xl mx-32">
-
-        <h2 class="text-[2rem] text-customBlack font-extrabold text-center mb-8" id="past-programs">Past Program & Events</h2>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Title -->
+        <h2 class="text-xl sm:text-2xl md:text-[2rem] text-customBlack font-extrabold text-center mb-8" id="past-programs">
+            Past Programs & Events
+        </h2>
         
-        <!-- Container for Event Cards -->
-        <div class="grid grid-rows-3 gap-2 mx-32 max-w-6xl">
+        <!-- Responsive Event Cards Grid -->
+        <div class="grid grid-cols-1 gap-6">
             {#each events as event}
-                <div class="flex justify-center py-2">
-                    <EventCard 
+                <EventCard 
                     title={event.title}
                     date={event.date}
                     location={event.location}
@@ -50,7 +51,6 @@
                     buttonLabel="Register"
                     imageSrc={event.imageSrc}
                 />
-                </div>
             {/each}
         </div>
     </div>

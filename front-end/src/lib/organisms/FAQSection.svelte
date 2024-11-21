@@ -32,11 +32,11 @@
 </script>
 
 <section class="py-12 bg-[#F8F8F8] relative" id="FAQs">
-    <section class="py-2 pb-4 max-w-8xl mx-auto px-8">
+    <section class="py-2 pb-4 max-w-8xl mx-auto px-6 lg:px-32">
         <h2 class="text-customBlack text-center text-[2rem] font-[800] mb-6">{title}</h2>
         <p class="text-center text-[1.063rem] font-[400] mb-8 px-4 md:px-8 lg:px-14 mx-auto leading-relaxed">{description}</p>
         
-        <div class="text-[1.063rem] font-[400]">
+        <div class="text-[1.063rem] font-[400] mx-auto">
         {#each faqs as faq}
             <FAQItem question={faq.question} answer={faq.answer} />
         {/each}
