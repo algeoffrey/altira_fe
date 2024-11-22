@@ -12,6 +12,7 @@
     ];
   
     export let theme = 'transparent';
+    export let hamburgerColor = 'black'
     let isMenuOpen = false;
     const dispatch = createEventDispatcher();
     let currentTheme = theme;
@@ -109,7 +110,7 @@
     </ul>
   
     <!-- Action Buttons (Desktop) -->
-    <div class="flex items-center space-x-6 lg:pr-12 ml-auto">
+    <div class="flex items-center space-x-6 md:pr-12 ml-auto">
       <!-- Primary Button -->
       <a
         href="/alt-c-investor-network"
@@ -163,6 +164,7 @@
         isOpen={isMenuOpen}
         toggleMenu={toggleMenu}
         ariaLabel="Toggle Menu"
+        hamburgerColor = {hamburgerColor}
       />
   
       <!-- Mobile Menu Overlay (Visible when Menu is Open) -->

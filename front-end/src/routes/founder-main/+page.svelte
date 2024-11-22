@@ -13,7 +13,7 @@ import {
        } from '/src/lib/organisms';
   </script>
   
-  <Navbar theme="black" />
+  <Navbar theme="black" hamburgerColor = "white" />
 
   <PageHeader
   title="Foundrx"
