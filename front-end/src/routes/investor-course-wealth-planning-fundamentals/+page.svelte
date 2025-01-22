@@ -15,8 +15,14 @@
       weight: "font-thin",
     },
     {
+      courseTitle: "Wealth Planning Fundamentals",
+      size: "text-2xl lg:text-3xl",
+      align: "text-left",
+      weight: "font-semibold",
+    },
+    {
       type: "text",
-      title: "Wealth Planning Fundamentals",
+      title: "",
       titleSize: "text-3xl",
       titleWeight: "font-semibold",
       content: `
@@ -78,7 +84,8 @@
       buttonText: "JOIN COURSE",
       duration: 4,
       date: "June 29, 2024",
-      price: "Rp. 1,000,000"
+      currency: "SGD",
+      price: "100"
     }];
 
     let otherCourses = [

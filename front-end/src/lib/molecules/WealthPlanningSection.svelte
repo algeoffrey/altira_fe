@@ -20,15 +20,15 @@
     ];
 </script>
 
-<section class="bg-white py-12 md:py-16 relative" id = "wealth">
-    <section class="max-w-8xl mx-auto px-8">
+<section class="bg-white py-12 md:py-16 relative px-8 sm:px-24 md:px-32" id = "wealth">
+    <section class="max-w-8xl mx-auto">
         <!-- Title and Description -->
         <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-6">{title}</h2>
 
         <!-- Sections -->
         {#each sections as section}
             <div class="mb-10 py-4 mx-auto">
-                <CardTitle text={section.subtitle} size="text-xl md:text-[1.7rem]" align="text-left" weight="font-light-bold" />
+                <CardTitle text={section.subtitle} size="text-xl md:text-[1.7rem]" align="text-left" weight="font-semibold" />
                 <p class="text-base text-left md:text-justify font-light mt-7 md:mt-9 mb-6 leading-relaxed">{section.description}</p>
                 <div class="mt-4 flex justify-end">
                     <ActionButton text={section.buttonText} href={section.buttonLink} theme="transparent" variant="secondary" bordersize="px-5 py-1" size="text-sm md:text-lg" fontWeight="font-medium" />

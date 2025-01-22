@@ -8,7 +8,7 @@
   export let logos = [];
   export let maxColumns = 5;
   export let maxRows = 1;
-  export let gap = 15;
+  export let gap = 10;
   export let width = 211;
   export let height = 211;
   export let title = "";
@@ -17,7 +17,6 @@
   export let seeMoreLink = "/ecosystem-profile";
   export let linkText = "See More >";
   export let showmore = "Y";
-
 </script>
 
 <section class="bg-white relative py-8 md:py-12">
@@ -52,16 +51,15 @@
     </div>
   
     <!-- Logo Grid -->
-    <div class="flex justify-center items-center pb-6 md:pb-8">
+    <div class="relative flex justify-center items-center pb-6 md:pb-8">
       <LogoGrid {logos} {maxColumns} {maxRows} {gap} {width} {height} />
+      
+      <!-- "See More" Button -->
+      {#if showmore === "Y"}
+        <div class="absolute bottom-0 right-0">
+          <LinkButton href={seeMoreLink} text={linkText} />
+        </div>
+      {/if}
     </div>
-  
-    <!-- Link Button -->
-    {#if showmore === "Y"}
-      <div class="text-center md:text-right mt-6 md:mt-8">
-        <LinkButton href={seeMoreLink} text={linkText} />
-      </div>
-    {/if}
   </div>
 </section>
-

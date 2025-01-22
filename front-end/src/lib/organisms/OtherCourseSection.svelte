@@ -51,14 +51,14 @@
 </script>
 
 <section class="py-16 bg-[#F4F4F4]">
-  <div class="max-w-8xl mx-auto px-8">
+  <div class="max-w-8xl mx-auto px-8 sm:px-24 md:px-32">
     <h2 class="text-2xl md:text-[2rem] font-bold text-center mb-16">
       Other Courses You Might Like
     </h2>
     
     <!-- Iterate through each section -->
     {#each sections as section}
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-16 mb-12 mx-auto px-2 lg:px-14">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 md:gap-10 lg:gap-[60px] px-2 md:px-12 lg:px-24 md:mb-[40px] lg:mb-[60px]">
         {#each section.courses as course}
           <CourseCard
             title={course.title}

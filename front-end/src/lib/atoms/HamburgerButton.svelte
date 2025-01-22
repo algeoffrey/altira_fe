@@ -12,12 +12,16 @@
     aria-label={ariaLabel}
 >
     {#if isOpen}
-        <img width = "25px" src="/images/icon/close_icon.svg" alt="Close menu"/>
+        <img width="25px" src="/images/icon/close_icon.svg" alt="Close menu" />
     {:else}
-        <img width= "24px" height= "25px" 
-            src={hamburgerColor === "black" 
-                ? "/images/icon/icon_hamburger_black.svg" 
-                : "/images/icon/icon_hamburger_white.svg"} 
+        <img
+            width="24px"
+            height="25px"
+            src={
+                hamburgerColor === "black"
+                    ? "/images/icon/icon_hamburger_black.svg"
+                    : "/images/icon/icon_hamburger_white.svg"
+            }
             alt="Hamburger button to expand menu"
         />
     {/if}

@@ -17,6 +17,7 @@
     { name: "Enterprise Innovation", href: "/asset-owners-&-investors#innovation" },
     { name: "Wealth Planning & Solutions", href: "/asset-owners-&-investors#wealth" }
   ]}
+  hamburgerColor = "white"
 />
 
 <InvestorPlatformSection/>

@@ -64,7 +64,7 @@
 
       <!-- Course Cards Grid -->
       <div class="flex justify-center">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 lg:gap-12 w-full max-w-5xl px-12 sm:px-0">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 md:gap-12 lg:gap-[60px] px-2 md:px-12 lg:px-28">
           {#each section.courses as course}
             <div class="flex justify-center mb-8">
               <CourseCard 

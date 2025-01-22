@@ -36,9 +36,11 @@
         if (window.scrollY > 0) {
           isSticky = true;
           currentTheme = 'black';
+          hamburgerColor = "white";
         } else {
           isSticky = false;
           currentTheme = theme;
+          hamburgerColor = "black";
         }
       }
     }
@@ -81,7 +83,7 @@
       : 'bg-black shadow-md'
   }`}>
     <!-- Logo -->
-    <div class="md:pl-9">
+    <div class="flex-shrink-0 md:pl-4 lg:pl-9">
       <NavLogo
         logoSrc={
           currentTheme === 'black'
@@ -94,7 +96,7 @@
     </div>
   
     <!-- Navigation Links (Desktop) -->
-    <ul class="flex items-center gap-12 font-light lg:ml-10 text-md">
+    <ul class="flex items-center gap-4 md:gap-6 lg:gap-8 font-light text-sm md:text-base lg:text-md  md:ml-6 lg:ml-8">
       {#each links as { name, href }}
         <li>
           <a
@@ -110,11 +112,11 @@
     </ul>
   
     <!-- Action Buttons (Desktop) -->
-    <div class="flex items-center space-x-6 md:pr-12 ml-auto">
+    <div class="flex items-center space-x-4 md:space-x-6 ml-auto">
       <!-- Primary Button -->
       <a
         href="/alt-c-investor-network"
-        class={`transition-all duration-300 px-4 py-1.5 text-md border rounded-md font-[400] ${
+        class={`transition-all duration-300 px-3 md:px-4 py-1 md:py-1.5 text-sm md:text-md border rounded-md font-medium ${
           currentTheme === 'black' ? 'bg-black text-white' : 'bg-[#363338] text-white'
         } ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}
       >
@@ -124,7 +126,7 @@
       <!-- Secondary Button -->
       <a
         href="/founder-main"
-        class={`transition-all duration-300 px-4 py-1.5 text-md border rounded-md font-[600] ${
+        class={`transition-all duration-300 px-3 md:px-4 py-1 md:py-1.5 text-sm md:text-md border rounded-md font-medium ${
           currentTheme === 'black'
             ? 'border-white bg-white text-[#363338]'
             : 'border-black bg-transparent text-black'
@@ -147,7 +149,7 @@
         : 'bg-black shadow-md'
     }`}>
       <!-- Logo -->
-      <div>
+      <div class="pl-5">
         <NavLogo
           logoSrc={
             currentTheme === 'black'

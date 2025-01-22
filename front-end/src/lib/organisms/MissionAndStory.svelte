@@ -21,39 +21,33 @@
 </script>
 
 <section class="py-12 bg-white relative mx-4" id="mission">
-  <!-- Paragraph at the top -->
-  <p class="text-left text-sm md:text-base font-light mb-6 pb-6 max-w-8xl mx-4 md:mx-32">
-      {@html paragraphContent}
-  </p>
-
-  <!-- Mission and Story Title -->
-  <div class="pt-6">
-      <Heading text="Mission and Story" size="text-[1.5rem] md:text-[2rem]" />
-  </div>
-
-  <!-- Venn Diagram for Mobile -->
-  <div class="flex justify-center mt-6 md:hidden">
-      <div class="w-full max-w-xs px-4">
-          <VennDiagram alt="Venn Diagram representing Mission and Story" />
-      </div>
-  </div>
-
-  <!-- Content Wrapper for Desktop and Tablet -->
-  <div class="flex flex-col md:flex-row justify-between items-start mt-10 max-w-8xl mx-4 md:mx-32 px-4 md:px-16">
-      <!-- Text with Headings (Mission and Story) -->
-      <div class="w-full md:w-2/5 space-y-8 pr-0 md:pr-6">
-          <TextWithHeading heading="Our Mission" type="mission" content={missionContent} />
-          <TextWithHeading heading="Our Story" type="story" content={storyContent} />
-      </div>
-
-      <!-- Venn Diagram for Desktop and Tablet -->
-      <div class="w-full md:w-3/5 py-6 px-4 flex justify-center hidden md:flex">
-          <div class="w-full max-w-xs md:max-w-xl">
-              <VennDiagram alt="Venn Diagram representing Mission and Story" />
-          </div>
-      </div>
-  </div>
-</section>
+    <!-- Paragraph at the top -->
+    <p class="text-left text-sm md:text-base font-light mb-8 max-w-7xl mx-auto">
+        {@html paragraphContent}
+    </p>
+  
+    <!-- Mission and Story Title -->
+    <div class="text-center">
+        <Heading text="Mission and Story" size="text-[1.5rem] md:text-[2rem]" />
+    </div>
+  
+    <!-- Content Wrapper -->
+    <div class="flex flex-col-reverse md:flex-row justify-between items-start mt-10 gap-8 max-w-7xl mx-auto px-4 md:px-8">
+        <!-- Text with Headings (Mission and Story) -->
+        <div class="w-full md:w-1/2 space-y-8">
+            <TextWithHeading heading="Our Mission" type="mission" content={missionContent} />
+            <TextWithHeading heading="Our Story" type="story" content={storyContent} />
+        </div>
+  
+        <!-- Venn Diagram -->
+        <div class="w-full md:w-1/2 flex justify-center items-center">
+            <div class="w-3/4 md:w-full max-w-md md:max-w-lg">
+                <VennDiagram alt="Venn Diagram representing Mission and Story" />
+            </div>
+        </div>
+    </div>
+  </section>
+  
 
 
 

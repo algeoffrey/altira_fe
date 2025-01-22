@@ -11,11 +11,11 @@
     export let buttonLink = "#";
 </script>
 
-<section class="flex flex-col md:flex-col items-center justify-between py-12 px-6 bg-[#F8F8F8]" id="asset-owners">
+<section class="flex flex-col md:flex-col items-center justify-between py-12 px-8 sm:px-24 md:px-32 bg-[#F8F8F8]" id="asset-owners">
     <h2 class="text-center text-2xl md:text-3xl font-semibold mb-6">{title}</h2>
 
     <!-- Text Content -->
-    <div class="mb-8 md:mb-0 font-light mb-12 py-6 max-w-8xl mx-auto px-8">
+    <div class="mb-8 md:mb-0 font-light mb-12 py-6 max-w-8xl mx-auto">
         {#each paragraphs as paragraph}
             <p class="text-base font-light mb-6 leading-relaxed">{paragraph}</p>
         {/each}

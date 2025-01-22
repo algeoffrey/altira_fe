@@ -5,13 +5,13 @@
   export let buttonHref = "#";
   export let duration = 0;
   export let date = "June 29, 2024";
-  export let price = "Rp. 1,000,000";
+  export let price = "100"; // Adjust the value as needed
+  export let currency = "SGD"; // Add a currency prop for flexibility
 </script>
 
 <div class="border border-[#C4C4C4] rounded-md">
   <div class="border-b border-b-[#C4C4C4] bg-[#F8F8F8] p-4">
-
-    <div class="flex justify-items-strecth my-4 mx-4 text-center">
+    <div class="flex justify-items-stretch my-4 mx-4 text-center">
       <Button 
         text={buttonText} 
         href={buttonHref} 
@@ -36,9 +36,8 @@
         </p>
       </div>
     </div>
-
   </div>
   <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold text-center p-6">
-    {price}
+    <span class="align-super text-xs font-[400]">{currency}</span> {price}
   </p>
 </div>

@@ -9,7 +9,7 @@
     export let title = "Title";
   </script>
   
-  <div class="max-w-xs bg-white shadow-lg rounded-lg overflow-hidden">
+  <div class=" bg-white shadow-lg rounded-lg overflow-hidden w-[150px] h-[280px] sm:w-[220px] sm:h-[300px] md:w-[230px] md:h-[356px]">
     <div class="p-1">
       <Avatar src={src} alt={alt} />
     </div>

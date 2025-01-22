@@ -53,7 +53,7 @@
 
 
 <section class="py-16 bg-white" id="governance">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
         <!-- Header -->
         <h2 class="text-2xl sm:text-3xl text-customBlack font-semibold text-center mb-12">
             Governance Board
@@ -62,7 +62,7 @@
         <!-- Members Section -->
         <div class="grid gap-12">
             {#each teamMembers as member}
-                <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-start"> 
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-start" id={member.id}> 
                     <!-- Left: Image and Info -->
                     <div class="col-span-1">
                         <div class="grid grid-cols-2 md:grid-cols-1 gap-1 items-start">

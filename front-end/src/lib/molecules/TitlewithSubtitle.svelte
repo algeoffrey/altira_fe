@@ -9,7 +9,7 @@
 <div class="flex flex-row justify-between items-center w-full max-w-7xl">
   <!-- Title on the left -->
   <h1
-    class="font-{titleWeight} text-[22px] sm:text-3xl md:text-4xl text-customBlack pl-7 md:pl-3"
+    class="font-{titleWeight} text-[22px] sm:text-4xl text-customBlack"
     style="color: {titleColor}; font-weight: {titleWeight};"
   >
     {@html title}

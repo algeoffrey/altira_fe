@@ -32,17 +32,22 @@
   export let learnMoreHref = "/investor-learn-hub";
 </script>
 
-<section class="py-12 bg-gray-50">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8">
-    <h2 class="text-customBlack text-2xl md:text-[2rem] font-bold text-center mb-6 pt-6">
+<section class="py-8 sm:py-12 bg-gray-50">
+  <div class="container mx-auto px-7 sm:px-6 md:px-8 max-w-7xl">
+    <!-- Section Title -->
+    <h2 class="text-customBlack text-xl sm:text-2xl md:text-[2rem] font-bold text-center mb-4 sm:mb-6 pt-4 sm:pt-6">
       {sectionTitle}
     </h2>
-    <p class="text-[1rem] font-[400] text-center lg:text-md mb-8 md:mb-12 max-w-lg md:max-w-4xl lg:max-w-5xl mx-auto font-light">
-     {introParagraph}
+    
+    <!-- Section Intro Paragraph -->
+    <p class="text-[0.9rem] sm:text-[1rem] md:text-md font-light text-center mb-6 sm:mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed">
+      {introParagraph}
     </p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-full md:max-w-6xl px-4 md:px-12 mx-auto">
+    
+    <!-- Courses Grid -->
+    <div class="relative grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-14 max-w-5xl mx-auto">
       {#each courses as course}
-        <div class="flex justify-left">
+        <div class="flex justify-center sm:justify-start">
           <CourseCard 
             title={course.title}
             description={course.description}
@@ -57,9 +62,14 @@
         </div>
       {/each}
     </div>
-    <div class="text-right mt-8 max-w-6xl pr-12 mx-auto">
+    
+    <!-- Learn More Link -->
+    <div class="mt-6 sm:mt-8 flex justify-end max-w-6xl mx-auto px-2 sm:px-4 md:px-6">
       <LearnMoreLink href={learnMoreHref} />
     </div>
   </div>
 </section>
+
+
+
 

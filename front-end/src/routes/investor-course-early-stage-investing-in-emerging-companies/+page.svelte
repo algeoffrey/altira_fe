@@ -84,7 +84,8 @@
       buttonText: "JOIN COURSE",
       duration: 4,
       date: "June 29, 2024",
-      price: "Rp. 1,000,000"
+      currency: "SGD",
+      price: "100"
     }];
 
     let otherCourses = [

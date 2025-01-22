@@ -30,9 +30,9 @@
 </script>
   
 <section class="py-12 bg-white relative">
-  <div class="px-6 sm:px-8 md:px-16 lg:px-32 max-w-7xl mx-auto">
+  <div class="px-6 sm:px-8 md:px-16 lg:px-32 max-w-8xl mx-auto">
     <!-- Introductory Text -->
-    <p class="text-left text-sm md:text-base lg:text-lg leading-relaxed mb-8 md:mb-12 font-light">
+    <p class="text-left text-sm md:text-[1rem] leading-relaxed mb-8 md:mb-12 font-light">
       {introText}
     </p>
     
@@ -43,7 +43,7 @@
     
     <!-- Course Cards Grid -->
     <div class="flex justify-center">
-      <div class="grid px-12 sm:px-0 grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-8 md:gap-12 lg:gap-[60px] px-2 md:px-12 lg:px-28">
         {#each courses as course}
           <div class="flex justify-center">
             <CourseCard 

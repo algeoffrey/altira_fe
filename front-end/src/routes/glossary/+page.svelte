@@ -39,6 +39,7 @@
     { name: "V", href: "/glossary#indexV"},
     { name: "W", href: "/glossary#indexW"},
   ]}
+  isShowMobileNav = {false}
 />
 
 <GlossaryIndex/>

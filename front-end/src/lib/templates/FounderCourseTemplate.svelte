@@ -1,4 +1,5 @@
 <script>
+  import InvestorCourseSection from '../organisms/InvestorCourseSection.svelte';
     import { Navbar, PageHeader, FounderDescSection, OtherFounderCourse, Footer } from '/src/lib/organisms';
   
     export let coursePage = true;
@@ -23,11 +24,14 @@
     titleColor={titleColor}
     subHeaderTextColor={subHeaderTextColor}
     subHeaderLinks={subHeaderLinks}
+    hamburgerColor = "white"
+    isShowMobileNav = {false}
   />
   
   <FounderDescSection courseSections={courseSections} />
   
   <OtherFounderCourse sections={otherCourses} additionalContent = {additionalContent}/>
+  <InvestorCourseSection/>
   
   <Footer />
 

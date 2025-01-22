@@ -48,18 +48,18 @@
     ];
 </script>
 
-<section class="py-12 bg-white relative">
+<section class="py-12 bg-white relative px-8 sm:px-24 md:px-32">
     <!-- Introductory Paragraph -->
-    <p class="text-left text-[1rem] md:text-base font-light mb-12 py-6 max-w-8xl mx-auto px-8 leading-6">
+    <p class="text-left text-[1rem] md:text-base font-light mb-12 py-6 max-w-8xl mx-auto leading-6">
         {introParagraph}
     </p>
 
     <!-- Title and Description -->
     <h2 class="text-center text-2xl md:text-3xl font-semibold mb-6">{title}</h2>
-    <p class="text-center text-[1rem] md:text-base font-light mb-12 max-w-5xl mx-auto px-8 leading-6">{description}</p>
+    <p class="text-center text-[1rem] md:text-base font-light mb-12 max-w-5xl mx-autoleading-6">{description}</p>
 
     <!-- Responsive Grid Layout -->
-    <div class="relative hidden md:grid md:grid-cols-[1fr_20px_1fr] items-center gap-8 md:gap-16 max-w-7xl mx-auto px-8">
+    <div class="relative hidden md:grid md:grid-cols-[1fr_20px_1fr] items-center gap-8 md:gap-16 max-w-7xl mx-auto">
         <!-- Left Column -->
         <div class="flex flex-col items-end space-y-16">
             <BenefitCard {...cards[0]} class="p-4 md:p-6" />

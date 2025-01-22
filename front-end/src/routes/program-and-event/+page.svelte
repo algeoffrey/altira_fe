@@ -15,6 +15,7 @@
     { name: "Networking & Capacity Building", href: "/program-and-event#networking" },
     { name: "Past Program & Events", href: "/program-and-event#past-programs" }
   ]}
+  hamburgerColor = "white"
 />
 
 <ShowcaseSection/>

@@ -20,18 +20,18 @@
         ];
     </script>
 
-    <section class="py-14 mb-8 px-6 bg-white" id="partners-builders">
+    <section class="py-14 mb-8  px-8 sm:px-24 md:px-32 bg-white" id="partners-builders">
 
         <!-- Title and Description -->
         <h2 class="text-center text-2xl md:text-3xl font-semibold mb-6">{title}</h2>
-        <p class="text-center text-[1rem] md:text-base font-light mb-4 py-4 max-w-8xl mx-auto px-8 leading-relaxed">{mainDescription}</p>
-        <div class="mt-8 flex justify-end mb-2 py-4 max-w-8xl mx-auto px-8">
+        <p class="text-center text-[1rem] md:text-base font-light mb-4 py-4 max-w-8xl mx-auto leading-relaxed">{mainDescription}</p>
+        <div class="mt-8 flex justify-end mb-2 py-4 max-w-8xl mx-auto">
             <ActionButton text={buttonText} href={buttonLink} theme="transparent" variant="secondary" bordersize="px-5 py-1" size="text-md md:text-lg" fontWeight="font-medium" />
         </div>
 
         <!-- Sections -->
         {#each sections as section, i}
-            <div class="mb-2 py-4 max-w-8xl mx-auto px-8">
+            <div class="mb-2 py-4 max-w-8xl mx-auto">
                 <CardTitle text={section.subtitle} size="text-2xl" align="text-left" weight="font-thin-bold" />
                 <p class="text-base font-light mt-6 mb-6 leading-relaxed">{section.description}</p>
             </div>

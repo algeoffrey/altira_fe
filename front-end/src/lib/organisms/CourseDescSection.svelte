@@ -83,13 +83,14 @@
       buttonText: "JOIN COURSE",
       duration: 4,
       date: "June 29, 2024",
-      price: "Rp. 1,000,000"
+      currency : "SGD",
+      price: "100"
     }
   ];
 </script>
 
 <section class="py-12 bg-white relative">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-8xl mx-auto px-8">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-8xl mx-auto px-8 sm:px-24 md:px-32">
     
     <!-- Left Column -->
     <div class="md:col-span-2 space-y-6">
@@ -147,7 +148,7 @@
           {:else if section.type === "learning-method"}
             <LearningMethodCard title={section.title} content={section.content} />
           {:else if section.type === "join-course"}
-            <JoinCourseCard buttonText={section.buttonText} duration={section.duration} date={section.date} price={section.price} />
+            <JoinCourseCard buttonText={section.buttonText} duration={section.duration} date={section.date} currency={section.currency} price={section.price} />
           {/if}
         {/if}
       {/each}

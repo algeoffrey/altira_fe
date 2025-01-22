@@ -32,6 +32,7 @@ import {
     { name: "Events & Pitches", href: "/founder-main#events-pitches" },
     { name: "Fundraise", href: "/founder-main#fundraise" }
   ]}
+  hamburgerColor = "white"
 />
 
 <ConnectFundraiseSection/>

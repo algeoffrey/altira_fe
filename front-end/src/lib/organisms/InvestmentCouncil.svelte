@@ -169,7 +169,7 @@
         <!-- Members Section -->
         <div class="grid gap-12">
             {#each teamMembers as member}
-                <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-start"> 
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-start" id={member.id}> 
                     <!-- Left: Image and Info -->
                     <div class="col-span-1">
                         <div class="grid grid-cols-2 md:grid-cols-1 gap-1 items-start">

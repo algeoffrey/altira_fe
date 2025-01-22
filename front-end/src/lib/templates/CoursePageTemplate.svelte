@@ -22,6 +22,7 @@
     titleColor={titleColor}
     subHeaderTextColor={subHeaderTextColor}
     subHeaderLinks={subHeaderLinks}
+    isShowMobileNav = {false}
   />
   
   <CourseDescSection courseSections={courseSections} />

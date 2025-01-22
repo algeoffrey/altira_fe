@@ -20,8 +20,10 @@
   export let coursePage = false;
   export let subtitleMarginLeft = "ml-auto";
   export let subtitleMarginRight = "";
+  export let hamburgerColor = "black";
+  export let isShowMobileNav = true;
 
-  // Navigation links
+  // Navigation links (used for both desktop and mobile)
   export let links = [
     { name: "About", href: "/about" },
     { name: "Solutions", href: "/solutions" },
@@ -33,6 +35,9 @@
   const displayTitle = customTitle || title;
   let isMenuOpen = false;
 
+  // For the mobile submenu
+  let isSubMenuOpen = false;
+
   // Toggle the mobile menu open and close
   function toggleMenu() {
     isMenuOpen = !isMenuOpen;
@@ -40,11 +45,20 @@
       document.body.style.overflow = isMenuOpen ? 'hidden' : '';
     }
   }
+
+  // Toggle the mobile submenu open and close
+  function toggleSubMenu() {
+    isSubMenuOpen = !isSubMenuOpen;
+  }
 </script>
 
 <!-- Page Header Section -->
-<section class="relative w-full" style="background-color: {backgroundColor};">
-  <div class="container pt-8 pb-8 md:pt-32 md:pb-12 px-4 mx-auto flex justify-between items-center">
+<!-- Make header sticky on mobile only:
+     - "sticky top-0 z-50" for mobile
+     - "md:static" ensures non-sticky on larger screens
+-->
+<section class="w-full sticky top-0 z-50 bg-white  md:static" style="background-color: {backgroundColor};">
+  <div class="container pt-8 pb-8 md:pt-32 md:pb-12  mx-auto px-4 sm:px-12 md:px-14 lg:px-32 flex justify-between items-center">
     <TitleWithSubtitle
       title={displayTitle}
       titleWeight={titleWeight}
@@ -61,16 +75,17 @@
       isOpen={isMenuOpen}
       toggleMenu={toggleMenu}
       ariaLabel="Toggle Menu"
+      hamburgerColor={hamburgerColor}
       class="md:hidden"
     />
   </div>
 </section>
 
 <!-- Sticky Sub-header Navigation for Desktop and Tablet -->
-<section class="sticky top-16 z-40 hidden md:block">
+<section class="sticky top-16 z-40 hidden md:block ">
   <div class="w-full h-14 flex justify-between items-center" style="background-color: {secondaryColor};">
     <!-- Navigation Links -->
-    <div class="px-6 md:px-16">
+    <div class="px-2 sm:px-32 md:px-35">
       <Navigation
         links={subHeaderLinks}
         color={subHeaderTextColor}
@@ -80,12 +95,60 @@
 
     <!-- Extra Text (Visible only on desktop) -->
     {#if extraText}
-      <div class="text-right px-4">
+      <div class="text-right px-2 sm:px-32 md:px-35">
         <ExtraText text={extraText} color={subHeaderTextColor} />
       </div>
     {/if}
   </div>
 </section>
+
+<!-- Mobile Sub-menu (Only visible on mobile), also sticky -->
+{#if isShowMobileNav}
+  {#if !isSubMenuOpen}
+    <!-- When not collapsed: entire gray area is clickable -->
+    <section 
+      class="block md:hidden sticky top-[6rem] z-40 bg-[#E4E4E5] text-black text-center cursor-pointer"
+      role="button"
+      tabindex="0"
+      aria-label="Open submenu"
+      on:click={toggleSubMenu}
+    >
+      <div class="flex items-center justify-center py-2 px-4">
+        <img src="/images/arrow_down_black.png" alt="Expand submenu" width="20" height="20" />
+      </div>
+    </section>
+  {:else}
+    <!-- When expanded: show the subHeaderLinks at top and arrow up at bottom -->
+    <section class="block md:hidden sticky top-[6rem] z-40 bg-[#E4E4E5] text-black text-center">
+      <!-- Text content -->
+      <nav class="p-4">
+        <ul class="flex flex-col space-y-2">
+          {#each subHeaderLinks as { name, href }}
+            <li>
+              <a href={href}>{name}</a>
+            </li>
+          {/each}
+        </ul>
+      </nav>
+
+      <!-- Arrow up at bottom to close -->
+      <div class="py-2">
+        <button
+          class="focus:outline-none"
+          on:click={toggleSubMenu}
+          aria-label="Close Submenu"
+        >
+          <img src="/images/arrow_up_black.png" alt="Collapse submenu" width="20" height="20" />
+        </button>
+      </div>
+    </section>
+  {/if}
+{:else}
+  <!-- Static gray bar when isShowMobileNav is false -->
+  <section class="block md:hidden sticky top-[6rem] z-40 bg-[#E4E4E5] h-8">
+    <!-- Empty container -->
+  </section>
+{/if}
 
 <!-- Mobile Menu Overlay -->
 {#if isMenuOpen}

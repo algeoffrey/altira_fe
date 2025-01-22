@@ -152,7 +152,7 @@
         <!-- Advisory Board -->
         <h3 class="text-xl md:text-2xl font-semibold text-center mb-8 md:mb-12 text-customBlack">Advisory Board</h3>
         <div class="flex justify-center">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-5xl">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 w-full max-w-5xl">
                 {#each advisoryBoard as member}
                     <a href="{member.href}" class="flex justify-center">
                         <ProfileCard 
@@ -170,7 +170,7 @@
         <!-- Governance Board -->
         <h3 class="text-xl md:text-2xl font-semibold text-center mt-10 md:mt-16 mb-8 md:mb-12 text-customBlack">Governance Board</h3>
         <div class="flex justify-center">
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-10 w-full max-w-3xl">
                 {#each governanceBoard as member}
                     <a href="{member.href}" class="flex justify-center align-baseline">
                         <ProfileCard 
@@ -188,7 +188,7 @@
         <!-- Investment Council -->
         <h3 class="text-xl md:text-2xl font-semibold text-center mt-10 md:mt-16 mb-8 md:mb-12 text-customBlack">Investment Council</h3>
         <div class="flex justify-center">
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-10 w-full max-w-2xl">
                 {#each investmentCouncil as member}
                     <a href="{member.href}" class="flex justify-center">
                         <ProfileCard 
@@ -204,5 +204,6 @@
         </div>
     </div>
 </section>
+
 
 

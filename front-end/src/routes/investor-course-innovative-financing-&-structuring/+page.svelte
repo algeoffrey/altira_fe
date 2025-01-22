@@ -15,8 +15,14 @@
       weight: "font-thin",
     },
     {
+      courseTitle: "Innovative Financing & Structuring",
+      size: "text-2xl lg:text-3xl",
+      align: "text-left",
+      weight: "font-semibold",
+    },
+    {
       type: "text",
-      title: "Innovative Financing & Structuring",
+      title: "",
       titleSize: "text-3xl",
       titleWeight: "font-semibold",
       content: `
@@ -78,7 +84,8 @@
       buttonText: "JOIN COURSE",
       duration: 4,
       date: "June 29, 2024",
-      price: "Rp. 1,000,000"
+      currencty: "SGD",
+      price: "100"
     }];
 
     let otherCourses = [

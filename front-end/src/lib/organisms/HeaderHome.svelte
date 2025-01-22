@@ -20,32 +20,42 @@
   style="min-height: 100vh;"
 >
   <!-- Header Background Image -->
-  <HomeBG src={backgroundImage} altText="Header Background" />
+  <HomeBG src={backgroundImage} altText="Header Background" class="absolute inset-0 w-full h-full object-cover" />
 
   <!-- Header Text and Buttons -->
   <div
-    class={`relative text-left max-w-full md:max-w-2xl lg:max-w-2xl px-4 md:px-8 lg:px-8 lg:ml-12 lg:pl-12 lg:pr-5 py-8 md:py-24 lg:pt-8 lg:mb-12 lg:pb-18 ${menuOpen ? "hidden" : "block"}`}
+    class={`relative text-left max-w-full md:max-w-2xl lg:max-w-3xl px-8 sm:px-14 py-8 sm:py-16 md:py-24 ${menuOpen ? "hidden" : "block"} lg:ml-8`}
   >
-    <HomeHeader {title} {description} />
+    <!-- Header Text -->
+    <HomeHeader 
+      {title} 
+      {description} 
+      class="text-[1.5rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] font-bold leading-snug"
+    />
 
-    <div class="mt-6 flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-5 md:space-x-4">
-    <!-- "Become an Investor" Button -->
-    <ActionButton
+    <!-- Buttons and Message -->
+    <div class="mt-6 flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+      <!-- "Become an Investor" Button -->
+      <ActionButton
         href="{buttonLink}"
         text="Become an Investor"
         theme="custom"
         variant="secondary"
-        size="text-[1.1rem]"
-        fontWeight= "font-md"
-        bordersize = "py-2 px-4"
-    />
+        size="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]"
+        fontWeight="font-medium"
+        bordersize="py-2 px-4"
+        class="w-full sm:w-auto"
+      />
 
-    <HomeMsg
+      <!-- Founders Message -->
+      <HomeMsg
         message="For founders, please"
         linkText="click here"
         linkHref="/founder-main"
-    />
-
+        class="text-sm sm:text-base md:text-lg"
+      />
     </div>
   </div>
 </section>
+
+

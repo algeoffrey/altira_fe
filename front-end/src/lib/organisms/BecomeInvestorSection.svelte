@@ -14,7 +14,7 @@
 </script>
 
 <section class="py-20 bg-gray-100 relative">
-  <div class="w-full max-w-4xl mx-auto px-4 md:px-8 lg:px-16 flex flex-col items-center md:items-start text-center md:text-left">
+  <div class="w-full max-w-4xl mx-auto px-6 sm:px-8 md:px-16 lg:px-28 flex flex-col items-center md:items-start text-center md:text-left">
     <!-- Title -->
     <h2 class="mb-8 text-xl md:text-[2rem] font-semibold">
       {title}

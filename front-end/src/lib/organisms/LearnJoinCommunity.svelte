@@ -27,8 +27,8 @@
 
 </script>
 
-<section class="py-14 bg-[#F4F4F4] relative max-w-screen-lg mx-auto">
-  <div class="container mx-auto py-4 px-4 md:px-16">
+<section class="py-14 bg-[#F4F4F4] relative mx-auto">
+  <div class="container mx-auto py-4 px-4 md:px-16 max-w-screen-lg">
     <h2 class="text-center text-2xl md:text-[2rem] font-semibold mb-12">
       {title}
     </h2>

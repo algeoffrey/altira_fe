@@ -17,6 +17,7 @@
     { name: "Family Enterprises", href: "/solutions#family-enterprises" },
     { name: "Partners & Builders", href: "/solutions#partners-builders" }
   ]}
+  hamburgerColor = "white"
 />
   
 <BeneficiarySection/>

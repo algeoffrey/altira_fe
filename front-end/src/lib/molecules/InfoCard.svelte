@@ -14,7 +14,14 @@
         <CardTitle text={title} size="text-[1.375rem]" weight="font-[700]"/>
     </div>
     <div class="pl-6">
-        <ListText items={content} size = "text-[0.875rem]" weight="font-[400]"/>
+        <ListText items={content} size = "text-[0.875rem] sm:text-[1rem] lg:text-[1.125rem]" weight="font-[400]"/>
     </div>
-    <ActionButton text={buttonText} href={buttonLink} fontWeight="font-light" />
+    <div class="mt-4 sm:mt-6 w-full flex justify-center">
+        <ActionButton 
+            text={buttonText} 
+            href={buttonLink} 
+            fontWeight="font-light" 
+            class="text-[0.875rem] sm:text-[1rem] lg:text-[1.125rem] py-2 px-4"
+        />
+    </div>
 </div>
