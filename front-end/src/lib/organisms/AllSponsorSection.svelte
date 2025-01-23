@@ -221,7 +221,7 @@ $: networkEcosystemConfig = isMobile
 
   </div>
 
-  <!-- Network Ecosyste m -->
+  <!-- Network Ecosystem -->
     <div class="pb-4 mb-6 relative">
       <SponsorSection 
       title="Network Ecosystem"

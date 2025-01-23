@@ -58,7 +58,7 @@
      - "md:static" ensures non-sticky on larger screens
 -->
 <section class="w-full sticky top-0 z-50 bg-white  md:static" style="background-color: {backgroundColor};">
-  <div class="container pt-8 pb-8 md:pt-32 md:pb-12  mx-auto px-4 sm:px-12 md:px-14 lg:px-32 flex justify-between items-center">
+  <div class="pt-8 pb-8 md:pt-32 md:pb-12 mx-auto px-10 sm:px-24 md:px-32  flex justify-between items-center">
     <TitleWithSubtitle
       title={displayTitle}
       titleWeight={titleWeight}
@@ -85,7 +85,7 @@
 <section class="sticky top-16 z-40 hidden md:block ">
   <div class="w-full h-14 flex justify-between items-center" style="background-color: {secondaryColor};">
     <!-- Navigation Links -->
-    <div class="px-2 sm:px-32 md:px-35">
+    <div class="px-2 sm:px-32">
       <Navigation
         links={subHeaderLinks}
         color={subHeaderTextColor}

@@ -69,7 +69,7 @@
 
     export let maxColumns = 4;
     export let maxRows = 2;
-    export let gap = 15;
+    export let gap = 21;
     export let width = 211;
     export let height = 211;
 

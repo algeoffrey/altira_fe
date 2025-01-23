@@ -20,7 +20,7 @@
     ];
 </script>
 
-<section class="py-12 bg-white relative mx-4" id="mission">
+<section class="py-12 bg-white relative mx- mx-auto px-4 sm:px-12 md:px-16 lg:px-32" id="mission">
     <!-- Paragraph at the top -->
     <p class="text-left text-sm md:text-base font-light mb-8 max-w-7xl mx-auto">
         {@html paragraphContent}
