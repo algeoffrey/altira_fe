@@ -117,7 +117,7 @@
       <a
         href="/alt-c-investor-network"
         class={`transition-all duration-300 px-3 md:px-4 py-1 md:py-1.5 text-sm md:text-md border rounded-md font-medium ${
-          currentTheme === 'black' ? 'bg-white text-black' : 'bg-white text-black'
+          currentTheme === 'black' ? 'bg-black text-white' : 'bg-white text-black'
         } ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}
       >
         Investor Track
