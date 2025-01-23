@@ -16,7 +16,7 @@
             description: "Team up with the experts and be a business-driven fundraiser.",
             courseType: "Startup Consult Hour",
             backgroundColor: "#D3E8F8",
-            buttonLink: "#",
+            buttonLink: "https://forms.gle/bGftt3jxvanGdhEz7",
         },
         {
             title: "Raise Me Up",
@@ -24,7 +24,7 @@
             description: "Spend less time fundraising, more time building your business.",
             courseType: "Apply to Fundraise",
             backgroundColor: "#FBD7D7",
-            buttonLink: "#",
+            buttonLink: "https://forms.gle/uGgunDxkCBqWB1fN7",
         }
     ];
 </script>
