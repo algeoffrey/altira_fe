@@ -1,6 +1,7 @@
 <script>
     import { Navbar, HeaderHero, InnovationPlatform, InvestorEducation, SponsorSection, AllSponsorSection, Footer} from '/src/lib/organisms';
     import { HeroQuote } from '/src/lib/molecules';
+  import JoinUsLearnMore from '../lib/organisms/JoinUsLearnMore.svelte';
 
 
   </script>
@@ -40,6 +41,6 @@
 />
 
 <AllSponsorSection/>
-
+<JoinUsLearnMore/>
 
 <Footer />

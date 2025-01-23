@@ -11,6 +11,7 @@ export { default as MissionAndStory } from "./MissionAndStory.svelte";
 export { default as MissionStory } from "./MissionStory.svelte";
 export { default as TeamSection } from "./TeamSection.svelte";
 export { default as LearnJoin } from "./LearnJoinCommunity.svelte";
+export { default as JoinUsLearnMore } from "./JoinUsLearnMore.svelte";
 
 export { default as BeneficiarySection } from "./BeneficiarySection.svelte";
 export { default as FAQSection } from "./FAQSection.svelte";
