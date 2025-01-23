@@ -150,31 +150,31 @@ export let showAll = false;
 
 
 $: institutionalSupporterConfig = isMobile
-    ? { maxColumns: 2, maxRows: 2, rowGap : 12, columnGap : 21, width: 120, height: 120, logos: showAll ? institutionalSupporterConfig : institutionalSupporterLogos.slice(0, 4), seeMoreLink: "/institutional-supporters" }
+    ? { maxColumns: 2, maxRows: 2, rowGap : 12, columnGap : 21, width: 120, height: 120, logos: institutionalSupporterLogos.slice(0, 4), seeMoreLink: "/institutional-supporters" }
     : isTablet
     ? { maxColumns: 3, maxRows: 2, width: 150, height: 150, logos: institutionalSupporterLogos, seeMoreLink: "/institutional-supporters" }
     : { maxColumns: 5, maxRows: 1, width: 200, height: 200, logos: institutionalSupporterLogos, seeMoreLink: "/institutional-supporters" };
 
 $: strategicPartnersConfig = isMobile
-    ? { maxColumns: 2, maxRows: 2, width: 120, height: 120, logos: showAll ? strategicPartnersLogos : strategicPartnersLogos.slice(0, 4), seeMoreLink: "/strategic-partners" }
+    ? { maxColumns: 2, maxRows: 2, width: 120, height: 120, logos: strategicPartnersLogos.slice(0, 4), seeMoreLink: "/strategic-partners" }
     : isTablet
     ? { maxColumns: 3, maxRows: 2, width: 150, height: 150, logos: strategicPartnersLogos, seeMoreLink: "/strategic-partners" }
     : { maxColumns: 4, maxRows: 1, width: 200, height: 200, logos: strategicPartnersLogos, seeMoreLink: "/strategic-partners" };
 
 $: innovationPioneersConfig = isMobile
-    ? { maxColumns: 3, maxRows: 3, width: 120, height: 120, logos: showAll ? innovationPioneersLogos : innovationPioneersLogos.slice(0, 6), seeMoreLink: "/innovation-pioneers" }
+    ? { maxColumns: 3, maxRows: 3, width: 120, height: 120, logos: innovationPioneersLogos.slice(0, 6), seeMoreLink: "/innovation-pioneers" }
     : isTablet
     ? { maxColumns: 4, maxRows: 2, width: 150, height: 150, logos: innovationPioneersLogos, seeMoreLink: "/innovation-pioneers" }
     : { maxColumns: 7, maxRows: 2, width: 200, height: 200, logos: innovationPioneersLogos, seeMoreLink: "/innovation-pioneers" };
 
 $: innovationLeadersConfig = isMobile
-    ? { maxColumns: 3, maxRows: 3, width: 120, height: 120, logos: showAll ? innovationLeadersLogos : innovationLeadersLogos.slice(0, 6), seeMoreLink: "/innovation-leaders" }
+    ? { maxColumns: 3, maxRows: 3, width: 120, height: 120, logos: innovationLeadersLogos.slice(0, 6), seeMoreLink: "/innovation-leaders" }
     : isTablet
     ? { maxColumns: 4, maxRows: 2, width: 150, height: 150, logos: innovationLeadersLogos, seeMoreLink: "/innovation-leaders" }
     : { maxColumns: 6, maxRows: 2, rowGap : 12, columnGap : 10, width: 200, height: 200, logos: innovationLeadersLogos, seeMoreLink: "/innovation-leaders" };
 
 $: networkEcosystemConfig = isMobile
-    ? { maxColumns: 3, maxRows: 3, rowGap : 12, columnGap : 10,width: 120, height: 120, logos: showALl ? networkEcosystemLogos : networkEcosystemLogos.slice(0, 6), seeMoreLink: "/network-ecosystem" }
+    ? { maxColumns: 3, maxRows: 3, rowGap : 12, columnGap : 10,width: 120, height: 120, logos: networkEcosystemLogos.slice(0, 6), seeMoreLink: "/network-ecosystem" }
     : isTablet
     ? { maxColumns: 4, maxRows: 2, rowGap : 12, columnGap : 10,width: 150, height: 150, logos: networkEcosystemLogos, seeMoreLink: "/network-ecosystem" }
     : { maxColumns: 9, maxRows: 2, rowGap : 12, columnGap : 10, width: 200, height: 200, logos: networkEcosystemLogos, seeMoreLink: "/network-ecosystem" };

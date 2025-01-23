@@ -21,7 +21,7 @@
 </script>
 
 <section class="bg-white relative py-8 md:py-12">
-  <div class="max-w-7xl mx-auto">
+  <div class="max-w-6xl mx-auto">
     <!-- Title and Subtitle -->
     <div class="text-center">
       {#if title}
