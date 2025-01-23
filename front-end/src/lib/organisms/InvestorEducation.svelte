@@ -8,7 +8,6 @@
   export let buttonTheme =  "black";
   export let buttonVariant = "secondary";
   export let sectionTitle = "Asset Owner & Investor Education";
-  export let introParagraph = "Becoming a pioneer sounds intimidating, but we are here to guide you to make your ambition come true. Whether you are an investor who is looking for a new asset class for your investment or an asset owner who wants to be part of innovation, we provide a comprehensive learning program to master investing in early-stage ventures."
 
   export let courses = [
     {
@@ -35,15 +34,19 @@
 <section class="py-8 sm:py-12 bg-gray-50">
   <div class="container mx-auto px-7 sm:px-6 md:px-8 max-w-7xl">
     <!-- Section Title -->
-    <h2 class="text-customBlack text-xl sm:text-2xl md:text-[2rem] font-bold text-center mb-4 sm:mb-6 pt-4 sm:pt-6">
+    <h2 class="text-customBlack text-xl sm:text-2xl md:text-[2rem] font-bold text-center mb-4 sm:mb-8 pt-4 sm:pt-6">
       {sectionTitle}
     </h2>
     
     <!-- Section Intro Paragraph -->
-    <p class="text-[0.9rem] sm:text-[1rem] md:text-md font-light text-center mb-6 sm:mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed">
-      {introParagraph}
+    <p class="text-[0.9rem] sm:text-[1rem] font-[400] mb-6 sm:mb-8 px-2 max-w-sm sm:max-w-xl md:max-w-5xl lg:max-w-6xl mx-auto leading-relaxed text-left">
+      Investor Learn Hub is our curated resource designed to empower asset owners, managers and investors with the knowledge and tools needed to make informed, actionable and strategic decisions in the rapidly evolving world of innovation, venture investing and wealth planning. It bridges the gap between learning and doing, creating actionable pathways for investors.
     </p>
     
+    <p class="text-[0.9rem] sm:text-[1rem] font-[400] mb-6 sm:mb-8 px-2 max-w-sm sm:max-w-xl md:max-w-5xl lg:max-w-6xl mx-auto leading-relaxed text-left">
+      Learn from seasoned and high profile investors and experts while actively building your own portfolio of highly-vetted opportunities available only through our private network and platform. <a class="underline hover:text-gray-500" href="#">Join us now</a>
+    </p>
+
     <!-- Courses Grid -->
     <div class="relative grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-14 max-w-5xl mx-auto">
       {#each courses as course}

@@ -116,6 +116,16 @@
       { imgSrc: '/images/sponsor_logo/network_ecosystem/64.investing_in_women.png', altText: 'Investing in Women'},
   ];
 
+  const introParagraph = 
+    {
+      institutionalSupporter : "Backed by global institutions and partners, we help drive progress in the local and regional innovation ecosystem, creating lasting impact and tangible results. Together, we foster entrepreneurship, drive innovation, scale businesses, and accelerate asset growth in the Southeast Asia region and beyond.",
+      strategicPartnersConfig : "",
+      innovationPioneers : "Our portfolio includes trailblazing companies that have reshaped their respective industries. Through legacy Angel-eQ Network, we have supported and championed startups that have set new standards in their fields, driving systemic change, market growth and technological advancement.",
+      innovationLeaders : "More recently, we have supported the following emerging leaders who are at the forefront of the next digital transformation and innovation, applying modern business models, creating new opportunities and delivering lasting impact and value. These innovators are shaping tomorrow’s markets and inspiring the next generation of entrepreneurs.",
+      networkEcosystem : "We thrive on collaboration and operate based on a networked ecosystem built on circular-hub model, supporting innovation through strong relationships with fund managers like venture capital and private equity firms, accelerators and incubators, government agencies as well as academic institutions."
+    }
+
+
   let isMobile = false;
   let isTablet = false;
 
@@ -136,41 +146,49 @@
   });
 
 
+export let showAll = false;
+
 
 $: institutionalSupporterConfig = isMobile
-    ? { maxColumns: 2, maxRows: 2, width: 120, height: 120, logos: institutionalSupporterLogos.slice(0, 4), seeMoreLink: "/institutional-supporters" }
+    ? { maxColumns: 2, maxRows: 2, rowGap : 12, columnGap : 21, width: 120, height: 120, logos: showAll ? institutionalSupporterConfig : institutionalSupporterLogos.slice(0, 4), seeMoreLink: "/institutional-supporters" }
     : isTablet
     ? { maxColumns: 3, maxRows: 2, width: 150, height: 150, logos: institutionalSupporterLogos, seeMoreLink: "/institutional-supporters" }
     : { maxColumns: 5, maxRows: 1, width: 200, height: 200, logos: institutionalSupporterLogos, seeMoreLink: "/institutional-supporters" };
 
 $: strategicPartnersConfig = isMobile
-    ? { maxColumns: 2, maxRows: 2, width: 120, height: 120, logos: strategicPartnersLogos.slice(0, 4), seeMoreLink: "/strategic-partners" }
+    ? { maxColumns: 2, maxRows: 2, width: 120, height: 120, logos: showAll ? strategicPartnersLogos : strategicPartnersLogos.slice(0, 4), seeMoreLink: "/strategic-partners" }
     : isTablet
     ? { maxColumns: 3, maxRows: 2, width: 150, height: 150, logos: strategicPartnersLogos, seeMoreLink: "/strategic-partners" }
     : { maxColumns: 4, maxRows: 1, width: 200, height: 200, logos: strategicPartnersLogos, seeMoreLink: "/strategic-partners" };
 
 $: innovationPioneersConfig = isMobile
-    ? { maxColumns: 3, maxRows: 3, width: 120, height: 120, logos: innovationPioneersLogos.slice(0, 6), seeMoreLink: "/innovation-pioneers" }
+    ? { maxColumns: 3, maxRows: 3, width: 120, height: 120, logos: showAll ? innovationPioneersLogos : innovationPioneersLogos.slice(0, 6), seeMoreLink: "/innovation-pioneers" }
     : isTablet
     ? { maxColumns: 4, maxRows: 2, width: 150, height: 150, logos: innovationPioneersLogos, seeMoreLink: "/innovation-pioneers" }
     : { maxColumns: 7, maxRows: 2, width: 200, height: 200, logos: innovationPioneersLogos, seeMoreLink: "/innovation-pioneers" };
 
 $: innovationLeadersConfig = isMobile
-    ? { maxColumns: 3, maxRows: 3, width: 120, height: 120, logos: innovationLeadersLogos.slice(0, 6), seeMoreLink: "/innovation-leaders" }
+    ? { maxColumns: 3, maxRows: 3, width: 120, height: 120, logos: showAll ? innovationLeadersLogos : innovationLeadersLogos.slice(0, 6), seeMoreLink: "/innovation-leaders" }
     : isTablet
     ? { maxColumns: 4, maxRows: 2, width: 150, height: 150, logos: innovationLeadersLogos, seeMoreLink: "/innovation-leaders" }
-    : { maxColumns: 6, maxRows: 2, width: 200, height: 200, logos: innovationLeadersLogos, seeMoreLink: "/innovation-leaders" };
+    : { maxColumns: 6, maxRows: 2, rowGap : 12, columnGap : 10, width: 200, height: 200, logos: innovationLeadersLogos, seeMoreLink: "/innovation-leaders" };
 
 $: networkEcosystemConfig = isMobile
-    ? { maxColumns: 3, maxRows: 3, width: 120, height: 120, logos: networkEcosystemLogos.slice(0, 6), seeMoreLink: "/network-ecosystem" }
+    ? { maxColumns: 3, maxRows: 3, rowGap : 12, columnGap : 10,width: 120, height: 120, logos: showALl ? networkEcosystemLogos : networkEcosystemLogos.slice(0, 6), seeMoreLink: "/network-ecosystem" }
     : isTablet
-    ? { maxColumns: 4, maxRows: 2, width: 150, height: 150, logos: networkEcosystemLogos, seeMoreLink: "/network-ecosystem" }
-    : { maxColumns: 9, maxRows: 2, width: 200, height: 200, logos: networkEcosystemLogos, seeMoreLink: "/network-ecosystem" };
+    ? { maxColumns: 4, maxRows: 2, rowGap : 12, columnGap : 10,width: 150, height: 150, logos: networkEcosystemLogos, seeMoreLink: "/network-ecosystem" }
+    : { maxColumns: 9, maxRows: 2, rowGap : 12, columnGap : 10, width: 200, height: 200, logos: networkEcosystemLogos, seeMoreLink: "/network-ecosystem" };
+
 
 </script>
 
 <div class="container mx-auto py-8 px-4 sm:px-8 md:px-12 lg:px-16">
   <!-- Institutional Supporters -->
+
+  <p class="text-[0.9rem] sm:text-[1rem] font-[400] mt-6 sm:mt-8 mb-6 sm:mb-8 px-2 max-w-sm sm:max-w-xl md:max-w-5xl lg:max-w-6xl mx-auto leading-relaxed text-left">
+    {introParagraph.institutionalSupporter}
+  </p>
+
   <div class="pb-4 mb-6 relative">
     <SponsorSection 
     title="Institutional Supporters"
@@ -179,6 +197,7 @@ $: networkEcosystemConfig = isMobile
     logos={institutionalSupporterConfig.logos}
     width={institutionalSupporterConfig.width}
     height={institutionalSupporterConfig.height}
+    showAll = {showAll}
 />
 
   </div>
@@ -192,6 +211,7 @@ $: networkEcosystemConfig = isMobile
     logos={strategicPartnersConfig.logos}
     width={strategicPartnersConfig.width}
     height={strategicPartnersConfig.height}
+    showAll = {showAll}
 />
 
   </div>
@@ -200,11 +220,13 @@ $: networkEcosystemConfig = isMobile
   <div class="pb-4 mb-6 relative">
     <SponsorSection 
     title="Innovation Pioneers"
+    paragraph = {introParagraph.innovationLeaders}
     maxColumns={innovationPioneersConfig.maxColumns}
     maxRows={innovationPioneersConfig.maxRows}
     logos={innovationPioneersConfig.logos}
     width={innovationPioneersConfig.width}
     height={innovationPioneersConfig.height}
+    showAll = {showAll}
 />
   </div>
 
@@ -212,11 +234,13 @@ $: networkEcosystemConfig = isMobile
     <div class="pb-4 mb-6 relative">
       <SponsorSection 
       title="Innovation Leaders"
+      paragraph = {introParagraph.innovationLeaders}
       maxColumns={innovationLeadersConfig.maxColumns}
       maxRows={innovationLeadersConfig.maxRows}
       logos={innovationLeadersConfig.logos}
       width={innovationLeadersConfig.width}
       height={innovationLeadersConfig.height}
+      showAll = {showAll}
   />
 
   </div>
@@ -225,11 +249,13 @@ $: networkEcosystemConfig = isMobile
     <div class="pb-4 mb-6 relative">
       <SponsorSection 
       title="Network Ecosystem"
+      paragraph = {introParagraph.networkEcosystem}
       maxColumns={networkEcosystemConfig.maxColumns}
       maxRows={networkEcosystemConfig.maxRows}
       logos={networkEcosystemConfig.logos}
       width={networkEcosystemConfig.width}
       height={networkEcosystemConfig.height}
+      showAll = {showAll}
   />
   </div>
 </div>

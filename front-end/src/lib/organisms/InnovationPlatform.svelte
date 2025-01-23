@@ -30,10 +30,13 @@
         <h3 class="text-customBlack text-[1.5rem] sm:text-[2rem] font-[800] pb-4 sm:pb-6">
             Innovation Platform
         </h3>
+
+        <p class="italic text-[0.7rem] sm:text-[0.875rem] font-[400] mb-6 sm:mb-8 max-w-sm sm:max-w-lg md:max-w-4xl lg:max-w-5xl mx-auto leading-relaxed">
+            Innovation is ability to see change as an opportunity, not a threat – Steve Jobs</p>
         
         <!-- Section Description -->
-        <p class="text-[0.9rem] sm:text-[1rem] font-[400] mb-6 sm:mb-8 max-w-sm sm:max-w-lg md:max-w-4xl lg:max-w-5xl mx-auto leading-relaxed">
-            Empower investors and asset owners to invest in the future they dream of. Groundbreaking ideas are nurtured in this innovation ecosystem. Learn more about how to contribute to this elite mission.
+        <p class="text-[0.9rem] sm:text-[1rem] font-[400] mb-6 sm:mb-8 px-2 max-w-sm sm:max-w-xl md:max-w-5xl lg:max-w-6xl mx-auto leading-relaxed text-left">
+            We help forward-thinking asset owners, managers, investors and enterprises to identify opportunities in transformative innovation and bridge the gap between potential and impact, offering you a front-row seat to collaborate with and invest in the most promising solutions of tomorrow—today.
         </p>
   
         <!-- Cards Grid -->

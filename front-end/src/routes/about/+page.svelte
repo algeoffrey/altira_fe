@@ -1,5 +1,5 @@
 <script>
-    import { Navbar, PageHeader, MissionAndStory, TeamSection, SponsorSection, LearnJoin, Footer, AllSponsorSection } from '/src/lib/organisms';
+    import { Navbar, PageHeader, MissionStory, TeamSection, SponsorSection, LearnJoin, Footer, AllSponsorSection } from '/src/lib/organisms';
   </script>
   
   <Navbar theme="black" />
@@ -19,7 +19,7 @@
 />
 
 
-<MissionAndStory />
+<MissionStory/>
 <TeamSection />
 
 <div id="partners">

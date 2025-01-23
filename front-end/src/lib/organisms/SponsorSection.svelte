@@ -8,7 +8,8 @@
   export let logos = [];
   export let maxColumns = 5;
   export let maxRows = 1;
-  export let gap = 10;
+  export let rowGap = 12;
+  export let columnGap = 8;
   export let width = 211;
   export let height = 211;
   export let title = "";
@@ -16,11 +17,11 @@
   export let paragraph = "";
   export let seeMoreLink = "/ecosystem-profile";
   export let linkText = "See More >";
-  export let showmore = "Y";
+  export let showAll = false;
 </script>
 
 <section class="bg-white relative py-8 md:py-12">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+  <div class="max-w-7xl mx-auto">
     <!-- Title and Subtitle -->
     <div class="text-center">
       {#if title}
@@ -39,12 +40,11 @@
   
       <!-- Paragraph -->
       {#if paragraph}
-        <div class="max-w-4xl mx-auto mt-4 md:mt-6">
+        <div class="text-[0.9rem] sm:text-[1rem] font-[400] mb-6 mt-8 sm:mb-8 px-2 max-w-sm sm:max-w-xl md:max-w-5xl lg:max-w-6xl mx-auto leading-relaxed text-left">
           <Paragraph
             text={paragraph}
-            size="text-sm md:text-base lg:text-[1rem] font-[400]"
             fontStyle="font-light"
-            textAlign="text-center"
+            textAlign="text-left"
           />
         </div>
       {/if}
@@ -52,10 +52,10 @@
   
     <!-- Logo Grid -->
     <div class="relative flex justify-center items-center pb-6 md:pb-8">
-      <LogoGrid {logos} {maxColumns} {maxRows} {gap} {width} {height} />
+      <LogoGrid {logos} {maxColumns} {maxRows} {rowGap} {columnGap} {width} {height} />
       
       <!-- "See More" Button -->
-      {#if showmore === "Y"}
+      {#if showAll}
         <div class="absolute bottom-0 right-0">
           <LinkButton href={seeMoreLink} text={linkText} />
         </div>

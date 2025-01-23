@@ -1,6 +1,7 @@
 export { default as NavLogo } from "./AltiraLogo.svelte";
 export { default as NavLink } from "./NavLink.svelte";
 export { default as ActionButton } from "./ActionButton.svelte";
+export { default as HeroButton } from "./HeroButton.svelte";
 export { default as HamburgerButton } from "./HamburgerButton.svelte";
 
 export { default as HomeBG } from "./BackgroundImage.svelte";

@@ -1,7 +1,7 @@
 <script>
-    export let srcDesktop = "/images/header-home-bg-desktop.svg";
-    export let srcTablet = "/images/header-home-bg-tablet.svg";
-    export let srcMobile = "/images/header-home-bg-mobile.svg";
+    export let srcDesktop = "/images/hero-bg.png";
+    export let srcTablet = "/images/hero-bg.png";
+    export let srcMobile = "/images/hero-bg.png";
     export let altText = "Header Background";
 </script>
 

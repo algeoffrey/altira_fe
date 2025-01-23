@@ -29,8 +29,8 @@
     ];
 </script>
 
-<section class="py-14 bg-white relative max-w-8xl" id="connect-fundraise">
-    <div class="mx-auto px-8 py-4">
+<section class="py-14 px-8 md:px-8 lg:px-32 bg-white relative max-w-8xl" id="connect-fundraise">
+    <div class="mx-auto py-4">
 
         <!-- Intro Paragraph -->
         <p class="text-left text-[1.05rem] leading-8 mb-12 pb-12 font-md max-w-8xl">

@@ -1,10 +1,12 @@
 <script>
-  import { HomeBG, HomeHeader, HomeMsg, ActionButton } from "../atoms/";
+  import { HomeBG, HomeHeader, HomeMsg, ActionButton, HeroButton } from "../atoms/";
 
-  export let backgroundImage = "/images/header-home-bg.svg";
+  export let backgroundImage = "/images/hero-bg.png";
   export let title = "Invest early in the future you believe in, today";
-  export let description =
-    "Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.";
+  export let hookJoinparagraph =
+    "Join us to drive progress, shape the future and discover the space where innovation meets mission-driven investment and wealth creation.";
+  export let hookMemberParagraph =
+    "Become a member and let us help guide your journey.";
   
   export let buttonLink = "/investor-learn-hub"
   
@@ -29,23 +31,15 @@
     <!-- Header Text -->
     <HomeHeader 
       {title} 
-      {description} 
+      {hookJoinparagraph}
+      {hookMemberParagraph} 
       class="text-[1.5rem] sm:text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] font-bold leading-snug"
     />
 
     <!-- Buttons and Message -->
     <div class="mt-6 flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
       <!-- "Become an Investor" Button -->
-      <ActionButton
-        href="{buttonLink}"
-        text="Become an Investor"
-        theme="custom"
-        variant="secondary"
-        size="text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]"
-        fontWeight="font-medium"
-        bordersize="py-2 px-4"
-        class="w-full sm:w-auto"
-      />
+      <HeroButton/>
 
       <!-- Founders Message -->
       <HomeMsg

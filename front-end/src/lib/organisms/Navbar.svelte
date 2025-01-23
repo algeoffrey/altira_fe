@@ -88,7 +88,7 @@
         logoSrc={
           currentTheme === 'black'
             ? '/images/altira-logo-white.svg'
-            : '/images/altira-logo-black.svg'
+            : '/images/altira-logo-white.svg'
         }
         href="/"
         theme={currentTheme}
@@ -102,7 +102,7 @@
           <a
             href={href}
             class={`nav-link transition-all duration-300 ${
-              currentTheme === 'black' ? 'text-white' : 'text-black'
+              currentTheme === 'black' ? 'text-white' : 'text-white'
             }`}
           >
             {name}
@@ -117,7 +117,7 @@
       <a
         href="/alt-c-investor-network"
         class={`transition-all duration-300 px-3 md:px-4 py-1 md:py-1.5 text-sm md:text-md border rounded-md font-medium ${
-          currentTheme === 'black' ? 'bg-black text-white' : 'bg-[#363338] text-white'
+          currentTheme === 'black' ? 'bg-white text-black' : 'bg-white text-black'
         } ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}
       >
         Investor Track
@@ -129,7 +129,7 @@
         class={`transition-all duration-300 px-3 md:px-4 py-1 md:py-1.5 text-sm md:text-md border rounded-md font-medium ${
           currentTheme === 'black'
             ? 'border-white bg-white text-[#363338]'
-            : 'border-black bg-transparent text-black'
+            : 'border-white bg-transparent text-white'
         } ${currentTheme === 'black' ? 'border-white' : 'border-black'}`}
       >
         Raise Capital
@@ -154,7 +154,7 @@
           logoSrc={
             currentTheme === 'black'
               ? '/images/altira-logo-white.svg'
-              : '/images/altira-logo-black.svg'
+              : '/images/altira-logo-white.svg'
           }
           href="/"
           theme={currentTheme}

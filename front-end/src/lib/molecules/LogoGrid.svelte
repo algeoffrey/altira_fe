@@ -69,9 +69,15 @@
 
     export let maxColumns = 4;
     export let maxRows = 2;
-    export let gap = 21;
+    export let rowGap = 12;  // Vertical gap between rows
+    export let columnGap = 21;  // Horizontal gap between columns
     export let width = 211;
     export let height = 211;
+
+    $: style = `
+        --maxColumns: ${maxColumns};
+        --row-gap: ${rowGap}px; 
+        --column-gap: ${columnGap}px;`;
 
     let currentIndex = 0;
 
@@ -114,9 +120,9 @@
     }
     .grid {
         display: grid;
-        gap: var(--gap);
+        gap: var(--row-gap) var(--column-gap);
         grid-template-columns: repeat(var(--maxColumns), 1fr);
-        padding: 2rem;
+        padding: 1rem;
     }
     .arrow-button {
         position: absolute;
@@ -160,7 +166,7 @@
         >
             {#each Array(maxIndex) as _, index}
                 <div class="slide">
-                    <div class="grid" style="--gap: {gap}px; --maxColumns: {maxColumns};">
+                    <div class="grid" style={style}>
                         {#each logos.slice(index * maxItems, index * maxItems + maxItems) as logo}
                             <div class="flex justify-center items-center">
                                 <LogoImage imgSrc={logo.imgSrc} altText={logo.altText} width={width} height={height} />
