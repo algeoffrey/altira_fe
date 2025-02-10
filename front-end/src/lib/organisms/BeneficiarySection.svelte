@@ -59,29 +59,31 @@
     <p class="text-center text-[1rem] md:text-base font-light mb-12 max-w-5xl mx-autoleading-6">{description}</p>
 
     <!-- Responsive Grid Layout -->
-    <div class="relative hidden md:grid md:grid-cols-[1fr_20px_1fr] items-center gap-8 md:gap-16 max-w-7xl mx-auto">
+    <div class="relative hidden md:grid md:grid-cols-[1fr_20px_1fr] items-center justify-center max-w-7xl mx-auto">
         <!-- Left Column -->
-        <div class="flex flex-col items-end space-y-16">
+        <div class="flex flex-col justify-between space-y-8 items-end">
             <BenefitCard {...cards[0]} class="p-4 md:p-6" />
-            <div class="w-full h-[1px] bg-black"></div>
+            <div class="h-[1px] w-[70%] mx-12 border-t border-solid border-[#1B1B1D73]"></div>
             <BenefitCard {...cards[2]} class="p-4 md:p-6" />
         </div>
 
         <!-- Middle Column: Vertical Line -->
-        <div class="hidden md:flex flex-col items-center">
-            <div class="w-[1px] h-[70%] bg-black"></div>
-            <div class="w-16 h-16 rounded-full bg-[#363338] flex items-center justify-center my-8">
-                <div class="w-10 h-10 rounded-full bg-[#D9D9D9] flex items-center justify-center">
-                    <div class="w-6 h-6 rounded-full bg-[#363338]"></div>
+        <div class="flex flex-col justify-between items-center w-full h-full relative">
+            <div class="h-[90%] w-0 border-l border-solid border-[#1B1B1D73] mt-12"></div>
+            <div class="flex justify-center items-center my-8">
+                <div class="w-16 h-16 rounded-full bg-[#363338] flex justify-center items-center">
+                    <div class="w-10 h-10 rounded-full bg-[#D9D9D9] flex justify-center items-center">
+                        <div class="w-6 h-6 rounded-full bg-[#363338]"></div>
+                    </div>
                 </div>
             </div>
-            <div class="w-[1px] h-[70%] bg-black"></div>
+            <div class="h-[90%] w-0 border-l border-solid border-[#1B1B1D73] mb-12"></div>
         </div>
 
         <!-- Right Column -->
-        <div class="flex flex-col items-start space-y-16">
+        <div class="flex flex-col justify-between space-y-8 items-start">
             <BenefitCard {...cards[1]} class="p-4 md:p-6" />
-            <div class="w-full h-[1px] bg-black"></div>
+            <div class="h-[1px] w-[70%] mx-12 border-t border-solid border-[#1B1B1D73]"></div>
             <BenefitCard {...cards[3]} class="p-4 md:p-6" />
         </div>
     </div>
@@ -89,25 +91,25 @@
     <!-- Mobile View -->
     <div class="md:hidden flex flex-col items-center space-y-12">
         <div class="flex items-center">
-            <span class="w-28 sm:w-40 h-[1px] bg-black"></span>
+            <span class="w-40 sm:w-52 h-0 border-t border-solid border-[#1B1B1D73]"></span>
             <span class="w-8 h-8 rounded-full bg-[#363338] flex items-center justify-center mx-6">
                 <span class="w-4 h-4 rounded-full bg-[#D9D9D9] flex items-center justify-center">
                     <span class="w-2 h-2 rounded-full bg-[#363338]"></span>
                 </span>
             </span>
-            <span class="w-28 sm:w-40 h-[1px] bg-black"></span>
+            <span class="w-40 sm:w-52 h-0 border-t border-solid border-[#1B1B1D73]"></span>
         </div>
         {#each cards as card, index}
             <BenefitCard {...card} class="p-4" />
             {#if index < cards.length - 1}
                 <div class="flex items-center">
-                    <span class="w-28 sm:w-40 h-[1px] bg-black"></span>
+                    <span class="w-40 sm:w-52 h-0 border-t border-solid border-[#1B1B1D73]"></span>
                     <span class="w-8 h-8 rounded-full bg-[#363338] flex items-center justify-center mx-6">
                         <span class="w-4 h-4 rounded-full bg-[#D9D9D9] flex items-center justify-center">
                             <span class="w-2 h-2 rounded-full bg-[#363338]"></span>
                         </span>
                     </span>
-                    <span class="w-28 sm:w-40 h-[1px] bg-black"></span>
+                    <span class="w-40 sm:w-52 h-0 border-t border-solid border-[#1B1B1D73]"></span>
                 </div>
             {/if}
         {/each}

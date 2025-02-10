@@ -9,7 +9,7 @@
             subtitle: "Corporate & Family Enterprise Innovation (CFEI)",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum. Nam suscipit molestie augue, ac finibus lacus mattis in. Curabitur id convallis sem, et pulvinar turpis. Maecenas sagittis dui non risus commodo, fringilla interdum tortor gravida. Integer porttitor ante sit amet sem efficitur tincidunt.",
             buttonText: "Learn more",
-            buttonLink: "#"
+            buttonLink: "https://docs.google.com/forms/d/e/1FAIpQLSfTZTEA8a0fASdmcGS95oz18GhcM237g5oiseb8aknXkT2K8g/formrestricted"
         },
         {
             subtitle: "Venture Innovation Solutions (VIS)",
@@ -25,7 +25,7 @@
                     subtitle: "Venture Management Services (VMS)",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum. Nam suscipit molestie augue, ac finibus lacus mattis in. Curabitur id convallis sem, et pulvinar turpis. Maecenas sagittis dui non risus commodo, fringilla interdum tortor gravida. Integer porttitor ante sit amet sem efficitur tincidunt.",
                     buttonText: "Learn more",
-                    buttonLink: "#"
+                    buttonLink: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdFiUnUtz0tOCC0jFh-JUBRgdyK-d6aRXT_zisQlImMRL-wnw/formrestricted"
                 }
             ]
         }

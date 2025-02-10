@@ -5,7 +5,7 @@
         export let title = "Partners & Builders";
         export let mainDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum. Nam suscipit molestie augue, ac finibus lacus mattis in. Curabitur id convallis sem, et pulvinar turpis. Maecenas sagittis dui non risus commodo, fringilla interdum tortor gravida. Integer porttitor ante sit amet sem efficitur tincidunt.";
         export let buttonText = "Learn more";
-        export let buttonLink = "#";
+        export let buttonLink = "https://docs.google.com/forms/d/e/1FAIpQLSdYj8Ft0W7n7sIqbrhSz5Z9rP1B_R4tVjphhOMwNvRZKgSwGA/formrestricted";
 
         export let sections = [
             {
@@ -25,9 +25,6 @@
         <!-- Title and Description -->
         <h2 class="text-center text-2xl md:text-3xl font-semibold mb-6">{title}</h2>
         <p class="text-center text-[1rem] md:text-base font-light mb-4 py-4 max-w-8xl mx-auto leading-relaxed">{mainDescription}</p>
-        <div class="mt-8 flex justify-end mb-2 py-4 max-w-8xl mx-auto">
-            <ActionButton text={buttonText} href={buttonLink} theme="transparent" variant="secondary" bordersize="px-5 py-1" size="text-md md:text-lg" fontWeight="font-medium" />
-        </div>
 
         <!-- Sections -->
         {#each sections as section, i}
@@ -36,4 +33,9 @@
                 <p class="text-base font-light mt-6 mb-6 leading-relaxed">{section.description}</p>
             </div>
         {/each}
+
+        <div class="mt-8 flex justify-end mb-2 py-4 max-w-8xl mx-auto">
+            <ActionButton text={buttonText} href={buttonLink} theme="transparent" variant="secondary" bordersize="px-5 py-1" size="text-md md:text-lg" fontWeight="font-medium" />
+        </div>
+
     </section>

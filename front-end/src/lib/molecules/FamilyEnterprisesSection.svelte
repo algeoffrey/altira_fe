@@ -9,7 +9,7 @@
             subtitle: "Wealth Planning Solutions (WPS)",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat eros velit. Vestibulum vestibulum imperdiet nisi, ut vulputate augue consectetur at. Sed scelerisque efficitur bibendum. Nam suscipit molestie augue, ac finibus lacus mattis in. Curabitur id convallis sem, et pulvinar turpis. Maecenas sagittis dui non risus commodo, fringilla interdum tortor gravida. Integer porttitor ante sit amet sem efficitur tincidunt.",
             buttonText: "Learn more",
-            buttonLink: "#"
+            buttonLink: "https://docs.google.com/forms/d/e/1FAIpQLSfRqGpnMrDxp1CrBtfdI-LzV7zwninyEvrxzK5gptk5x8oLpg/formrestricted"
         },
         {
             subtitle: "Family Enterprise Innovation Solutions",
